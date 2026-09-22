@@ -44,6 +44,7 @@ Seluruh latihan berjalan sebagai simulasi di browser. Perintah diproses oleh mes
 - XP, badge, petunjuk, dan indikator progres pembelajaran.
 - Progres tersimpan di browser melalui `localStorage`.
 - Ekspor statis untuk deployment melalui GitHub Pages.
+- Tema biru tua dan kuning yang seragam dengan Simple Toolkit Pentest, navigasi cepat antarjalur, dan tombol lanjut belajar.
 
 ## Alur Pembelajaran
 
@@ -86,7 +87,7 @@ Tidak diperlukan konfigurasi environment untuk penggunaan lokal. Contoh variabel
 3. Push perubahan ke branch `main`, atau jalankan workflow **Deploy to GitHub Pages** dari tab **Actions**.
 4. Setelah workflow berhasil, buka [LinuxLab Cyber](https://cakgup.github.io/linuxlab/).
 
-Workflow di [`.github/workflows/pages.yml`](.github/workflows/pages.yml) menginstal dependensi, menjalankan tes simulator, membangun aplikasi, lalu menerbitkan folder `out` ke GitHub Pages.
+Workflow di [`.github/workflows/pages.yml`](.github/workflows/pages.yml) menginstal dependensi, menjalankan tes simulator, membangun aplikasi, memeriksa tautan dan aset hasil ekspor, lalu menerbitkan folder `out` ke GitHub Pages. Gunakan Source **GitHub Actions**, agar deployment tidak bersamaan dengan publikasi langsung dari branch.
 
 Base path diambil otomatis dari konfigurasi Pages. Pada URL repository ini, tautan dan aset menggunakan awalan `/linuxlab/`. Semua halaman room dibuat saat build agar dapat dibuka langsung dan di-refresh.
 
@@ -130,9 +131,10 @@ linuxlab/
 ```bash
 npm run test:core
 npm run build
+npm run test:export
 ```
 
-`test:core` memeriksa skenario perintah dan penyelesaian tugas. `build` memeriksa kompilasi aplikasi serta pembuatan halaman statis.
+`test:core` memeriksa skenario perintah dan penyelesaian tugas. `build` memeriksa kompilasi aplikasi serta pembuatan halaman statis. `test:export` memeriksa keberadaan halaman, tujuan tautan, dan aset. Jalankan dengan nilai `NEXT_PUBLIC_BASE_PATH` yang sama dengan saat build.
 
 ## Troubleshooting Singkat
 
@@ -151,7 +153,6 @@ npm run build
 - [Architecture](docs/ARCHITECTURE.md) — struktur aplikasi dan mekanisme simulasi.
 - [Curriculum Map](docs/CURRICULUM.md) — materi dan urutan pembelajaran.
 - [Pro Bash Coverage](docs/PRO_BASH_COVERAGE.md) — cakupan perintah dan batasan shell.
-- [Test Results](docs/TEST_RESULTS.md) — catatan hasil pengujian.
 - [Roadmap](docs/ROADMAP.md) — rencana pengembangan.
 
 ## Catatan Penggunaan

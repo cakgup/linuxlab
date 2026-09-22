@@ -102,8 +102,8 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
   return (
     <div className="shell">
       <Nav xp={xp} completed={completed.length} />
-      <div className="room-layout">
-        <section className="lesson-pane">
+      <main className="room-layout" lang="en">
+        <section className="lesson-pane" id="lesson">
           <div className="lesson-inner">
             <div className="breadcrumb"><Link href="/">Learning paths</Link><span>/</span><span>{room.path}</span><span>/</span><span>{room.title}</span></div>
             <div className="lesson-heading">
@@ -120,6 +120,7 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
               <span className="tag">{room.duration}</span>
               <span className="tag">{roomDone}/{room.tasks.length} complete</span>
             </div>
+            <a className="btn btn-primary mobile-terminal-link" href="#terminal">Go to terminal <ChevronRight size={16} /></a>
 
             <div className="lesson-card">
               <h3>What you&apos;ll learn</h3>
@@ -174,15 +175,15 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
           </div>
         </section>
 
-        <section className="terminal-pane">
+        <section className="terminal-pane" id="terminal" aria-label="Training terminal">
           <div className="terminal-toolbar">
             <div style={{ display: "flex", alignItems: "center", gap: 11 }}><span className="terminal-dots"><i /><i /><i /></span><span>training-web-01 · isolated simulator</span></div>
-            <div className="terminal-actions"><button onClick={resetLab}><RotateCcw size={12} style={{ verticalAlign: "-2px", marginRight: 5 }} />Reset lab</button></div>
+            <div className="terminal-actions"><a className="mobile-terminal-link" href="#lesson">Back to lesson</a><button onClick={resetLab}><RotateCcw size={12} style={{ verticalAlign: "-2px", marginRight: 5 }} />Reset lab</button></div>
           </div>
           <div className="terminal-wrap"><BrowserTerminal onCommand={handleCommand} cwd={labState.cwd} resetToken={resetToken} /></div>
           {justCompleted && <div className="objective-toast">✓ Objective validated · XP awarded</div>}
         </section>
-      </div>
+      </main>
     </div>
   );
 }

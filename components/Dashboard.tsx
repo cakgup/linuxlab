@@ -20,8 +20,10 @@ export function Dashboard() {
   const completedRooms = rooms.filter((r) => isRoomComplete(r, completed)).length;
   const percent = Math.round((completed.length / totalTasks) * 100) || 0;
   const badges = rooms.filter((r) => r.badge && isRoomComplete(r, completed)).map((r) => r.badge as string);
+  const nextRoom = rooms.find((room) => isRoomUnlocked(room, completed) && !isRoomComplete(room, completed));
 
   const reset = () => {
+    if (!window.confirm("Hapus seluruh progres belajar dan XP di browser ini?")) return;
     clearProgress();
     setCompleted([]);
   };
@@ -29,25 +31,26 @@ export function Dashboard() {
   return (
     <div className="shell">
       <Nav xp={earnedXp} completed={completed.length} />
-      <main className="container">
-        <section className="hero">
-          <div className="eyebrow">TryHackMe-style Linux learning · defender focused</div>
-          <h1>Learn Linux first. Then defend it.</h1>
+      <header className="hero">
+        <div className="container">
+          <div className="eyebrow">Linux & Cybersecurity Learning Lab</div>
+          <h1>LinuxLab Cyber</h1>
           <p>
-            Start with a complete Linux command-line foundation, unlock the cybersecurity path, and finish with a guided
-            incident-response room. Every lab runs in a safe browser simulation and validates the resulting host state.
+            Pelajari Linux dari dasar, praktikkan investigasi keamanan, dan selesaikan tantangan incident response.
+            Semua latihan berjalan di browser, tanpa instalasi VM atau akses ke shell perangkat Anda.
           </p>
           <div className="hero-actions">
-            <Link className="btn btn-primary" href="/room/basic-navigation">Start Linux Basics <ArrowRight size={17} /></Link>
-            {completed.length > 0 && <button className="btn" onClick={reset}><RotateCcw size={16} /> Reset learning progress</button>}
+            <Link className="btn btn-primary" href={`/room/${nextRoom?.slug || rooms[0].slug}`}>{completed.length === 0 ? "Mulai Belajar" : nextRoom ? "Lanjutkan Belajar" : "Ulangi Latihan"} <ArrowRight size={17} /></Link>
+            {learningPaths.map((path, index) => <a className="btn" key={path.name} href={`#path-${index + 1}`}>{path.name}</a>)}
           </div>
-        </section>
-
+        </div>
+      </header>
+      <main className="container dashboard-main" id="main-content">
         <section className="stats">
-          <div className="stat"><TerminalSquare size={19} /><strong>{rooms.length}</strong><span>interactive rooms</span></div>
-          <div className="stat"><Waypoints size={19} /><strong>{totalTasks}</strong><span>hands-on tasks</span></div>
-          <div className="stat"><Trophy size={19} /><strong>{earnedXp}/{totalXp}</strong><span>XP earned</span></div>
-          <div className="stat"><Shield size={19} /><strong>{percent}%</strong><span>learning path complete</span></div>
+          <div className="stat"><TerminalSquare size={19} /><strong>{rooms.length}</strong><span>Room interaktif</span></div>
+          <div className="stat"><Waypoints size={19} /><strong>{totalTasks}</strong><span>Tugas praktik</span></div>
+          <div className="stat"><Trophy size={19} /><strong>{earnedXp}/{totalXp}</strong><span>XP terkumpul</span></div>
+          <div className="stat"><Shield size={19} /><strong>{percent}%</strong><span>Progres belajar</span></div>
         </section>
 
         {badges.length > 0 && (
@@ -66,11 +69,11 @@ export function Dashboard() {
           const pathUnlocked = pathRooms.some((room) => isRoomUnlocked(room, completed));
 
           return (
-            <section className="learning-path" key={path.name}>
+            <section className="learning-path" id={`path-${pathIndex + 1}`} aria-labelledby={`path-title-${pathIndex + 1}`} key={path.name}>
               <div className="section-title path-title">
                 <div>
-                  <div className="path-kicker">PATH {String(pathIndex + 1).padStart(2, "0")} · {path.accent}</div>
-                  <h2>{path.name}</h2>
+                  <div className="path-kicker">{String(pathIndex + 1).padStart(2, "0")} · {path.accent}</div>
+                  <h2 id={`path-title-${pathIndex + 1}`}>{path.name}</h2>
                   <p>{path.description}</p>
                 </div>
                 <div className="path-progress-summary">
@@ -80,7 +83,7 @@ export function Dashboard() {
               </div>
 
               {!pathUnlocked && (
-                <div className="path-locked-banner"><Lock size={15} /> Complete the previous learning path to unlock these rooms.</div>
+                <div className="path-locked-banner"><Lock size={15} /> Selesaikan jalur sebelumnya untuk membuka latihan ini. Pilih room untuk melihat prasyaratnya.</div>
               )}
 
               <div className="rooms">
@@ -93,7 +96,7 @@ export function Dashboard() {
                     <>
                       <div className="room-card-top">
                         <RoomIcon icon={room.icon} />
-                        {!unlocked ? <span className="lock-chip"><Lock size={12} /> Locked</span> : complete ? <span className="complete-chip"><CheckCircle2 size={12} /> Complete</span> : null}
+                        {!unlocked ? <span className="lock-chip"><Lock size={12} /> Terkunci</span> : complete ? <span className="complete-chip"><CheckCircle2 size={12} /> Selesai</span> : <span className="complete-chip">Tersedia</span>}
                       </div>
                       <h3>{room.title}</h3>
                       <p>{room.description}</p>
@@ -108,10 +111,8 @@ export function Dashboard() {
                     </>
                   );
 
-                  return unlocked ? (
-                    <Link href={`/room/${room.slug}`} className="room-card" key={room.slug}>{card}</Link>
-                  ) : (
-                    <div className="room-card room-card-locked" key={room.slug}>{card}</div>
+                  return (
+                    <Link href={`/room/${room.slug}`} className={`room-card ${unlocked ? "" : "room-card-locked"}`} key={room.slug}>{card}<span className="room-card-action">{unlocked ? complete ? "Ulangi latihan" : "Buka latihan" : "Lihat prasyarat"} <ArrowRight size={14} /></span></Link>
                   );
                 })}
               </div>
@@ -120,12 +121,12 @@ export function Dashboard() {
         })}
 
         <section className="coverage-note">
-          <strong>Linux Basics baseline:</strong> navigation, file operations, text reading, grep/find search, symbolic and numeric permissions,
-          process inspection, pipes/redirection, and user/system context are all included before the cybersecurity rooms unlock.
+          <strong>Belajar bertahap.</strong> Mulai dari navigasi, file, permission, dan proses sebelum masuk ke investigasi keamanan.
+          Materi dan perintah latihan menggunakan bahasa Inggris. Progres tersimpan otomatis di browser ini.
         </section>
-        <div className="small" style={{ paddingBottom: 36 }}>{completedRooms}/{rooms.length} rooms completed.</div>
+        <div className="progress-tools"><span className="small">{completedRooms}/{rooms.length} room selesai.</span>{completed.length > 0 && <button className="btn" onClick={reset}><RotateCcw size={16} /> Reset progres</button>}</div>
       </main>
-      <footer className="footer-note">Training simulator only · no commands are executed on the web server or your device shell.</footer>
+      <footer className="footer-note">LinuxLab Cyber · Simulasi pembelajaran Linux dan keamanan siber.<br />developed with love by cakgup</footer>
     </div>
   );
 }
