@@ -1,6 +1,12 @@
 import { notFound } from "next/navigation";
 import { RoomClient } from "@/components/RoomClient";
-import { getRoom } from "@/lib/tracks";
+import { getRoom, rooms } from "@/lib/tracks";
+
+export function generateStaticParams() {
+  return rooms.map((room) => ({ slug: room.slug }));
+}
+
+export const dynamicParams = false;
 
 export default async function RoomPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

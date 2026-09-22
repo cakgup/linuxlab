@@ -5,10 +5,12 @@ const { spawnSync } = require('child_process');
 
 const root = path.resolve(__dirname, '..');
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'linuxlab-core-'));
-const bin = path.join(root, 'node_modules', '.bin', process.platform === 'win32' ? 'tsc.cmd' : 'tsc');
+const bin = require.resolve('typescript/bin/tsc');
 const sourceFiles = ['lib/types.ts', 'lib/fs.ts', 'lib/shell.ts', 'lib/validator.ts', 'lib/tracks.ts'];
 
-const compile = spawnSync(bin, [
+const compile = spawnSync(process.execPath, [
+  bin,
+  '--ignoreConfig',
   '--outDir', tmp,
   '--target', 'ES2020',
   '--module', 'commonjs',
