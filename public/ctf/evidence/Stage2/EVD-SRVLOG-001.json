@@ -1,0 +1,3587 @@
+[
+  {
+    "timestamp": "2026-03-01T00:03:04+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 4396"
+  },
+  {
+    "timestamp": "2026-03-01T00:03:58+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 9092"
+  },
+  {
+    "timestamp": "2026-03-01T00:07:55+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 7760"
+  },
+  {
+    "timestamp": "2026-03-01T00:11:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 5129"
+  },
+  {
+    "timestamp": "2026-03-01T00:14:16+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 339"
+  },
+  {
+    "timestamp": "2026-03-01T00:14:29+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 8664"
+  },
+  {
+    "timestamp": "2026-03-01T00:15:11+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 9233"
+  },
+  {
+    "timestamp": "2026-03-01T00:16:31+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 7779"
+  },
+  {
+    "timestamp": "2026-03-01T00:16:38+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 2728"
+  },
+  {
+    "timestamp": "2026-03-01T00:19:09+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 6263"
+  },
+  {
+    "timestamp": "2026-03-01T00:20:04+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 8738"
+  },
+  {
+    "timestamp": "2026-03-01T00:22:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 3886"
+  },
+  {
+    "timestamp": "2026-03-01T00:23:35+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 6940"
+  },
+  {
+    "timestamp": "2026-03-01T00:24:28+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 4432"
+  },
+  {
+    "timestamp": "2026-03-01T00:25:28+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 8731"
+  },
+  {
+    "timestamp": "2026-03-01T00:26:49+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 4795"
+  },
+  {
+    "timestamp": "2026-03-01T00:27:14+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 3322"
+  },
+  {
+    "timestamp": "2026-03-01T00:30:26+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 580"
+  },
+  {
+    "timestamp": "2026-03-01T00:30:48+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 598"
+  },
+  {
+    "timestamp": "2026-03-01T00:33:31+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 3677"
+  },
+  {
+    "timestamp": "2026-03-01T00:36:55+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 6249"
+  },
+  {
+    "timestamp": "2026-03-01T00:37:03+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 7155"
+  },
+  {
+    "timestamp": "2026-03-01T00:45:34+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 2316"
+  },
+  {
+    "timestamp": "2026-03-01T00:47:17+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 6781"
+  },
+  {
+    "timestamp": "2026-03-01T00:49:44+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 3927"
+  },
+  {
+    "timestamp": "2026-03-01T00:50:11+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 8800"
+  },
+  {
+    "timestamp": "2026-03-01T00:52:29+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 3394"
+  },
+  {
+    "timestamp": "2026-03-01T00:53:51+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 6075"
+  },
+  {
+    "timestamp": "2026-03-01T01:00:40+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 844"
+  },
+  {
+    "timestamp": "2026-03-01T01:01:07+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 9427"
+  },
+  {
+    "timestamp": "2026-03-01T01:01:38+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 1282"
+  },
+  {
+    "timestamp": "2026-03-01T01:02:18+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 6537"
+  },
+  {
+    "timestamp": "2026-03-01T01:03:11+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 3271"
+  },
+  {
+    "timestamp": "2026-03-01T01:14:15+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 5859"
+  },
+  {
+    "timestamp": "2026-03-01T01:15:22+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 8758"
+  },
+  {
+    "timestamp": "2026-03-01T01:18:26+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 7430"
+  },
+  {
+    "timestamp": "2026-03-01T01:21:33+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 242"
+  },
+  {
+    "timestamp": "2026-03-01T01:30:26+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 1279"
+  },
+  {
+    "timestamp": "2026-03-01T01:30:56+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 4959"
+  },
+  {
+    "timestamp": "2026-03-01T01:31:10+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 9871"
+  },
+  {
+    "timestamp": "2026-03-01T01:33:31+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 739"
+  },
+  {
+    "timestamp": "2026-03-01T01:36:17+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 5670"
+  },
+  {
+    "timestamp": "2026-03-01T01:37:44+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 6131"
+  },
+  {
+    "timestamp": "2026-03-01T01:37:48+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 9074"
+  },
+  {
+    "timestamp": "2026-03-01T01:38:52+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 7657"
+  },
+  {
+    "timestamp": "2026-03-01T01:47:17+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 3364"
+  },
+  {
+    "timestamp": "2026-03-01T01:53:58+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 3640"
+  },
+  {
+    "timestamp": "2026-03-01T02:04:01+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 4725"
+  },
+  {
+    "timestamp": "2026-03-01T02:04:50+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 2156"
+  },
+  {
+    "timestamp": "2026-03-01T02:09:40+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 1377"
+  },
+  {
+    "timestamp": "2026-03-01T02:13:34+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 4619"
+  },
+  {
+    "timestamp": "2026-03-01T02:15:56+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 7730"
+  },
+  {
+    "timestamp": "2026-03-01T02:19:32+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 2317"
+  },
+  {
+    "timestamp": "2026-03-01T02:20:25+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 6761"
+  },
+  {
+    "timestamp": "2026-03-01T02:24:09+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 1229"
+  },
+  {
+    "timestamp": "2026-03-01T02:25:53+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 5378"
+  },
+  {
+    "timestamp": "2026-03-01T02:28:29+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 634"
+  },
+  {
+    "timestamp": "2026-03-01T02:28:41+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 8900"
+  },
+  {
+    "timestamp": "2026-03-01T02:31:46+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 1235"
+  },
+  {
+    "timestamp": "2026-03-01T02:39:50+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 5543"
+  },
+  {
+    "timestamp": "2026-03-01T02:40:19+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 2888"
+  },
+  {
+    "timestamp": "2026-03-01T02:41:42+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 2695"
+  },
+  {
+    "timestamp": "2026-03-01T02:43:02+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 8599"
+  },
+  {
+    "timestamp": "2026-03-01T02:46:40+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 2830"
+  },
+  {
+    "timestamp": "2026-03-01T02:54:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 2351"
+  },
+  {
+    "timestamp": "2026-03-01T03:03:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 6474"
+  },
+  {
+    "timestamp": "2026-03-01T03:04:01+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 4690"
+  },
+  {
+    "timestamp": "2026-03-01T03:08:06+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 7332"
+  },
+  {
+    "timestamp": "2026-03-01T03:08:53+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 4954"
+  },
+  {
+    "timestamp": "2026-03-01T03:09:10+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 3735"
+  },
+  {
+    "timestamp": "2026-03-01T03:11:36+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 5645"
+  },
+  {
+    "timestamp": "2026-03-01T03:12:55+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 5115"
+  },
+  {
+    "timestamp": "2026-03-01T03:13:38+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 9694"
+  },
+  {
+    "timestamp": "2026-03-01T03:21:43+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 539"
+  },
+  {
+    "timestamp": "2026-03-01T03:23:09+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 2628"
+  },
+  {
+    "timestamp": "2026-03-01T03:24:50+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 1938"
+  },
+  {
+    "timestamp": "2026-03-01T03:27:07+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 7536"
+  },
+  {
+    "timestamp": "2026-03-01T03:34:04+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 6444"
+  },
+  {
+    "timestamp": "2026-03-01T03:34:09+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 7317"
+  },
+  {
+    "timestamp": "2026-03-01T03:40:07+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 3804"
+  },
+  {
+    "timestamp": "2026-03-01T03:46:37+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 1329"
+  },
+  {
+    "timestamp": "2026-03-01T03:47:47+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 7869"
+  },
+  {
+    "timestamp": "2026-03-01T03:49:40+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 6992"
+  },
+  {
+    "timestamp": "2026-03-01T03:56:56+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 3255"
+  },
+  {
+    "timestamp": "2026-03-01T03:57:03+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 8161"
+  },
+  {
+    "timestamp": "2026-03-01T03:57:21+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 7548"
+  },
+  {
+    "timestamp": "2026-03-01T04:09:01+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 9647"
+  },
+  {
+    "timestamp": "2026-03-01T04:20:02+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 2045"
+  },
+  {
+    "timestamp": "2026-03-01T04:25:32+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 6120"
+  },
+  {
+    "timestamp": "2026-03-01T04:30:09+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 9182"
+  },
+  {
+    "timestamp": "2026-03-01T04:31:24+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 6482"
+  },
+  {
+    "timestamp": "2026-03-01T04:34:58+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 2118"
+  },
+  {
+    "timestamp": "2026-03-01T04:43:37+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 6607"
+  },
+  {
+    "timestamp": "2026-03-01T04:48:23+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 4166"
+  },
+  {
+    "timestamp": "2026-03-01T04:48:43+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 5954"
+  },
+  {
+    "timestamp": "2026-03-01T04:52:05+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 6305"
+  },
+  {
+    "timestamp": "2026-03-01T04:53:10+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 6951"
+  },
+  {
+    "timestamp": "2026-03-01T04:56:02+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 5022"
+  },
+  {
+    "timestamp": "2026-03-01T04:57:30+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 4751"
+  },
+  {
+    "timestamp": "2026-03-01T04:59:32+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 8211"
+  },
+  {
+    "timestamp": "2026-03-01T05:03:38+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 8922"
+  },
+  {
+    "timestamp": "2026-03-01T05:20:50+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 7446"
+  },
+  {
+    "timestamp": "2026-03-01T05:33:49+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 6260"
+  },
+  {
+    "timestamp": "2026-03-01T05:37:57+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 9676"
+  },
+  {
+    "timestamp": "2026-03-01T05:38:32+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 3217"
+  },
+  {
+    "timestamp": "2026-03-01T05:42:39+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 1782"
+  },
+  {
+    "timestamp": "2026-03-01T05:43:02+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 5824"
+  },
+  {
+    "timestamp": "2026-03-01T05:44:41+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 9692"
+  },
+  {
+    "timestamp": "2026-03-01T05:48:12+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 5584"
+  },
+  {
+    "timestamp": "2026-03-01T05:52:24+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 7991"
+  },
+  {
+    "timestamp": "2026-03-01T06:00:39+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 4819"
+  },
+  {
+    "timestamp": "2026-03-01T06:01:15+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 7860"
+  },
+  {
+    "timestamp": "2026-03-01T06:05:52+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 1846"
+  },
+  {
+    "timestamp": "2026-03-01T06:07:48+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 1989"
+  },
+  {
+    "timestamp": "2026-03-01T06:08:33+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 2474"
+  },
+  {
+    "timestamp": "2026-03-01T06:10:48+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 238"
+  },
+  {
+    "timestamp": "2026-03-01T06:10:54+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 3242"
+  },
+  {
+    "timestamp": "2026-03-01T06:14:01+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 7698"
+  },
+  {
+    "timestamp": "2026-03-01T06:15:51+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 4997"
+  },
+  {
+    "timestamp": "2026-03-01T06:34:01+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 3604"
+  },
+  {
+    "timestamp": "2026-03-01T06:39:11+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 7796"
+  },
+  {
+    "timestamp": "2026-03-01T06:42:18+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 3234"
+  },
+  {
+    "timestamp": "2026-03-01T06:42:21+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 2541"
+  },
+  {
+    "timestamp": "2026-03-01T06:43:24+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 8365"
+  },
+  {
+    "timestamp": "2026-03-01T06:52:06+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 9333"
+  },
+  {
+    "timestamp": "2026-03-01T06:52:25+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 9522"
+  },
+  {
+    "timestamp": "2026-03-01T06:53:45+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 4310"
+  },
+  {
+    "timestamp": "2026-03-01T06:58:54+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 6086"
+  },
+  {
+    "timestamp": "2026-03-01T07:02:36+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 7256"
+  },
+  {
+    "timestamp": "2026-03-01T07:13:23+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 2993"
+  },
+  {
+    "timestamp": "2026-03-01T07:14:42+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 7192"
+  },
+  {
+    "timestamp": "2026-03-01T07:21:32+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 8576"
+  },
+  {
+    "timestamp": "2026-03-01T07:22:46+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 5094"
+  },
+  {
+    "timestamp": "2026-03-01T07:24:59+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 9143"
+  },
+  {
+    "timestamp": "2026-03-01T07:38:55+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 8469"
+  },
+  {
+    "timestamp": "2026-03-01T07:39:09+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 8704"
+  },
+  {
+    "timestamp": "2026-03-01T07:40:02+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 2037"
+  },
+  {
+    "timestamp": "2026-03-01T07:41:01+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 2070"
+  },
+  {
+    "timestamp": "2026-03-01T07:41:09+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 7966"
+  },
+  {
+    "timestamp": "2026-03-01T07:42:22+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 7452"
+  },
+  {
+    "timestamp": "2026-03-01T07:50:19+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 9022"
+  },
+  {
+    "timestamp": "2026-03-01T07:52:47+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 8411"
+  },
+  {
+    "timestamp": "2026-03-01T07:54:46+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 477"
+  },
+  {
+    "timestamp": "2026-03-01T07:55:07+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 2140"
+  },
+  {
+    "timestamp": "2026-03-01T08:01:09+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 3700"
+  },
+  {
+    "timestamp": "2026-03-01T08:04:58+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 4027"
+  },
+  {
+    "timestamp": "2026-03-01T08:10:00+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 9492"
+  },
+  {
+    "timestamp": "2026-03-01T08:19:21+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 5623"
+  },
+  {
+    "timestamp": "2026-03-01T08:29:23+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 9587"
+  },
+  {
+    "timestamp": "2026-03-01T08:35:17+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 164"
+  },
+  {
+    "timestamp": "2026-03-01T08:40:21+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 1946"
+  },
+  {
+    "timestamp": "2026-03-01T08:44:02+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 9804"
+  },
+  {
+    "timestamp": "2026-03-01T08:45:22+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 1792"
+  },
+  {
+    "timestamp": "2026-03-01T08:52:27+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 8556"
+  },
+  {
+    "timestamp": "2026-03-01T08:53:12+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 6548"
+  },
+  {
+    "timestamp": "2026-03-01T08:57:23+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 4119"
+  },
+  {
+    "timestamp": "2026-03-01T09:06:08+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 8986"
+  },
+  {
+    "timestamp": "2026-03-01T09:10:01+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 9620"
+  },
+  {
+    "timestamp": "2026-03-01T09:12:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 8717"
+  },
+  {
+    "timestamp": "2026-03-01T09:12:31+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 7470"
+  },
+  {
+    "timestamp": "2026-03-01T09:14:44+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 3456"
+  },
+  {
+    "timestamp": "2026-03-01T09:16:46+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 8730"
+  },
+  {
+    "timestamp": "2026-03-01T09:28:55+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 7404"
+  },
+  {
+    "timestamp": "2026-03-01T09:30:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 2370"
+  },
+  {
+    "timestamp": "2026-03-01T09:44:37+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 5081"
+  },
+  {
+    "timestamp": "2026-03-01T09:47:13+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 7798"
+  },
+  {
+    "timestamp": "2026-03-01T09:48:18+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 2358"
+  },
+  {
+    "timestamp": "2026-03-01T09:51:03+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 2462"
+  },
+  {
+    "timestamp": "2026-03-01T09:53:44+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 869"
+  },
+  {
+    "timestamp": "2026-03-01T09:55:01+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 3203"
+  },
+  {
+    "timestamp": "2026-03-01T10:12:04+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 8278"
+  },
+  {
+    "timestamp": "2026-03-01T10:18:33+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 8330"
+  },
+  {
+    "timestamp": "2026-03-01T10:24:00+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 5859"
+  },
+  {
+    "timestamp": "2026-03-01T10:24:29+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 3992"
+  },
+  {
+    "timestamp": "2026-03-01T10:38:49+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 5359"
+  },
+  {
+    "timestamp": "2026-03-01T10:40:31+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 647"
+  },
+  {
+    "timestamp": "2026-03-01T10:44:10+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 2678"
+  },
+  {
+    "timestamp": "2026-03-01T10:58:41+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 6134"
+  },
+  {
+    "timestamp": "2026-03-01T11:03:03+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 5015"
+  },
+  {
+    "timestamp": "2026-03-01T11:06:28+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 6304"
+  },
+  {
+    "timestamp": "2026-03-01T11:15:48+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 9804"
+  },
+  {
+    "timestamp": "2026-03-01T11:17:18+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 4848"
+  },
+  {
+    "timestamp": "2026-03-01T11:24:54+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 6270"
+  },
+  {
+    "timestamp": "2026-03-01T11:29:47+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 6176"
+  },
+  {
+    "timestamp": "2026-03-01T11:40:39+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 325"
+  },
+  {
+    "timestamp": "2026-03-01T11:41:03+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 3526"
+  },
+  {
+    "timestamp": "2026-03-01T11:42:47+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 6342"
+  },
+  {
+    "timestamp": "2026-03-01T11:46:58+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 4613"
+  },
+  {
+    "timestamp": "2026-03-01T11:56:56+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 6979"
+  },
+  {
+    "timestamp": "2026-03-01T12:08:56+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 8583"
+  },
+  {
+    "timestamp": "2026-03-01T12:11:43+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 6057"
+  },
+  {
+    "timestamp": "2026-03-01T12:12:27+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 2227"
+  },
+  {
+    "timestamp": "2026-03-01T12:20:49+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 5347"
+  },
+  {
+    "timestamp": "2026-03-01T12:21:10+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 5459"
+  },
+  {
+    "timestamp": "2026-03-01T12:24:05+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 6671"
+  },
+  {
+    "timestamp": "2026-03-01T12:24:18+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 2407"
+  },
+  {
+    "timestamp": "2026-03-01T12:25:34+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 5567"
+  },
+  {
+    "timestamp": "2026-03-01T12:31:04+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 1619"
+  },
+  {
+    "timestamp": "2026-03-01T12:39:22+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 2658"
+  },
+  {
+    "timestamp": "2026-03-01T12:54:51+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 2581"
+  },
+  {
+    "timestamp": "2026-03-01T12:57:55+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 3525"
+  },
+  {
+    "timestamp": "2026-03-01T13:11:48+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 8942"
+  },
+  {
+    "timestamp": "2026-03-01T13:19:00+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 9351"
+  },
+  {
+    "timestamp": "2026-03-01T13:21:18+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 3389"
+  },
+  {
+    "timestamp": "2026-03-01T13:23:26+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 8906"
+  },
+  {
+    "timestamp": "2026-03-01T13:25:49+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 1395"
+  },
+  {
+    "timestamp": "2026-03-01T13:27:06+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 2065"
+  },
+  {
+    "timestamp": "2026-03-01T13:28:42+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 7174"
+  },
+  {
+    "timestamp": "2026-03-01T13:31:04+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 4465"
+  },
+  {
+    "timestamp": "2026-03-01T13:34:16+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 2273"
+  },
+  {
+    "timestamp": "2026-03-01T13:41:12+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 9132"
+  },
+  {
+    "timestamp": "2026-03-01T13:51:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 5039"
+  },
+  {
+    "timestamp": "2026-03-01T13:58:07+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 6206"
+  },
+  {
+    "timestamp": "2026-03-01T13:59:45+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 5811"
+  },
+  {
+    "timestamp": "2026-03-01T14:01:13+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 2946"
+  },
+  {
+    "timestamp": "2026-03-01T14:01:24+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 8192"
+  },
+  {
+    "timestamp": "2026-03-01T14:02:45+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 5642"
+  },
+  {
+    "timestamp": "2026-03-01T14:09:44+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 2095"
+  },
+  {
+    "timestamp": "2026-03-01T14:10:51+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 582"
+  },
+  {
+    "timestamp": "2026-03-01T14:15:39+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 371"
+  },
+  {
+    "timestamp": "2026-03-01T14:16:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 3829"
+  },
+  {
+    "timestamp": "2026-03-01T14:19:13+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 6678"
+  },
+  {
+    "timestamp": "2026-03-01T14:20:52+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 4507"
+  },
+  {
+    "timestamp": "2026-03-01T14:24:33+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 8895"
+  },
+  {
+    "timestamp": "2026-03-01T14:36:53+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 3368"
+  },
+  {
+    "timestamp": "2026-03-01T14:41:43+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 1709"
+  },
+  {
+    "timestamp": "2026-03-01T14:44:42+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 2646"
+  },
+  {
+    "timestamp": "2026-03-01T14:51:43+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 2259"
+  },
+  {
+    "timestamp": "2026-03-01T14:55:59+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 1279"
+  },
+  {
+    "timestamp": "2026-03-01T14:59:27+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 3761"
+  },
+  {
+    "timestamp": "2026-03-01T15:04:37+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 7123"
+  },
+  {
+    "timestamp": "2026-03-01T15:13:50+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 6492"
+  },
+  {
+    "timestamp": "2026-03-01T15:13:58+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 4485"
+  },
+  {
+    "timestamp": "2026-03-01T15:14:31+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 9348"
+  },
+  {
+    "timestamp": "2026-03-01T15:15:22+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 5870"
+  },
+  {
+    "timestamp": "2026-03-01T15:20:56+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 9814"
+  },
+  {
+    "timestamp": "2026-03-01T15:21:33+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 2668"
+  },
+  {
+    "timestamp": "2026-03-01T15:22:07+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 1251"
+  },
+  {
+    "timestamp": "2026-03-01T15:25:33+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 8877"
+  },
+  {
+    "timestamp": "2026-03-01T15:25:55+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 7405"
+  },
+  {
+    "timestamp": "2026-03-01T15:37:40+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 7405"
+  },
+  {
+    "timestamp": "2026-03-01T15:41:13+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 6811"
+  },
+  {
+    "timestamp": "2026-03-01T15:41:26+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 8628"
+  },
+  {
+    "timestamp": "2026-03-01T15:41:31+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 467"
+  },
+  {
+    "timestamp": "2026-03-01T15:42:26+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 8727"
+  },
+  {
+    "timestamp": "2026-03-01T15:46:28+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 5139"
+  },
+  {
+    "timestamp": "2026-03-01T15:48:34+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 2466"
+  },
+  {
+    "timestamp": "2026-03-01T15:51:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 786"
+  },
+  {
+    "timestamp": "2026-03-01T15:58:37+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 6212"
+  },
+  {
+    "timestamp": "2026-03-01T16:06:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 8697"
+  },
+  {
+    "timestamp": "2026-03-01T16:09:09+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 8688"
+  },
+  {
+    "timestamp": "2026-03-01T16:15:15+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 2599"
+  },
+  {
+    "timestamp": "2026-03-01T16:16:28+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 2604"
+  },
+  {
+    "timestamp": "2026-03-01T16:17:33+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 4802"
+  },
+  {
+    "timestamp": "2026-03-01T16:18:49+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 3347"
+  },
+  {
+    "timestamp": "2026-03-01T16:25:02+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 1350"
+  },
+  {
+    "timestamp": "2026-03-01T16:25:13+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 3298"
+  },
+  {
+    "timestamp": "2026-03-01T16:34:02+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 9190"
+  },
+  {
+    "timestamp": "2026-03-01T16:34:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 5284"
+  },
+  {
+    "timestamp": "2026-03-01T16:35:40+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 8601"
+  },
+  {
+    "timestamp": "2026-03-01T16:37:03+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 3075"
+  },
+  {
+    "timestamp": "2026-03-01T16:42:59+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 6222"
+  },
+  {
+    "timestamp": "2026-03-01T16:45:04+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 5847"
+  },
+  {
+    "timestamp": "2026-03-01T16:52:27+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 3143"
+  },
+  {
+    "timestamp": "2026-03-01T16:52:31+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 2651"
+  },
+  {
+    "timestamp": "2026-03-01T17:06:16+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 5242"
+  },
+  {
+    "timestamp": "2026-03-01T17:07:15+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 1496"
+  },
+  {
+    "timestamp": "2026-03-01T17:08:58+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 2260"
+  },
+  {
+    "timestamp": "2026-03-01T17:14:35+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 2096"
+  },
+  {
+    "timestamp": "2026-03-01T17:15:43+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 8881"
+  },
+  {
+    "timestamp": "2026-03-01T17:16:26+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 6870"
+  },
+  {
+    "timestamp": "2026-03-01T17:22:31+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 8549"
+  },
+  {
+    "timestamp": "2026-03-01T17:29:34+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 3778"
+  },
+  {
+    "timestamp": "2026-03-01T17:38:52+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 9796"
+  },
+  {
+    "timestamp": "2026-03-01T17:44:04+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 3647"
+  },
+  {
+    "timestamp": "2026-03-01T17:51:33+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 4831"
+  },
+  {
+    "timestamp": "2026-03-01T17:55:32+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 901"
+  },
+  {
+    "timestamp": "2026-03-01T17:57:17+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 809"
+  },
+  {
+    "timestamp": "2026-03-01T18:00:56+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 3665"
+  },
+  {
+    "timestamp": "2026-03-01T18:08:01+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 2576"
+  },
+  {
+    "timestamp": "2026-03-01T18:08:16+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 9179"
+  },
+  {
+    "timestamp": "2026-03-01T18:11:55+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 1085"
+  },
+  {
+    "timestamp": "2026-03-01T18:12:04+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 5327"
+  },
+  {
+    "timestamp": "2026-03-01T18:13:39+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 8525"
+  },
+  {
+    "timestamp": "2026-03-01T18:21:40+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 4752"
+  },
+  {
+    "timestamp": "2026-03-01T18:23:50+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 7761"
+  },
+  {
+    "timestamp": "2026-03-01T18:32:18+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 6617"
+  },
+  {
+    "timestamp": "2026-03-01T18:40:15+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 6492"
+  },
+  {
+    "timestamp": "2026-03-01T18:42:16+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 9433"
+  },
+  {
+    "timestamp": "2026-03-01T18:48:39+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 2083"
+  },
+  {
+    "timestamp": "2026-03-01T18:58:59+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 1246"
+  },
+  {
+    "timestamp": "2026-03-01T19:00:23+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4611,
+    "message": "Routine system process execution. PID: 5615"
+  },
+  {
+    "timestamp": "2026-03-01T19:04:31+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 3052"
+  },
+  {
+    "timestamp": "2026-03-01T19:07:09+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 1905"
+  },
+  {
+    "timestamp": "2026-03-01T19:09:40+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4627,
+    "message": "Routine system process execution. PID: 4546"
+  },
+  {
+    "timestamp": "2026-03-01T19:34:48+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 3136"
+  },
+  {
+    "timestamp": "2026-03-01T19:42:40+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "message": "Routine system process execution. PID: 6371"
+  },
+  {
+    "timestamp": "2026-03-01T19:44:31+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 4386"
+  },
+  {
+    "timestamp": "2026-03-01T19:49:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "message": "Routine system process execution. PID: 9324"
+  },
+  {
+    "timestamp": "2026-03-01T19:59:12+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "message": "Routine system process execution. PID: 7119"
+  },
+  {
+    "timestamp": "2026-03-02T10:10:34+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 11967,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:11:31+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 7726,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:12:25+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 9782,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:13:00+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 11484,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:14:53+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 13145,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:15:30+07:00",
+    "host": "WS-RINA",
+    "user": "SYSTEM",
+    "action": "API_TOKEN_ISSUE",
+    "destination_url": "internal-erp.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 500,
+    "alert": "CRITICAL: Token issued for MOFCG-MAIN-ACC. Bound to external C2 IP: 192.0.2.205."
+  },
+  {
+    "timestamp": "2026-03-02T10:15:35+07:00",
+    "level": "WARNING",
+    "source": "Web Application Firewall",
+    "host": "WS-RINA",
+    "user": "SYSTEM",
+    "action": "WAF_ALERT",
+    "destination_url": "http://192.0.2.205/api/v1/auth",
+    "status": "Blocked",
+    "bytes_transferred": 342,
+    "event_id": 9999,
+    "alert": "Suspicious payload detected in User-Agent header: TU9GQ0d7UzRtUDQhfQ==",
+    "message": "Suspicious payload detected in User-Agent header: TU9GQ0d7UzRtUDQhfQ=="
+  },
+  {
+    "timestamp": "2026-03-02T10:15:48+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 20971,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:16:32+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 12214,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:17:14+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 18340,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:18:35+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 21982,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:19:22+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 24290,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:20:01+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 3479,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:21:08+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 17348,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:22:41+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 24706,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:23:29+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 7207,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:24:51+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 14476,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:25:53+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 9706,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:26:45+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 17705,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:27:00+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 12165,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:28:33+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 6515,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:29:21+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 24972,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:30:28+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 7351,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:31:26+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 14965,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:32:50+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 10846,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:33:26+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 13330,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:34:38+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 13848,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:35:50+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 16440,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:36:07+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 21959,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:37:39+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 8096,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:38:01+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 28889,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:39:56+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 7290,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:40:02+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 15138,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:41:03+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 6717,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:42:10+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 22032,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:43:23+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 4141,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:44:55+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 21444,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:45:19+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 26479,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:46:13+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 12694,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:47:18+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 22181,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:48:18+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 17082,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:49:24+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 6933,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:50:36+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 25901,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:51:21+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 25649,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:52:15+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 19279,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:53:35+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 8087,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:54:05+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 24056,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:55:17+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 19566,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:56:04+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 15066,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:57:59+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 12943,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:58:57+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 19864,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T10:59:47+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://docs.mofcg.co.id/portal",
+    "status": "Allowed",
+    "bytes_transferred": 27145,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:00:00+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mitra-komunitas-global.abc/dokumen-kerjasama.zip",
+    "status": "Allowed",
+    "bytes_transferred": 0,
+    "alert": "Known Suspicious Domain"
+  },
+  {
+    "timestamp": "2026-03-02T11:00:05+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "FileDownload",
+    "filename": "dokumen-kerjasama.zip",
+    "status": "Blocked",
+    "reason": "SmartScreen Filter"
+  },
+  {
+    "timestamp": "2026-03-02T11:01:02+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 748,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:02:31+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 443,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:03:35+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 626,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:04:40+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 1381,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:05:01+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 982,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:06:43+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 451,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:07:37+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 358,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:08:40+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 683,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:09:18+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 1054,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:10:12+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 918,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:10:18+07:00",
+    "host": "WS-RINA",
+    "process": "svchost.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:11:03+07:00",
+    "host": "WS-RINA",
+    "process": "svchost.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:11:31+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 388,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:12:44+07:00",
+    "host": "WS-RINA",
+    "process": "taskhostw.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:12:46+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 1232,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:13:05+07:00",
+    "host": "WS-RINA",
+    "process": "SearchIndexer.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:13:10+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 927,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:14:19+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 335,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:14:37+07:00",
+    "host": "WS-RINA",
+    "process": "taskhostw.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:15:27+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 876,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:15:56+07:00",
+    "host": "WS-RINA",
+    "process": "SearchIndexer.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:16:19+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 1420,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:16:43+07:00",
+    "host": "WS-RINA",
+    "process": "msmpeng.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:17:38+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 1248,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:17:51+07:00",
+    "host": "WS-RINA",
+    "process": "RuntimeBroker.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:18:25+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 946,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:18:53+07:00",
+    "host": "WS-RINA",
+    "process": "SearchIndexer.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:19:03+07:00",
+    "host": "WS-RINA",
+    "user": "rina.melati",
+    "action": "NetworkConnection",
+    "destination_url": "http://mail.mofcg.co.id",
+    "status": "Allowed",
+    "bytes_transferred": 960,
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-02T11:19:39+07:00",
+    "host": "WS-RINA",
+    "process": "RuntimeBroker.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:20:58+07:00",
+    "host": "WS-RINA",
+    "process": "msmpeng.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:21:03+07:00",
+    "host": "WS-RINA",
+    "process": "taskhostw.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:22:21+07:00",
+    "host": "WS-RINA",
+    "process": "msmpeng.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:23:40+07:00",
+    "host": "WS-RINA",
+    "process": "svchost.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:24:32+07:00",
+    "host": "WS-RINA",
+    "process": "RuntimeBroker.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:25:32+07:00",
+    "host": "WS-RINA",
+    "process": "taskhostw.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:26:04+07:00",
+    "host": "WS-RINA",
+    "process": "RuntimeBroker.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:27:56+07:00",
+    "host": "WS-RINA",
+    "process": "SearchIndexer.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:28:04+07:00",
+    "host": "WS-RINA",
+    "process": "msmpeng.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:29:53+07:00",
+    "host": "WS-RINA",
+    "process": "taskhostw.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:30:33+07:00",
+    "host": "WS-RINA",
+    "process": "RuntimeBroker.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:31:31+07:00",
+    "host": "WS-RINA",
+    "process": "svchost.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:32:21+07:00",
+    "host": "WS-RINA",
+    "process": "taskhostw.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:33:34+07:00",
+    "host": "WS-RINA",
+    "process": "SearchIndexer.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:34:33+07:00",
+    "host": "WS-RINA",
+    "process": "taskhostw.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:35:57+07:00",
+    "host": "WS-RINA",
+    "process": "SearchIndexer.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:36:55+07:00",
+    "host": "WS-RINA",
+    "process": "taskhostw.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:37:22+07:00",
+    "host": "WS-RINA",
+    "process": "svchost.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:38:10+07:00",
+    "host": "WS-RINA",
+    "process": "svchost.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:39:26+07:00",
+    "host": "WS-RINA",
+    "process": "svchost.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:40:59+07:00",
+    "host": "WS-RINA",
+    "process": "svchost.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:41:24+07:00",
+    "host": "WS-RINA",
+    "process": "SearchIndexer.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:42:45+07:00",
+    "host": "WS-RINA",
+    "process": "SearchIndexer.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:43:55+07:00",
+    "host": "WS-RINA",
+    "process": "taskhostw.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:44:07+07:00",
+    "host": "WS-RINA",
+    "process": "taskhostw.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:45:13+07:00",
+    "host": "WS-RINA",
+    "process": "SearchIndexer.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:46:17+07:00",
+    "host": "WS-RINA",
+    "process": "taskhostw.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:47:34+07:00",
+    "host": "WS-RINA",
+    "process": "taskhostw.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:48:51+07:00",
+    "host": "WS-RINA",
+    "process": "SearchIndexer.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T11:49:11+07:00",
+    "host": "WS-RINA",
+    "process": "RuntimeBroker.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T12:00:00+07:00",
+    "host": "WS-RINA",
+    "process": "explorer.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T12:05:12+07:00",
+    "host": "WS-RINA",
+    "process": "chrome.exe",
+    "event": "ProcessExecution",
+    "status": "Clean"
+  },
+  {
+    "timestamp": "2026-03-02T12:15:45+07:00",
+    "host": "WS-RINA",
+    "scan_type": "QuickScan",
+    "status": "Completed",
+    "threats_found": 0
+  },
+  {
+    "timestamp": "2026-03-03T02:00:15+07:00",
+    "host": "WS-TIRTA",
+    "user": "tirta.laksana",
+    "action": "NetworkConnection",
+    "destination_url": "10.0.0.99 (Internal Backup SAN)",
+    "status": "Allowed",
+    "bytes_transferred": 53687091200,
+    "alert": "High Volume Data Transfer Detected"
+  },
+  {
+    "timestamp": "2026-03-03T02:05:00+07:00",
+    "host": "WS-TIRTA",
+    "user": "tirta.laksana",
+    "action": "ProcessExecution",
+    "process": "mysqldump.exe",
+    "status": "Success",
+    "alert": "None"
+  },
+  {
+    "timestamp": "2026-03-03T08:12:50+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-DC-01",
+    "user": "budi.santoso",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T08:34:27+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-DC-01",
+    "user": "tirta.laksana",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T08:51:18+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 7036,
+    "host": "SRV-DC-01",
+    "user": "budi.santoso",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T09:12:44+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-DC-01",
+    "user": "SYSTEM",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T09:34:37+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-DC-01",
+    "user": "budi.santoso",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T09:51:15+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-DC-01",
+    "user": "tirta.laksana",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T10:12:42+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 7036,
+    "host": "SRV-DC-01",
+    "user": "budi.santoso",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T10:34:45+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-DC-01",
+    "user": "SYSTEM",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T10:51:36+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-DC-01",
+    "user": "itadmin",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T11:12:47+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-DC-01",
+    "user": "budi.santoso",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T11:34:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 7036,
+    "host": "SRV-DC-01",
+    "user": "itadmin",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T11:51:31+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-DC-01",
+    "user": "tirta.laksana",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T12:12:23+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-DC-01",
+    "user": "budi.santoso",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T12:34:15+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-DC-01",
+    "user": "budi.santoso",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T12:51:32+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-DC-01",
+    "user": "SYSTEM",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T13:12:26+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-DC-01",
+    "user": "itadmin",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T13:34:44+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-DC-01",
+    "user": "itadmin",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T13:51:15+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 7036,
+    "host": "SRV-DC-01",
+    "user": "dadan.suherman",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T14:12:50+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 7036,
+    "host": "SRV-DC-01",
+    "user": "dadan.suherman",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T14:34:46+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-DC-01",
+    "user": "budi.santoso",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T14:51:12+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 7036,
+    "host": "SRV-DC-01",
+    "user": "tirta.laksana",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T15:12:28+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-DC-01",
+    "user": "tirta.laksana",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T15:34:16+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-DC-01",
+    "user": "dadan.suherman",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T15:51:39+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 7036,
+    "host": "SRV-DC-01",
+    "user": "dadan.suherman",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T16:12:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-DC-01",
+    "user": "dadan.suherman",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T16:34:23+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 7036,
+    "host": "SRV-DC-01",
+    "user": "dadan.suherman",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T16:51:14+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 7036,
+    "host": "SRV-DC-01",
+    "user": "tirta.laksana",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T17:12:44+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 7036,
+    "host": "SRV-DC-01",
+    "user": "tirta.laksana",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T17:34:20+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-DC-01",
+    "user": "itadmin",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-03T17:51:27+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 7036,
+    "host": "SRV-DC-01",
+    "user": "SYSTEM",
+    "message": "Routine operational telemetry. Service state verified."
+  },
+  {
+    "timestamp": "2026-03-04T08:15:24+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "host": "SRV-FILE-02",
+    "user": "dadan.suherman",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T08:45:13+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-FILE-02",
+    "user": "budi.santoso",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T09:15:30+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-FILE-02",
+    "user": "dadan.suherman",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T09:45:14+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-FILE-02",
+    "user": "SYSTEM",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T10:15:30+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-FILE-02",
+    "user": "itadmin",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T10:45:35+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "host": "SRV-FILE-02",
+    "user": "itadmin",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T11:15:19+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-FILE-02",
+    "user": "tirta.laksana",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T11:45:25+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "host": "SRV-FILE-02",
+    "user": "SYSTEM",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T12:15:44+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-FILE-02",
+    "user": "SYSTEM",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T12:45:37+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "host": "SRV-FILE-02",
+    "user": "itadmin",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T13:15:33+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-FILE-02",
+    "user": "tirta.laksana",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T13:45:42+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-FILE-02",
+    "user": "budi.santoso",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T14:15:13+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-FILE-02",
+    "user": "tirta.laksana",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T14:45:50+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-FILE-02",
+    "user": "itadmin",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T15:15:48+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4624,
+    "host": "SRV-FILE-02",
+    "user": "itadmin",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T15:45:34+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "host": "SRV-FILE-02",
+    "user": "itadmin",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T16:15:43+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4634,
+    "host": "SRV-FILE-02",
+    "user": "SYSTEM",
+    "message": "Security audit success. Task scheduler executed."
+  },
+  {
+    "timestamp": "2026-03-04T16:45:10+07:00",
+    "level": "INFO",
+    "source": "Windows Event Log",
+    "event_id": 4672,
+    "host": "SRV-FILE-02",
+    "user": "budi.santoso",
+    "message": "Security audit success. Task scheduler executed."
+  }
+]

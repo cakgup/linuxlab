@@ -1,0 +1,10 @@
+{
+  "event": "deposit",
+  "timestamp": "2026-07-15T08:20:00+07:00",
+  "account": "CRYPTO-EX-999",
+  "amount": 8000000000,
+  "currency": "IDR",
+  "converted_to": "BTC",
+  "crypto_wallet_destination": "1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa",
+  "status": "CONFIRMED"
+}

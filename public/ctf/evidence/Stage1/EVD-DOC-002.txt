@@ -1,0 +1,5 @@
+Title: Panduan Komunikasi Eksternal MOFCG 2026
+
+Semua komunikasi eksternal harus diverifikasi domainnya. Dilarang mengunduh lampiran dari pengirim yang tidak dikenal.
+
+- Divisi Kepatuhan

@@ -1,0 +1,20 @@
+=== CATATAN OPERASIONAL SHIFT IT (HANDOVER) - 15 JULI 2026 ===
+Dari: Rian (Analis SOC)
+Tembusan: Dadan Suherman (Kepala Divisi IT), Raka Wijaya (CISO)
+Lokasi: Ruang Kontrol Server, MOFCG Senayan
+
+Pak Dadan & Tim Shift Pagi,
+
+Sesuai instruksi darurat semalam, kami telah menjalankan prosedur mitigasi dan melacak pergerakan anomali jaringan yang masuk melalui email Rina pada awal Maret lalu. Tim telah memutus koneksi pada endpoint yang dicurigai sebagai langkah penanganan awal.
+
+1. Pola Serangan (APT Indicator):
+Berdasarkan referensi indikator serangan, entitas peretas umumnya mencoba menginisiasi koneksi token API ke server internal dalam rentang 5-10 menit setelah payload terpicu. Mohon bantuan tim shift pagi untuk meninjau log JSON server pada periode waktu tersebut (2 Maret 2026). Tujuan utama adalah mengidentifikasi alamat IP eksternal yang berfungsi sebagai Command & Control (C2).
+
+2. Aktivitas Internal Terjadwal (Pengecualian):
+Harap memfokuskan analisis pada koneksi inbound/outbound ke IP eksternal. Sesuai arahan Pak Dadan:
+- Mohon abaikan aktivitas transfer data internal sebesar 50GB dari IP Mas Tirta (DevOps) pada tanggal yang sama, karena aktivitas tersebut merupakan bagian dari prosedur dump database untuk migrasi cloud.
+- Mohon abaikan juga log event reset password massal pada 12 Juli malam, karena itu merupakan skrip pemeliharaan berkala dari Mas Budi.
+
+Silakan lanjutkan investigasi dan laporkan temuan anomali yang terkait dengan entitas eksternal. Terima kasih atas kerja kerasnya.
+
+

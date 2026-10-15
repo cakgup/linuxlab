@@ -1,0 +1,987 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Arena Investigasi — MOFCG CTF: JEJAK DIGITAL</title><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="layout.css"><link rel="stylesheet" href="assets/icons.css"><link rel="stylesheet" href="assets/cyber.css"><link rel="stylesheet" href="local.css"><script src="lab.js" defer></script></head><body class="min-h-screen flex flex-col" style="visibility:hidden"><a href="#main-content" class="skip-link">Lewati ke Konten Utama</a>
+<div class="bg-gray-900 border-b border-gray-800 text-[11px] text-gray-400 py-1.5 px-4 text-center flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>LINUXLAB CYBER • ARENA CAPTURE THE FLAG</span>
+        </div>
+        <div class="flex items-center space-x-2 text-gray-400 font-mono text-[10px]">
+            <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+            <span>LATIHAN MANDIRI LINUXLAB</span>
+        </div>
+    </div>
+<header class="border-b border-gray-800 bg-[#111827] px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center space-x-3">
+            <span class="ctf-hero-icon" aria-hidden="true"><i class="fa-solid fa-flag"></i></span>
+            <div>
+                <div class="ctf-eyebrow">LINUXLAB CYBER / CTF</div>
+                <h1 class="text-xl font-bold text-white tracking-wide">Jejak Digital</h1>
+                <p class="text-xs text-gray-400">Arena investigasi forensik • Skenario MOFCG</p>
+            </div>
+        </div>
+
+        <div class="flex items-center space-x-3">
+            <a href="../../" target="_top" class="text-xs text-gray-400 hover:text-white flex items-center space-x-1 px-3 py-1.5 bg-gray-800/60 rounded border border-gray-700">
+                <i class="fa-solid fa-globe text-emerald-400"></i>
+                <span>Kembali ke Dashboard</span>
+            </a>
+            <!-- Participant Profile Badge -->
+            <div id="userProfileBadge" class="flex gap-3 items-center bg-gray-800 border border-gray-700 rounded-lg p-3 text-xs"><div><strong class="text-emerald-400">Guardian LinuxLab</strong><div id="localScore">Skor: 0</div></div><button id="historyButton" class="text-indigo-300">↶ Riwayat</button><button id="resetButton" class="text-red-300">Reset latihan</button></div>
+        </div>
+    </header>
+<div id="announcementBanner" class="bg-gradient-to-r from-amber-950/90 via-gray-900 to-amber-950/90 border-b border-amber-800/60 px-4 py-2 text-xs text-amber-200 flex items-center justify-between">
+        <div class="flex items-center space-x-2.5 overflow-hidden">
+            <span class="bg-amber-500 text-black px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider flex items-center">
+                <i class="fa-solid fa-bullhorn mr-1 animate-bounce"></i>PENGUMUMAN RESMI MIMIN
+            </span>
+            <span id="announcementText" class="font-medium truncate">MISI RAHASIA: Selesaikan seluruh tahapan investigasi untuk membuka tantangan TOKEN NEXUS!</span>
+        </div>
+        <button class="text-amber-400 hover:text-white text-xs ml-4">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+<main id="main-content" class="flex-1 max-w-7xl w-full mx-auto p-6 space-y-8">
+
+        <!-- Competition Status & Realtime Countdown HUD -->
+        <section id="labScheduleBanner" class="p-4 rounded-lg cyber-card border border-emerald-500/70 bg-gradient-to-r from-emerald-950/50 via-gray-900 to-emerald-950/50 flex flex-wrap items-center justify-between gap-4 shadow-lg shadow-emerald-950/40 transition-all duration-300">
+            <div class="flex items-start sm:items-center space-x-3.5">
+                <div id="labScheduleIcon" class="w-10 h-10 rounded-lg bg-amber-950/80 border border-amber-500/50 flex items-center justify-center shrink-0"><i class="fa-solid fa-satellite-dish text-emerald-400 text-lg animate-pulse"></i></div>
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <span id="labScheduleBadge" class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-500 text-black uppercase tracking-wider flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span> BERLANGSUNG</span>
+                        <span id="labScheduleSub" class="text-[11px] font-mono text-gray-400">Selesai: 16 Okt 2026, 10:00 WIB</span>
+                    </div>
+                    <p id="labScheduleDesc" class="text-xs text-gray-300 mt-0.5 font-sans">Kompetisi sedang berlangsung! Selesaikan 5 tahapan investigasi secara berurutan sebelum batas waktu.</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3 bg-black/60 border border-gray-800 px-3.5 py-2 rounded-lg font-mono text-right ml-auto">
+                <div class="text-[10px] text-gray-400 uppercase tracking-wider block text-left">
+                    <span id="labCountdownLabel" class="block">SISA WAKTU LOMBA:</span>
+                    <span id="labCountdownClock" class="text-base font-bold text-emerald-400 block font-mono">00h : 20j : 19m : 56d</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tactical Mission Pipeline HUD -->
+        <section class="cyber-card p-5 rounded-lg space-y-3 bg-[#0d1322] border-emerald-900/60">
+            <div class="flex items-center justify-between text-xs pb-2 border-b border-gray-800">
+                <span class="font-bold text-emerald-400 flex items-center space-x-1.5 uppercase tracking-wider">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <span>Visual Pipeline Investigasi 5 Stages</span>
+                </span>
+                <span id="pipelineProgressText" class="font-mono text-gray-400 text-[11px]"><span class="text-amber-400 font-bold">Progres: 5 / 5 Stage Selesai (100%) • MISI BONUS TERBUKA!</span></span>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 text-center text-xs font-mono">
+                <div id="pipeNode1" class="p-2.5 rounded border border-emerald-500 bg-emerald-950/60 space-y-1 transition duration-300 shadow-lg shadow-emerald-950/50 ring-1 ring-emerald-500/50">
+                    <span class="block text-[10px] text-gray-400 font-bold">STAGE 1</span>
+                    <span class="font-bold text-white block truncate text-[11px]">Titik Nol</span>
+                    <span id="pipeBadge1" class="inline-block text-[9px] px-1.5 py-0.5 rounded font-bold bg-emerald-500 text-black"><i class="fa-solid fa-check mr-1"></i>SELESAI</span>
+                </div>
+                <div id="pipeNode2" class="p-2.5 rounded border border-emerald-500 bg-emerald-950/60 space-y-1 transition duration-300 shadow-lg shadow-emerald-950/50 ring-1 ring-emerald-500/50">
+                    <span class="block text-[10px] text-gray-400 font-bold">STAGE 2</span>
+                    <span class="font-bold text-gray-300 block truncate text-[11px]">Entitas Bayangan</span>
+                    <span id="pipeBadge2" class="inline-block text-[9px] px-1.5 py-0.5 rounded font-bold bg-emerald-500 text-black"><i class="fa-solid fa-check mr-1"></i>SELESAI</span>
+                </div>
+                <div id="pipeNode3" class="p-2.5 rounded border border-emerald-500 bg-emerald-950/60 space-y-1 transition duration-300 shadow-lg shadow-emerald-950/50 ring-1 ring-emerald-500/50">
+                    <span class="block text-[10px] text-gray-400 font-bold">STAGE 3</span>
+                    <span class="font-bold text-gray-300 block truncate text-[11px]">Vektor Aliran</span>
+                    <span id="pipeBadge3" class="inline-block text-[9px] px-1.5 py-0.5 rounded font-bold bg-emerald-500 text-black"><i class="fa-solid fa-check mr-1"></i>SELESAI</span>
+                </div>
+                <div id="pipeNode4" class="p-2.5 rounded border border-emerald-500 bg-emerald-950/60 space-y-1 transition duration-300 shadow-lg shadow-emerald-950/50 ring-1 ring-emerald-500/50">
+                    <span class="block text-[10px] text-gray-400 font-bold">STAGE 4</span>
+                    <span class="font-bold text-gray-300 block truncate text-[11px]">Dekonstruksi</span>
+                    <span id="pipeBadge4" class="inline-block text-[9px] px-1.5 py-0.5 rounded font-bold bg-emerald-500 text-black"><i class="fa-solid fa-check mr-1"></i>SELESAI</span>
+                </div>
+                <div id="pipeNode5" class="p-2.5 rounded border border-emerald-500 bg-emerald-950/60 space-y-1 transition duration-300 shadow-lg shadow-emerald-950/50 ring-1 ring-emerald-500/50">
+                    <span class="block text-[10px] text-gray-400 font-bold">STAGE 5</span>
+                    <span class="font-bold text-gray-300 block truncate text-[11px]">The Nexus</span>
+                    <span id="pipeBadge5" class="inline-block text-[9px] px-1.5 py-0.5 rounded font-bold bg-emerald-500 text-black"><i class="fa-solid fa-check mr-1"></i>SELESAI</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Layout: 2-Kolom (Kiri: Arena Investigasi, Kanan: Live Leaderboard Peserta) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+            <!-- KOLOM KIRI: Briefing Dossier & 5 Stages Investigasi (lg:col-span-8) -->
+            <div class="lg:col-span-8 space-y-8">
+
+                <!-- 1. Incident Briefing Dossier -->
+                <section class="cyber-card p-6 rounded-lg border-l-4 border-amber-500 space-y-5 bg-gradient-to-b from-gray-900/90 via-gray-950/80 to-black/90 relative overflow-hidden">
+            
+            <!-- Header Badge & Metadata Bar -->
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-gray-800/80 pb-3">
+                <div class="flex items-center space-x-2.5">
+                    <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/30 font-mono text-xs font-bold tracking-wider uppercase flex items-center gap-1.5">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        TLP:AMBER (CONFIDENTIAL)
+                    </span>
+                    <span class="text-xs font-mono text-gray-400 hidden sm:inline">|</span>
+                    <span class="font-mono text-xs text-emerald-400 font-semibold tracking-wide">
+                        <i class="fa-solid fa-shield-halved mr-1"></i>KODE: OPERATION NEXUS DEEP-DIVE
+                    </span>
+                </div>
+                <div class="text-[11px] font-mono text-gray-400 flex items-center gap-2">
+                    <span><i class="fa-regular fa-clock mr-1"></i>20 Juli 2026</span>
+                    <span>•</span>
+                    <span><i class="fa-solid fa-location-dot mr-1"></i>Senayan, Jakarta</span>
+                </div>
+            </div>
+
+            <!-- Dossier Metadata Table -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs bg-gray-950/70 p-3.5 rounded border border-gray-800/80 font-mono">
+                <div class="space-y-1">
+                    <div class="flex items-start">
+                        <span class="text-gray-400 w-24 shrink-0">DARI</span>
+                        <span class="text-gray-200 font-semibold">: Dr. Raka Wijaya (Direktur Keamanan Informasi / CISO MOFCG)</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-gray-400 w-24 shrink-0">KEPADA</span>
+                        <span class="text-emerald-400 font-semibold">: Tim Forensik Eksternal (Peserta CTF / Guardian MOFCG)</span>
+                    </div>
+                </div>
+                <div class="space-y-1">
+                    <div class="flex items-start">
+                        <span class="text-gray-400 w-24 shrink-0">STATUS</span>
+                        <span class="text-amber-400 font-semibold">: INVESTIGASI AKTIF (INSIDEN FINANSIAL)</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="text-gray-400 w-24 shrink-0">FOKUS</span>
+                        <span class="text-gray-300">: Audit Vektor Serangan &amp; Eksfiltrasi Dana Rp 8 Miliar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gerbang Inisiasi Operasi (Robotic Standby Launchpad) -->
+            <div id="operationGate" class="relative overflow-hidden rounded-xl bg-gradient-to-b from-[#091120] to-[#040810] border-2 border-emerald-500/70 p-6 sm:p-8 text-center space-y-5 shadow-[0_0_35px_rgba(16,185,129,0.25)] transition-all duration-500 hidden">
+                <!-- Holographic scanline & cyber accents -->
+                <div class="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent"></div>
+                <div class="absolute top-2.5 left-3.5 text-[10px] font-mono text-emerald-500/70 tracking-widest uppercase flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>MOFCG // OPERASI JEJAK DIGITAL 2026</span>
+                </div>
+                <div class="absolute top-2.5 right-3.5 text-[10px] font-mono text-cyan-400/80 tracking-widest uppercase">
+                    STATUS: <span id="operationGateBadge" class="text-emerald-400 font-bold">SIAP DIINISIASI</span>
+                </div>
+
+                <div class="max-w-xl mx-auto space-y-2.5 pt-3">
+                    
+                    <div id="operationGateProtocolBadge" class="inline-flex items-center space-x-2 bg-emerald-950/80 border border-emerald-500/50 px-3.5 py-1 rounded-full text-xs font-mono text-emerald-400 shadow-sm">
+                        <i id="operationGateProtocolIcon" class="fa-solid fa-lock text-amber-400 animate-pulse"></i>
+                        <span id="operationGateProtocolText">PROTOKOL INVESTIGASI TERTUTUP</span>
+                    </div>
+                    <h3 id="operationGateHeading" class="text-xl sm:text-2xl font-black text-white font-mono tracking-wider uppercase">SISTEM FORENSIK SIAP DIINISIASI</h3>
+                    <p id="operationGateDesc" class="text-xs text-gray-300 leading-relaxed font-sans">Tekan tombol <strong class="text-emerald-400 font-mono">MULAI</strong> di bawah untuk membuka transmisi rahasia CISO, mengaktifkan live briefing dossier, dan memulai Tahap 1 Investigasi.</p>
+                    
+                </div>
+
+                <!-- HITUNG MUNDUR & WAKTU PENGERJAAN PADA GERBANG BUKA (Cyber HUD) -->
+                <div class="max-w-md mx-auto bg-black/75 border border-gray-800 p-4 rounded-xl space-y-2 text-center font-mono shadow-inner my-2">
+                    <div class="flex items-center justify-between text-xs border-b border-gray-800/80 pb-2">
+                        <span class="text-gray-400 flex items-center space-x-1.5 text-[11px]">
+                            <i class="fa-solid fa-calendar-check text-emerald-400"></i>
+                            <span>WAKTU PENGERJAAN:</span>
+                        </span>
+                        <span class="text-[10px] font-bold text-amber-300">15 s.d 16 OKTOBER 2026 (24 JAM)</span>
+                    </div>
+                    <div class="pt-1">
+                        <span id="gateCountdownLabel" class="text-[10px] text-gray-400 uppercase tracking-widest block mb-1">SISA WAKTU LOMBA:</span>
+                        <div id="gateCountdownClock" class="text-2xl sm:text-3xl font-black text-emerald-400 animate-pulse font-mono tracking-wider">00h : 20j : 19m : 56d</div>
+                    </div>
+                </div>
+
+                <!-- TOMBOL MULAI BERHURUF ROBOTIKA (Sci-Fi Cyber HUD) -->
+                <div class="pt-2 flex flex-col items-center justify-center">
+                    
+                    <button type="button" id="btnStartOperation" class="group relative inline-flex items-center justify-center px-10 py-4 text-xl sm:text-2xl font-black font-mono tracking-[0.3em] text-black uppercase transition-all duration-300 transform hover:scale-105 active:scale-95 bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 rounded-lg shadow-[0_0_30px_rgba(52,211,153,0.9)] hover:shadow-[0_0_50px_rgba(52,211,153,1)] border-2 border-white/80 cursor-pointer">
+                        <i id="btnStartIcon" class="fa-solid fa-power-off mr-3 text-2xl animate-pulse group-hover:rotate-90 transition-transform"></i>
+                        <span id="btnStartText" class="tracking-[0.35em]">MULAI</span>
+                        <i id="btnStartArrow" class="fa-solid fa-angles-right ml-3 text-lg animate-bounce"></i>
+                    </button>
+                    <span id="btnStartSubtext" class="text-[10px] font-mono text-gray-400 mt-2 tracking-widest uppercase">[ INITIATE FORENSIC PROTOCOL // STAGE 1 DEPLOYMENT ]</span>
+                    
+                </div>
+
+                <!-- Cyber telemetry status readout -->
+                <div id="gateTelemetryReadout" class="text-[11px] font-mono text-emerald-400/80 flex flex-wrap items-center justify-center gap-3 pt-1 border-t border-gray-800/80">
+                    <span><i class="fa-solid fa-shield-halved mr-1 text-emerald-400"></i>LEVEL: CONFIDENTIAL</span>
+                    <span>•</span>
+                    <span><i class="fa-solid fa-key mr-1 text-cyan-400"></i>ENKRIPSI: AES-256-GCM</span>
+                    <span>•</span>
+                    <span><i class="fa-solid fa-satellite-dish mr-1 text-amber-400"></i>LINK: ENCRYPTED</span>
+                </div>
+            </div>
+
+            <!-- Active Ceremony Notification (Shown when operation is started) -->
+            <div id="operationActiveBanner" class="bg-emerald-950/40 border border-emerald-500/50 p-3 rounded-lg flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-emerald-300 shadow-[0_0_15px_rgba(16,185,129,0.15)]">
+                <div class="flex items-center space-x-2">
+                    <span class="flex h-2.5 w-2.5 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                    </span>
+                    <span class="font-bold tracking-wider uppercase text-emerald-400">OPERASI INVESTIGASI AKTIF:</span>
+                    <span class="text-gray-300">Tahap 1 Terbuka • Transmisi Dossier Terdekripsi</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <button type="button" class="bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white px-2.5 py-1 rounded text-[11px] font-mono border border-gray-700 flex items-center space-x-1 transition" title="Tampilkan kembali gerbang inisiasi robotika">
+                        <i class="fa-solid fa-power-off text-emerald-400"></i>
+                        <span>Inisiasi Ulang</span>
+                    </button>
+                    <a href="#cardStage1" class="bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1 rounded text-[11px] font-bold flex items-center space-x-1 transition">
+                        <span>Menuju Stage 1</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Incident Narrative Section (Briefing Dossier Body) -->
+            <div id="briefingNarrativeSection" class="space-y-4">
+                <!-- Incident Narrative Live Teletype Controls -->
+                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-gray-800/80 pb-2">
+                    <div class="flex items-center space-x-2 text-xs font-mono">
+                        <span id="briefingLiveIndicator" class="flex h-2.5 w-2.5 relative"><span class="inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span></span>
+                        <span id="briefingStatusLabel" class="text-[11px] font-bold text-emerald-400 tracking-wider uppercase font-mono">TRANSMISSION DECRYPTED (VERIFIED)</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button type="button" id="btnSkipTyping" class="bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white px-2.5 py-1 rounded text-[11px] font-mono border border-gray-700 flex items-center space-x-1.5 transition" title="Tampilkan seluruh teks briefing seketika">
+                            <i class="fa-solid fa-forward-step text-amber-400"></i>
+                            <span>Lewati Animasi</span>
+                        </button>
+                        <button type="button" id="btnReplayTyping" class="bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white px-2.5 py-1 rounded text-[11px] font-mono border border-gray-700 flex items-center space-x-1.5 transition" title="Ketik ulang animasi briefing dari awal">
+                            <i class="fa-solid fa-rotate-right text-emerald-400"></i>
+                            <span>Ketik Ulang</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Incident Narrative Content (with live typewriter target) -->
+                <div id="briefingNarrative" class="space-y-3 text-xs text-gray-300 leading-relaxed min-h-[200px]">
+                    <div id="briefingTypewriterTarget" class="space-y-3 text-xs text-gray-300 leading-relaxed font-sans">
+                <p class="text-sm font-semibold text-white font-mono">
+                    Rekan-rekan Forensik / Guardian MOFCG,
+                </p>
+                <p>
+                    MOFCG baru saja mengalami insiden siber yang mengakibatkan kerugian finansial serius pada organisasi kami. Pada <strong class="text-amber-300 font-semibold">15 Juli 2026</strong>, sistem keuangan di server utama kami dibobol oleh kelompok peretas (diduga APT eksternal dari Eropa Timur). Mereka berhasil mengeksfiltrasi dana sebesar <strong class="text-red-400 font-semibold">8 Miliar Rupiah</strong> dengan memanipulasi dokumen persetujuan anggaran.
+                </p>
+                <p>
+                    Berdasarkan laporan investigasi awal dari Kepala Divisi IT kami, <strong class="text-cyan-300 font-semibold">Bapak Dadan Suherman</strong>, vektor serangan pertama terjadi pada awal bulan Maret. Seseorang dari luar mengirimkan email phishing yang tanpa sengaja diakses oleh sekretaris saya, <strong class="text-gray-200 font-semibold">Rina Melati</strong>. Tim IT telah melakukan prosedur penanganan insiden awal dan mengisolasi jaringan sejak anomali pertama terdeteksi. Namun, peretas tersebut diduga menggunakan teknik evasif untuk menutupi jejak mereka di dalam jaringan internal.
+                </p>
+                <p>
+                    Berdasarkan evaluasi internal dari Pak Dadan dan tim IT, kami menyewa tim forensik independen (Anda) untuk membedah seberapa jauh peretas eksternal ini menyusup ke dalam infrastruktur kami. Kami memerlukan perspektif pihak ketiga (<em class="text-amber-300">out-of-band</em>) agar hasil audit ini sepenuhnya independen dan objektif.
+                </p>
+                <p>
+                    Sebagai langkah awal, tim IT telah mengekspor cadangan arsip email dari periode infeksi awal (Stage 1). Sesuai standar keamanan MOFCG, arsip tersebut dienkripsi GPG. Pak Dadan telah melampirkan <span class="text-emerald-400 font-mono font-bold">Private Key</span> sementaranya (<code class="bg-gray-800 text-emerald-300 px-1 py-0.5 rounded">EVD-KEY-001.asc</code>) agar Anda dapat membuka dan menganalisis arsip tersebut secara aman.
+                </p>
+                <div class="p-3 bg-amber-500/10 border-l-2 border-amber-500 rounded text-amber-200 text-xs space-y-1 font-mono">
+                    <div class="font-bold text-amber-300 flex items-center gap-1.5">
+                        <i class="fa-solid fa-bullseye"></i>
+                        TUGAS ANDA:
+                    </div>
+                    <p class="text-gray-300 font-sans">
+                        Temukan kelompok APT mana yang menyerang kami. Lacak pergerakan lateral mereka. Identifikasi Payload mereka. Kami menantikan laporan temuan Anda untuk mencegah serangan susulan ke organisasi.
+                    </p>
+                </div>
+            </div>
+            </div>
+
+            <!-- Raw Briefing Source (Backup template for replay and fast reference) -->
+            <template id="briefingRawTemplate">
+                <p class="text-sm font-semibold text-white font-mono">
+                    Rekan-rekan Forensik / Guardian MOFCG,
+                </p>
+                <p>
+                    MOFCG baru saja mengalami insiden siber yang mengakibatkan kerugian finansial serius pada organisasi kami. Pada <strong class="text-amber-300 font-semibold">15 Juli 2026</strong>, sistem keuangan di server utama kami dibobol oleh kelompok peretas (diduga APT eksternal dari Eropa Timur). Mereka berhasil mengeksfiltrasi dana sebesar <strong class="text-red-400 font-semibold">8 Miliar Rupiah</strong> dengan memanipulasi dokumen persetujuan anggaran.
+                </p>
+                <p>
+                    Berdasarkan laporan investigasi awal dari Kepala Divisi IT kami, <strong class="text-cyan-300 font-semibold">Bapak Dadan Suherman</strong>, vektor serangan pertama terjadi pada awal bulan Maret. Seseorang dari luar mengirimkan email phishing yang tanpa sengaja diakses oleh sekretaris saya, <strong class="text-gray-200 font-semibold">Rina Melati</strong>. Tim IT telah melakukan prosedur penanganan insiden awal dan mengisolasi jaringan sejak anomali pertama terdeteksi. Namun, peretas tersebut diduga menggunakan teknik evasif untuk menutupi jejak mereka di dalam jaringan internal.
+                </p>
+                <p>
+                    Berdasarkan evaluasi internal dari Pak Dadan dan tim IT, kami menyewa tim forensik independen (Anda) untuk membedah seberapa jauh peretas eksternal ini menyusup ke dalam infrastruktur kami. Kami memerlukan perspektif pihak ketiga (<em class="text-amber-300">out-of-band</em>) agar hasil audit ini sepenuhnya independen dan objektif.
+                </p>
+                <p>
+                    Sebagai langkah awal, tim IT telah mengekspor cadangan arsip email dari periode infeksi awal (Stage 1). Sesuai standar keamanan MOFCG, arsip tersebut dienkripsi GPG. Pak Dadan telah melampirkan <span class="text-emerald-400 font-mono font-bold">Private Key</span> sementaranya (<code class="bg-gray-800 text-emerald-300 px-1 py-0.5 rounded">EVD-KEY-001.asc</code>) agar Anda dapat membuka dan menganalisis arsip tersebut secara aman.
+                </p>
+                <div class="p-3 bg-amber-500/10 border-l-2 border-amber-500 rounded text-amber-200 text-xs space-y-1 font-mono">
+                    <div class="font-bold text-amber-300 flex items-center gap-1.5">
+                        <i class="fa-solid fa-bullseye"></i>
+                        TUGAS ANDA:
+                    </div>
+                    <p class="text-gray-300 font-sans">
+                        Temukan kelompok APT mana yang menyerang kami. Lacak pergerakan lateral mereka. Identifikasi Payload mereka. Kami menantikan laporan temuan Anda untuk mencegah serangan susulan ke organisasi.
+                    </p>
+                </div>
+            </template>
+
+            <!-- Gasken Initiation Button Container (Hidden until briefing finishes) -->
+            <div id="gaskenContainer" class="p-5 rounded-xl bg-gradient-to-r from-[#091522] via-[#040812] to-[#091522] border-2 border-emerald-500/80 text-center space-y-3 shadow-[0_0_30px_rgba(16,185,129,0.35)] transition-all duration-500">
+                <div class="space-y-1">
+                    <div class="text-xs font-mono font-bold text-emerald-400 tracking-widest uppercase flex items-center justify-center gap-1.5">
+                        <i class="fa-solid fa-flag-checkered text-emerald-400"></i>
+                        <span>TRANSMISI SELESAI — SISTEM SIAP DIINVESTIGASI</span>
+                    </div>
+                    <p class="text-xs text-gray-300 font-sans max-w-lg mx-auto">
+                        Anda telah menerima dan memahami seluruh briefing dossier dari CISO. Tekan tombol <strong class="text-emerald-400 font-mono">GASKEN</strong> di bawah untuk membuka kartu Tahap 1 dan memulai analisis berkas bukti!
+                    </p>
+                </div>
+                <div class="pt-1 flex flex-col items-center justify-center">
+                    <button type="button" id="btnGasken" class="group relative inline-flex items-center justify-center px-8 py-3.5 text-lg font-black font-mono tracking-[0.25em] text-black uppercase transition-all duration-300 transform hover:scale-105 active:scale-95 bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 rounded-lg shadow-[0_0_25px_rgba(52,211,153,0.8)] hover:shadow-[0_0_40px_rgba(52,211,153,1)] border border-white/80 cursor-pointer opacity-50 pointer-events-none"><i class="fa-solid fa-check mr-2"></i>SUDAH DIGAS</button>
+                    <span class="text-[10px] font-mono text-gray-400 mt-2 tracking-widest uppercase">
+                        [ BUKA AKSES TAHAP 1 &amp; MULAI ANALISIS BUKTI ]
+                    </span>
+                </div>
+            </div>
+
+            </div> <!-- End briefingNarrativeSection -->
+
+            <!-- Sign-off & Footer note -->
+            <div class="flex flex-wrap items-center justify-between pt-2 border-t border-gray-800/80 gap-3 text-xs">
+                <div class="text-[11px] text-gray-400 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-info text-emerald-400"></i>
+                    <span>Unduh berkas bukti digital langsung pada masing-masing kartu tahapan di bawah. Berkas diberikan dalam format asli per stage.</span>
+                </div>
+                <div class="text-right font-mono text-gray-300">
+                    <div class="font-bold text-white">— Dr. Raka Wijaya</div>
+                    <div class="text-[10px] text-gray-400">CISO / Direktur Keamanan Informasi MOFCG</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Tahapan Investigasi (5 Stages Berurutan) -->
+        <section class="space-y-4">
+            <div>
+                <h3 class="text-lg font-bold text-white flex items-center space-x-2">
+                    <i class="fa-solid fa-cubes text-emerald-400"></i>
+                    <span>Tahapan Investigasi (5 Stages Berurutan)</span>
+                </h3>
+                <p class="text-xs text-gray-400">Penyelesaian stage bersifat sekuensial. Stage berikutnya hanya akan terbuka jika stage sebelumnya selesai!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+                <!-- Stage 1 -->
+                <div id="cardStage1" class="cyber-card relative overflow-hidden p-5 rounded-lg flex flex-col justify-between space-y-4 transition duration-300 border-emerald-500/80 bg-emerald-950/20 shadow-lg shadow-emerald-950/40 ring-1 ring-emerald-500/40">
+                    <!-- Lock Overlay -->
+                    <div id="lockOverlayStage1" class="absolute inset-0 bg-[#080d1a]/95 backdrop-blur-xl rounded-lg flex flex-col items-center justify-center p-6 text-center z-20 space-y-3 transition duration-500 hidden">
+                        <div class="w-14 h-14 rounded-full bg-gray-900 border border-amber-500/30 flex items-center justify-center shadow-lg shadow-black">
+                            <i id="lockIconStage1" class="fa-solid fa-lock text-2xl text-amber-400"></i>
+                        </div>
+                        <span id="lockBadgeStage1" class="text-xs font-mono font-bold text-amber-400 tracking-wider uppercase bg-amber-950/40 border border-amber-800/60 px-3 py-1 rounded">TAHAP 1 TERKUNCI (LOMBA BELUM DIMULAI)</span>
+                        <p id="lockDescStage1" class="text-[11px] text-gray-400 font-mono max-w-[260px] leading-relaxed">Kompetisi resmi dibuka pada 15 Oktober 2026, 10:00 WIB. Tahapan akan terbuka otomatis saat lomba dimulai.</p>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div id="bodyStage1" class="space-y-4 flex flex-col justify-between h-full transition duration-500">
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-emerald-400 font-bold uppercase tracking-wider font-mono">STAGE 1</span>
+                                <div class="flex items-center space-x-1.5">
+                                    <span id="badgeStateStage1" class="bg-emerald-500 text-black font-bold px-2 py-0.5 rounded text-[10px] font-mono"><i class="fa-solid fa-check mr-1"></i>SELESAI</span>
+                                    <span class="bg-gray-800 px-2 py-0.5 rounded text-gray-300 font-mono text-[11px]">1.000 Poin</span>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Tahap 1: Titik Nol (Infiltrasi Awal)</h4>
+                            
+                            <div class="bg-gray-900/90 p-3 rounded border border-gray-800/80 text-xs text-gray-300 space-y-1.5 leading-relaxed">
+                                <div class="text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+                                    <i class="fa-solid fa-clock-rotate-left"></i> Rangkaian 1: Dugaan Kontak Awal (Maret 2026)
+                                </div>
+                                <p class="text-gray-400 text-[11px] leading-relaxed">
+                                    Penyelidikan bermula dari laporan insiden awal bulan Maret 2026 yang mengindikasikan adanya korespondensi mencurigakan dari luar organisasi. Telusuri arsip komunikasi terenkripsi dan berkas kunci yang diamankan untuk merekonstruksi jejak interaksi pertama ini.
+                                </p>
+                            </div>
+
+                            <div class="text-[11px] bg-gray-900 p-2.5 rounded border border-gray-800 text-gray-300 space-y-2">
+                                <div class="font-bold text-gray-400 flex items-center justify-between">
+                                    <span><i class="fa-solid fa-file-shield mr-1 text-emerald-400"></i>Berkas Bukti Stage 1:</span>
+                                </div>
+                                <div class="flex flex-col gap-1.5">
+                                    <button type="button" class="stage-dl-btn-1 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-MAIL-001.mbox.enc</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                    <button type="button" class="stage-dl-btn-1 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-KEY-001.asc</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                    <button type="button" class="stage-dl-btn-1 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-DOC-002.txt</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Form / Solved Container -->
+                        <div id="actionContainerStage1" class="pt-2 border-t border-gray-800">
+                            <form id="formStage1" class="space-y-2 hidden">
+                                <input type="text" id="flagInput1" placeholder="MOFCG{...}" required="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="w-full bg-[#0b0f19] border border-gray-700 rounded px-3 py-1.5 text-xs text-white focus:border-emerald-500 focus:outline-none font-mono" disabled=""><div id="flagHelper1" class="text-[10px] font-mono flex items-center justify-between text-gray-500 mt-1 mb-1 transition-all"><span><i class="fa-solid fa-circle-info mr-1 text-cyan-400/80"></i>Format: <strong class="text-gray-300">MOFCG{...}</strong></span><span class="text-[9px] text-gray-600"><i class="fa-solid fa-wand-magic-sparkles mr-0.5 text-emerald-500/70"></i>Auto-trim</span></div>
+                                <button type="submit" id="btnStage1" class="w-full cyber-bg-accent text-white py-1.5 rounded text-xs font-semibold opacity-50 cursor-not-allowed" disabled="">Submit Flag 1</button>
+                                <div id="fb1" class="text-[11px] min-h-[16px]"></div>
+                            </form>
+                            <div id="solvedBannerStage1" class="space-y-2.5">
+                                <div class="p-2.5 rounded bg-emerald-950/70 border border-emerald-500/70 text-emerald-300 text-xs font-mono font-bold flex items-center justify-between shadow-sm">
+                                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i>FLAG TERVERIFIKASI</span>
+                                    <span class="text-[10px] text-emerald-400 font-mono bg-emerald-900/60 px-2 py-0.5 rounded border border-emerald-600/40">STAGE 1 SELESAI</span>
+                                </div>
+                                <div class="p-3 rounded-lg bg-black/60 border border-emerald-500/40 text-xs space-y-2 transition duration-300 shadow-md">
+                                    <div class="flex items-center gap-2 text-emerald-400 font-mono font-bold text-[11px] uppercase tracking-wider">
+                                        <i class="fa-solid fa-file-waveform animate-pulse"></i>
+                                        <span>SKENARIO KEJADIAN: DEKRIPSI JEJAK AWAL</span>
+                                    </div>
+                                    <p class="text-gray-300 text-[11px] font-sans leading-relaxed">
+                                        Dekripsi berkas email PGP mengungkap kontak awal <em>spear-phishing</em> berkedok proposal kemitraan yayasan global. Header email membuktikan adanya kampanye infiltrasi terencana yang menembus kotak masuk organisasi.
+                                    </p>
+                                    <div class="pt-1.5 border-t border-gray-800/80 text-[11px] text-amber-300/90 font-mono flex items-start gap-1.5">
+                                        <i class="fa-solid fa-angles-right text-amber-400 mt-0.5 shrink-0 animate-bounce"></i>
+                                        <span><strong>Misteri Lanjutan:</strong> Siapa dalang di balik domain pengirim tersebut? Log server di Tahap 2 mendeteksi anomali telemetri yang mencurigakan...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 2 -->
+                <div id="cardStage2" class="cyber-card relative overflow-hidden p-5 rounded-lg flex flex-col justify-between space-y-4 transition duration-300 border-emerald-500/80 bg-emerald-950/20 shadow-lg shadow-emerald-950/40 ring-1 ring-emerald-500/40">
+                    <!-- Lock Overlay -->
+                    <div id="lockOverlayStage2" class="absolute inset-0 bg-[#080d1a]/95 backdrop-blur-xl rounded-lg flex flex-col items-center justify-center p-6 text-center z-20 space-y-3 transition duration-500 hidden">
+                        <div class="w-14 h-14 rounded-full bg-gray-900 border border-amber-500/30 flex items-center justify-center shadow-lg shadow-black">
+                            <i class="fa-solid fa-lock text-2xl text-amber-400"></i>
+                        </div>
+                        <span class="text-xs font-mono font-bold text-amber-400 tracking-wider uppercase bg-amber-950/40 border border-amber-800/60 px-3 py-1 rounded">
+                            TAHAP 2 TERKUNCI
+                        </span>
+                        <p class="text-[11px] text-gray-400 font-mono max-w-[220px] leading-relaxed">
+                            Selesaikan Tahap 1 terlebih dahulu untuk membuka dan mendekripsi investigasi tahap ini.
+                        </p>
+                        <span class="text-[10px] text-gray-400 font-mono"><i class="fa-solid fa-shield mr-1"></i>Protokol Akses Sekuensial</span>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div id="bodyStage2" class="space-y-4 flex flex-col justify-between h-full transition duration-500">
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-emerald-400 font-bold uppercase tracking-wider font-mono">STAGE 2</span>
+                                <div class="flex items-center space-x-1.5">
+                                    <span id="badgeStateStage2" class="bg-emerald-500 text-black font-bold px-2 py-0.5 rounded text-[10px] font-mono"><i class="fa-solid fa-check mr-1"></i>SELESAI</span>
+                                    <span class="bg-gray-800 px-2 py-0.5 rounded text-gray-300 font-mono text-[11px]">1.000 Poin</span>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Tahap 2: Entitas Bayangan (Jejak Perimeter)</h4>
+                            
+                            <div class="bg-gray-900/90 p-3 rounded border border-gray-800/80 text-xs text-gray-300 space-y-1.5 leading-relaxed">
+                                <div class="text-[10px] font-mono font-bold text-cyan-400 uppercase tracking-wider flex items-center gap-1.5">
+                                    <i class="fa-solid fa-satellite-dish"></i> Rangkaian 2: Penelusuran Entitas Eksternal
+                                </div>
+                                <p class="text-gray-400 text-[11px] leading-relaxed">
+                                    Setelah kontak awal teridentifikasi, jejak digital mengindikasikan interaksi dengan entitas luar yang berkomunikasi di luar kanal umum. Analisis telemetri server dan berkas intelijen yang dicurigai untuk memetakan infrastruktur serta profil pihak luar tersebut.
+                                </p>
+                            </div>
+
+                            <div class="text-[11px] bg-gray-900 p-2.5 rounded border border-gray-800 text-gray-300 space-y-2">
+                                <div class="font-bold text-gray-400 flex items-center justify-between">
+                                    <span><i class="fa-solid fa-file-shield mr-1 text-emerald-400"></i>Berkas Bukti Stage 2:</span>
+                                </div>
+                                <div class="flex flex-col gap-1.5">
+                                    <button type="button" class="stage-dl-btn-2 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-INTEL-001.txt</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                    <button type="button" class="stage-dl-btn-2 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-SRVLOG-001.json</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Form / Solved Container -->
+                        <div id="actionContainerStage2" class="pt-2 border-t border-gray-800">
+                            <form id="formStage2" class="space-y-2 hidden">
+                                <input type="text" id="flagInput2" placeholder="MOFCG{...}" required="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="w-full bg-[#0b0f19] border border-gray-700 rounded px-3 py-1.5 text-xs text-white focus:border-emerald-500 focus:outline-none font-mono" disabled=""><div id="flagHelper2" class="text-[10px] font-mono flex items-center justify-between text-gray-500 mt-1 mb-1 transition-all"><span><i class="fa-solid fa-circle-info mr-1 text-cyan-400/80"></i>Format: <strong class="text-gray-300">MOFCG{...}</strong></span><span class="text-[9px] text-gray-600"><i class="fa-solid fa-wand-magic-sparkles mr-0.5 text-emerald-500/70"></i>Auto-trim</span></div>
+                                <button type="submit" id="btnStage2" class="w-full cyber-bg-accent text-white py-1.5 rounded text-xs font-semibold opacity-50 cursor-not-allowed" disabled="">Submit Flag 2</button>
+                                <div id="fb2" class="text-[11px] min-h-[16px]"></div>
+                            </form>
+                            <div id="solvedBannerStage2" class="space-y-2.5">
+                                <div class="p-2.5 rounded bg-emerald-950/70 border border-emerald-500/70 text-emerald-300 text-xs font-mono font-bold flex items-center justify-between shadow-sm">
+                                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i>FLAG TERVERIFIKASI</span>
+                                    <span class="text-[10px] text-emerald-400 font-mono bg-emerald-900/60 px-2 py-0.5 rounded border border-emerald-600/40">STAGE 2 SELESAI</span>
+                                </div>
+                                <div class="p-3 rounded-lg bg-black/60 border border-emerald-500/40 text-xs space-y-2 transition duration-300 shadow-md">
+                                    <div class="flex items-center gap-2 text-emerald-400 font-mono font-bold text-[11px] uppercase tracking-wider">
+                                        <i class="fa-solid fa-network-wired animate-pulse"></i>
+                                        <span>SKENARIO KEJADIAN: PROFIL ANCAMAN TERKUAK</span>
+                                    </div>
+                                    <p class="text-gray-300 text-[11px] font-sans leading-relaxed">
+                                        Telemetri WAF dan log web server membongkar identitas domain samaran <em>mitra-komunitas-global.abc</em>. Penyerang terbukti menyusupkan payload pengintaian serta menyiapkan dompet digital kripto gelap untuk transaksi bayangan.
+                                    </p>
+                                    <div class="pt-1.5 border-t border-gray-800/80 text-[11px] text-amber-300/90 font-mono flex items-start gap-1.5">
+                                        <i class="fa-solid fa-angles-right text-amber-400 mt-0.5 shrink-0 animate-bounce"></i>
+                                        <span><strong>Misteri Lanjutan:</strong> Infrastruktur penyerang terpetakan! Namun radar finansial mendeteksi aliran dana miliaran rupiah yang bergerak liar di jaringan perbankan Tahap 3...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 3 -->
+                <div id="cardStage3" class="cyber-card relative overflow-hidden p-5 rounded-lg flex flex-col justify-between space-y-4 transition duration-300 border-emerald-500/80 bg-emerald-950/20 shadow-lg shadow-emerald-950/40 ring-1 ring-emerald-500/40">
+                    <!-- Lock Overlay -->
+                    <div id="lockOverlayStage3" class="absolute inset-0 bg-[#080d1a]/95 backdrop-blur-xl rounded-lg flex flex-col items-center justify-center p-6 text-center z-20 space-y-3 transition duration-500 hidden">
+                        <div class="w-14 h-14 rounded-full bg-gray-900 border border-amber-500/30 flex items-center justify-center shadow-lg shadow-black">
+                            <i class="fa-solid fa-lock text-2xl text-amber-400"></i>
+                        </div>
+                        <span class="text-xs font-mono font-bold text-amber-400 tracking-wider uppercase bg-amber-950/40 border border-amber-800/60 px-3 py-1 rounded">
+                            TAHAP 3 TERKUNCI
+                        </span>
+                        <p class="text-[11px] text-gray-400 font-mono max-w-[220px] leading-relaxed">
+                            Selesaikan Tahap 2 terlebih dahulu untuk membuka dan mendekripsi investigasi tahap ini.
+                        </p>
+                        <span class="text-[10px] text-gray-400 font-mono"><i class="fa-solid fa-shield mr-1"></i>Protokol Akses Sekuensial</span>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div id="bodyStage3" class="space-y-4 flex flex-col justify-between h-full transition duration-500">
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-emerald-400 font-bold uppercase tracking-wider font-mono">STAGE 3</span>
+                                <div class="flex items-center space-x-1.5">
+                                    <span id="badgeStateStage3" class="bg-emerald-500 text-black font-bold px-2 py-0.5 rounded text-[10px] font-mono"><i class="fa-solid fa-check mr-1"></i>SELESAI</span>
+                                    <span class="bg-gray-800 px-2 py-0.5 rounded text-gray-300 font-mono text-[11px]">1.000 Poin</span>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Tahap 3: Vektor Aliran (Pergerakan Jaringan &amp; Finansial)</h4>
+                            
+                            <div class="bg-gray-900/90 p-3 rounded border border-gray-800/80 text-xs text-gray-300 space-y-1.5 leading-relaxed">
+                                <div class="text-[10px] font-mono font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+                                    <i class="fa-solid fa-diagram-project"></i> Rangkaian 3: Pergerakan Internal &amp; Transaksi
+                                </div>
+                                <p class="text-gray-400 text-[11px] leading-relaxed">
+                                    Setelah eksistensi entitas eksternal dipetakan, aktivitas anomali terpantau merambah ke segmen jaringan internal dan sistem pencatatan keuangan. Lakukan korelasi silang antara tangkapan lalu lintas data dan catatan mutasi finansial untuk melacak aliran pergerakan data.
+                                </p>
+                            </div>
+
+                            <div class="text-[11px] bg-gray-900 p-2.5 rounded border border-gray-800 text-gray-300 space-y-2">
+                                <div class="font-bold text-gray-400 flex items-center justify-between">
+                                    <span><i class="fa-solid fa-file-shield mr-1 text-emerald-400"></i>Berkas Bukti Stage 3:</span>
+                                </div>
+                                <div class="flex flex-col gap-1.5">
+                                    <button type="button" class="stage-dl-btn-3 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-FIN-001.csv</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                    <button type="button" class="stage-dl-btn-3 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-FIN-005.json</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                    <button type="button" class="stage-dl-btn-3 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-NET-001.pcap</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Form / Solved Container -->
+                        <div id="actionContainerStage3" class="pt-2 border-t border-gray-800">
+                            <form id="formStage3" class="space-y-2 hidden">
+                                <input type="text" id="flagInput3" placeholder="MOFCG{...}" required="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="w-full bg-[#0b0f19] border border-gray-700 rounded px-3 py-1.5 text-xs text-white focus:border-emerald-500 focus:outline-none font-mono" disabled=""><div id="flagHelper3" class="text-[10px] font-mono flex items-center justify-between text-gray-500 mt-1 mb-1 transition-all"><span><i class="fa-solid fa-circle-info mr-1 text-cyan-400/80"></i>Format: <strong class="text-gray-300">MOFCG{...}</strong></span><span class="text-[9px] text-gray-600"><i class="fa-solid fa-wand-magic-sparkles mr-0.5 text-emerald-500/70"></i>Auto-trim</span></div>
+                                <button type="submit" id="btnStage3" class="w-full cyber-bg-accent text-white py-1.5 rounded text-xs font-semibold opacity-50 cursor-not-allowed" disabled="">Submit Flag 3</button>
+                                <div id="fb3" class="text-[11px] min-h-[16px]"></div>
+                            </form>
+                            <div id="solvedBannerStage3" class="space-y-2.5">
+                                <div class="p-2.5 rounded bg-emerald-950/70 border border-emerald-500/70 text-emerald-300 text-xs font-mono font-bold flex items-center justify-between shadow-sm">
+                                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i>FLAG TERVERIFIKASI</span>
+                                    <span class="text-[10px] text-emerald-400 font-mono bg-emerald-900/60 px-2 py-0.5 rounded border border-emerald-600/40">STAGE 3 SELESAI</span>
+                                </div>
+                                <div class="p-3 rounded-lg bg-black/60 border border-emerald-500/40 text-xs space-y-2 transition duration-300 shadow-md">
+                                    <div class="flex items-center gap-2 text-emerald-400 font-mono font-bold text-[11px] uppercase tracking-wider">
+                                        <i class="fa-solid fa-money-bill-transfer animate-pulse"></i>
+                                        <span>SKENARIO KEJADIAN: ALIRAN DANA GELAP DITEMUKAN</span>
+                                    </div>
+                                    <p class="text-gray-300 text-[11px] font-sans leading-relaxed">
+                                        Analisis paket jaringan (PCAP) dan audit buku besar keuangan berhasil mengungkap mutasi dana siluman yang dieksekusi secara berlapis menuju rekening penampung pada tanggal 14 Juli 2026.
+                                    </p>
+                                    <div class="pt-1.5 border-t border-gray-800/80 text-[11px] text-amber-300/90 font-mono flex items-start gap-1.5">
+                                        <i class="fa-solid fa-angles-right text-amber-400 mt-0.5 shrink-0 animate-bounce"></i>
+                                        <span><strong>Misteri Lanjutan:</strong> Transaksi fantastis ini mustahil dieksekusi tanpa akses konsol internal! Ada stasiun kerja di dalam organisasi yang memicu perintah ini di Tahap 4...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 4 -->
+                <div id="cardStage4" class="cyber-card relative overflow-hidden p-5 rounded-lg flex flex-col justify-between space-y-4 transition duration-300 border-emerald-500/80 bg-emerald-950/20 shadow-lg shadow-emerald-950/40 ring-1 ring-emerald-500/40">
+                    <!-- Lock Overlay -->
+                    <div id="lockOverlayStage4" class="absolute inset-0 bg-[#080d1a]/95 backdrop-blur-xl rounded-lg flex flex-col items-center justify-center p-6 text-center z-20 space-y-3 transition duration-500 hidden">
+                        <div class="w-14 h-14 rounded-full bg-gray-900 border border-amber-500/30 flex items-center justify-center shadow-lg shadow-black">
+                            <i class="fa-solid fa-lock text-2xl text-amber-400"></i>
+                        </div>
+                        <span class="text-xs font-mono font-bold text-amber-400 tracking-wider uppercase bg-amber-950/40 border border-amber-800/60 px-3 py-1 rounded">
+                            TAHAP 4 TERKUNCI
+                        </span>
+                        <p class="text-[11px] text-gray-400 font-mono max-w-[220px] leading-relaxed">
+                            Selesaikan Tahap 3 terlebih dahulu untuk membuka dan mendekripsi investigasi tahap ini.
+                        </p>
+                        <span class="text-[10px] text-gray-400 font-mono"><i class="fa-solid fa-shield mr-1"></i>Protokol Akses Sekuensial</span>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div id="bodyStage4" class="space-y-4 flex flex-col justify-between h-full transition duration-500">
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-emerald-400 font-bold uppercase tracking-wider font-mono">STAGE 4</span>
+                                <div class="flex items-center space-x-1.5">
+                                    <span id="badgeStateStage4" class="bg-emerald-500 text-black font-bold px-2 py-0.5 rounded text-[10px] font-mono"><i class="fa-solid fa-check mr-1"></i>SELESAI</span>
+                                    <span class="bg-gray-800 px-2 py-0.5 rounded text-gray-300 font-mono text-[11px]">1.000 Poin</span>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Tahap 4: Dekonstruksi (Forensik Host &amp; Endpoint)</h4>
+                            
+                            <div class="bg-gray-900/90 p-3 rounded border border-gray-800/80 text-xs text-gray-300 space-y-1.5 leading-relaxed">
+                                <div class="text-[10px] font-mono font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
+                                    <i class="fa-solid fa-server"></i> Rangkaian 4: Penetrasi Host &amp; Jejak Persistensi
+                                </div>
+                                <p class="text-gray-400 text-[11px] leading-relaxed">
+                                    Fokus penyelidikan meluas ke workstation dan endpoint internal yang menjadi tumpuan operasional. Berbagai artefak sistem, log host, berkas media, dan catatan operasional diamankan. Dekonstruksi berkas bukti ini untuk menemukan jejak teknis persistensi sistem.
+                                </p>
+                            </div>
+
+                            <div class="text-[11px] bg-gray-900 p-2.5 rounded border border-gray-800 text-gray-300 space-y-2">
+                                <div class="font-bold text-gray-400 flex items-center justify-between">
+                                    <span><i class="fa-solid fa-file-shield mr-1 text-emerald-400"></i>Berkas Bukti Stage 4:</span>
+                                </div>
+                                <div class="flex flex-col gap-1.5">
+                                    <button type="button" class="stage-dl-btn-4 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-LOG-002.csv</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                    <button type="button" class="stage-dl-btn-4 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-HOSTLOG-001.json</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                    <button type="button" class="stage-dl-btn-4 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-IMG-001.jpg</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                    <button type="button" class="stage-dl-btn-4 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-NOTE-001.txt</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Form / Solved Container -->
+                        <div id="actionContainerStage4" class="pt-2 border-t border-gray-800">
+                            <form id="formStage4" class="space-y-2 hidden">
+                                <input type="text" id="flagInput4" placeholder="MOFCG{...}" required="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="w-full bg-[#0b0f19] border border-gray-700 rounded px-3 py-1.5 text-xs text-white focus:border-emerald-500 focus:outline-none font-mono" disabled=""><div id="flagHelper4" class="text-[10px] font-mono flex items-center justify-between text-gray-500 mt-1 mb-1 transition-all"><span><i class="fa-solid fa-circle-info mr-1 text-cyan-400/80"></i>Format: <strong class="text-gray-300">MOFCG{...}</strong></span><span class="text-[9px] text-gray-600"><i class="fa-solid fa-wand-magic-sparkles mr-0.5 text-emerald-500/70"></i>Auto-trim</span></div>
+                                <button type="submit" id="btnStage4" class="w-full cyber-bg-accent text-white py-1.5 rounded text-xs font-semibold opacity-50 cursor-not-allowed" disabled="">Submit Flag 4</button>
+                                <div id="fb4" class="text-[11px] min-h-[16px]"></div>
+                            </form>
+                            <div id="solvedBannerStage4" class="space-y-2.5">
+                                <div class="p-2.5 rounded bg-emerald-950/70 border border-emerald-500/70 text-emerald-300 text-xs font-mono font-bold flex items-center justify-between shadow-sm">
+                                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i>FLAG TERVERIFIKASI</span>
+                                    <span class="text-[10px] text-emerald-400 font-mono bg-emerald-900/60 px-2 py-0.5 rounded border border-emerald-600/40">STAGE 4 SELESAI</span>
+                                </div>
+                                <div class="p-3 rounded-lg bg-black/60 border border-emerald-500/40 text-xs space-y-2 transition duration-300 shadow-md">
+                                    <div class="flex items-center gap-2 text-emerald-400 font-mono font-bold text-[11px] uppercase tracking-wider">
+                                        <i class="fa-solid fa-laptop-code animate-pulse"></i>
+                                        <span>SKENARIO KEJADIAN: JEJAK ENDPOINT INTERNAL TERISOLASI</span>
+                                    </div>
+                                    <p class="text-gray-300 text-[11px] font-sans leading-relaxed">
+                                        Forensik host Sysmon berhasil mengeliminasi dugaan palsu. Jejak koneksi langsung ke IP C2 penyerang mengarah pada unduhan berkas media banner web dan catatan operasional mencurigakan yang sengaja disamarkan.
+                                    </p>
+                                    <div class="pt-1.5 border-t border-gray-800/80 text-[11px] text-amber-300/90 font-mono flex items-start gap-1.5">
+                                        <i class="fa-solid fa-angles-right text-amber-400 mt-0.5 shrink-0 animate-bounce"></i>
+                                        <span><strong>Misteri Lanjutan:</strong> Pelaku internal semakin terpojok! Pengalihan dana 8 Miliar Rupiah ternyata disahkan lewat satu dokumen persetujuan resmi di Tahap 5... Buktikan pemalsuan tersebut!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage 5 -->
+                <div id="cardStage5" class="cyber-card relative overflow-hidden p-5 rounded-lg flex flex-col justify-between space-y-4 transition duration-300 border-emerald-500/80 bg-emerald-950/20 shadow-lg shadow-emerald-950/40 ring-1 ring-emerald-500/40 md:col-span-2 lg:col-span-2">
+                    <!-- Lock Overlay -->
+                    <div id="lockOverlayStage5" class="absolute inset-0 bg-[#080d1a]/95 backdrop-blur-xl rounded-lg flex flex-col items-center justify-center p-6 text-center z-20 space-y-3 transition duration-500 hidden">
+                        <div class="w-14 h-14 rounded-full bg-gray-900 border border-amber-500/30 flex items-center justify-center shadow-lg shadow-black">
+                            <i class="fa-solid fa-lock text-2xl text-amber-400"></i>
+                        </div>
+                        <span class="text-xs font-mono font-bold text-amber-400 tracking-wider uppercase bg-amber-950/40 border border-amber-800/60 px-3 py-1 rounded">
+                            TAHAP 5 (FINAL) TERKUNCI
+                        </span>
+                        <p class="text-[11px] text-gray-400 font-mono max-w-[260px] leading-relaxed">
+                            Selesaikan Tahap 4 terlebih dahulu untuk membuka akses dokumen final investigasi ini.
+                        </p>
+                        <span class="text-[10px] text-gray-400 font-mono"><i class="fa-solid fa-shield mr-1"></i>Protokol Akses Sekuensial</span>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div id="bodyStage5" class="space-y-4 flex flex-col justify-between h-full transition duration-500">
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-emerald-400 font-bold uppercase tracking-wider font-mono">STAGE 5 (FINAL)</span>
+                                <div class="flex items-center space-x-1.5">
+                                    <span id="badgeStateStage5" class="bg-emerald-500 text-black font-bold px-2 py-0.5 rounded text-[10px] font-mono"><i class="fa-solid fa-check mr-1"></i>SELESAI</span>
+                                    <span class="bg-gray-800 px-2 py-0.5 rounded text-gray-300 font-mono text-[11px]">1.000 Poin</span>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-white text-sm">Tahap 5: The Nexus (Puncak Rekonstruksi &amp; Integritas)</h4>
+                            
+                            <div class="bg-gray-900/90 p-3 rounded border border-gray-800/80 text-xs text-gray-300 space-y-1.5 leading-relaxed">
+                                <div class="text-[10px] font-mono font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
+                                    <i class="fa-solid fa-key"></i> Rangkaian 5: Titik Temu Seluruh Rangkaian Insiden
+                                </div>
+                                <p class="text-gray-400 text-[11px] leading-relaxed">
+                                    Seluruh rangkaian temuan dari investigasi sebelumnya bermuara pada dokumen persetujuan resmi yang meloloskan manipulasi transaksi anggaran 8 Miliar Rupiah. Uji keabsahan dan integritas dokumen artefak kunci secara mendalam untuk mengungkap kebenaran faktual insiden dan menuntaskan investigasi Jejak Digital.
+                                </p>
+                            </div>
+
+                            <div class="text-[11px] bg-gray-900 p-2.5 rounded border border-gray-800 text-gray-300 space-y-2">
+                                <div class="font-bold text-gray-400 flex items-center justify-between">
+                                    <span><i class="fa-solid fa-file-shield mr-1 text-emerald-400"></i>Berkas Bukti Stage 5:</span>
+                                </div>
+                                <div class="flex flex-col gap-1.5">
+                                    <button type="button" class="stage-dl-btn-5 w-full text-left bg-gray-800/80 hover:bg-emerald-950/60 border border-gray-700 hover:border-emerald-500 text-white px-2.5 py-1.5 rounded text-[11px] transition flex items-center justify-between">
+                                        <span class="font-mono text-emerald-300"><i class="fa-solid fa-download mr-1.5"></i>EVD-DOC-001.pdf</span>
+                                        <span class="text-[10px] text-gray-300 font-mono flex items-center gap-1">Unduh <i class="fa-solid fa-cloud-arrow-down text-emerald-400"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Form / Solved Container -->
+                        <div id="actionContainerStage5" class="pt-2 border-t border-gray-800">
+                            <form id="formStage5" class="space-y-2 hidden">
+                                <input type="text" id="flagInput5" placeholder="MOFCG{...}" required="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="w-full bg-[#0b0f19] border border-gray-700 rounded px-3 py-1.5 text-xs text-white focus:border-emerald-500 focus:outline-none font-mono" disabled=""><div id="flagHelper5" class="text-[10px] font-mono flex items-center justify-between text-gray-500 mt-1 mb-1 transition-all"><span><i class="fa-solid fa-circle-info mr-1 text-cyan-400/80"></i>Format: <strong class="text-gray-300">MOFCG{...}</strong></span><span class="text-[9px] text-gray-600"><i class="fa-solid fa-wand-magic-sparkles mr-0.5 text-emerald-500/70"></i>Auto-trim</span></div>
+                                <button type="submit" id="btnStage5" class="w-full cyber-bg-accent text-white py-1.5 rounded text-xs font-semibold opacity-50 cursor-not-allowed" disabled="">Submit Flag 5</button>
+                                <div id="fb5" class="text-[11px] min-h-[16px]"></div>
+                            </form>
+                            <div id="solvedBannerStage5" class="space-y-2.5">
+                                <div class="p-2.5 rounded bg-emerald-950/70 border border-emerald-500/70 text-emerald-300 text-xs font-mono font-bold flex items-center justify-between shadow-sm">
+                                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-crown text-amber-400"></i>FLAG FINAL TERVERIFIKASI</span>
+                                    <span class="text-[10px] text-emerald-400 font-mono bg-emerald-900/60 px-2 py-0.5 rounded border border-emerald-600/40">INVESTIGASI TUNTAS</span>
+                                </div>
+                                <div class="p-3.5 rounded-lg bg-black/70 border border-emerald-400/60 text-xs space-y-2.5 transition duration-300 shadow-xl shadow-emerald-950/50">
+                                    <div class="flex items-center gap-2 text-amber-400 font-mono font-bold text-xs uppercase tracking-wider">
+                                        <i class="fa-solid fa-trophy text-amber-400 animate-bounce"></i>
+                                        <span>KONKLUSI KASUS: DEKLASIFIKASI TOTAL JEJAK DIGITAL</span>
+                                    </div>
+                                    <p class="text-gray-200 text-[11px] font-sans leading-relaxed">
+                                        Analisis pemalsuan berkas PDF dan dekonstruksi steganografi gambar mengungkap fakta telak: dokumen persetujuan transfer anggaran Rp 8 Miliar dipalsukan secara rapi dari dalam organisasi dengan meniru tanda tangan pejabat berwenang.
+                                    </p>
+                                    <div class="p-2.5 rounded bg-emerald-950/60 border border-emerald-500/60 space-y-1">
+                                        <div class="text-[10px] font-mono text-emerald-400 uppercase font-bold tracking-wider flex items-center gap-1">
+                                            <i class="fa-solid fa-key"></i> RANGKAIAN KALIMAT KUNCI RESMI:
+                                        </div>
+                                        <div class="text-xs sm:text-sm font-mono font-black text-amber-300 tracking-wider">
+                                            "JANGAN SAMPAI TERTIPU ORANG DALAM"
+                                        </div>
+                                        <p class="text-[10px] text-gray-400 font-sans leading-relaxed pt-0.5">
+                                            Selamat Guardian! Anda telah menuntaskan seluruh rantai forensik digital dan membongkar konspirasi insider threat secara sempurna!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========================================== -->
+                <!-- STAGE BONUS: THE SECRET NEXUS TOKEN        -->
+                <!-- ========================================== -->
+                <div id="stageCardBonus" class="md:col-span-2 lg:col-span-2 cyber-card p-5 rounded-lg border-2 border-amber-500/70 bg-gradient-to-b from-amber-950/30 via-[#0d1424] to-[#040810] relative overflow-hidden shadow-2xl shadow-amber-950/40 transition duration-300 space-y-4">
+                    <div class="absolute -right-8 -top-8 w-36 h-36 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+                    <!-- Header Bonus -->
+                    <div class="flex items-start justify-between gap-3 border-b border-amber-500/30 pb-3 relative z-10">
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-amber-500/20 border border-amber-500/60 flex items-center justify-center text-amber-400 font-bold text-base shadow-md">
+                                <i class="fa-solid fa-gift animate-bounce"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <h3 class="text-sm font-bold text-amber-300 font-mono tracking-wider">MISI RAHASIA BONUS: TOKEN NEXUS</h3>
+                                    <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/20 text-amber-400 border border-amber-500/40">+500 POIN BONUS</span>
+                                </div>
+                                <p class="text-[11px] text-gray-400 font-mono">Tantangan Ekstra: Deklasifikasi String Token Steganografi</p>
+                            </div>
+                        </div>
+                        
+                        <span id="badgeStageBonus" class="px-2.5 py-1 rounded text-[10px] font-mono font-bold bg-amber-500/20 text-amber-400 border border-amber-500/40 flex items-center gap-1.5 animate-pulse"><i class="fa-solid fa-gift text-amber-400"></i> BONUS TERBUKA</span>
+                        
+                    </div>
+
+                    <!-- Description & Form -->
+                    <div class="space-y-3 relative z-10">
+                        <div class="p-3 rounded-lg bg-black/50 border border-amber-500/30 text-xs text-gray-300 leading-relaxed space-y-1.5">
+                            <p class="text-gray-200">
+                                Selamat telah membongkar konspirasi Dadan Suherman! Ada hal tersembunyi lainnya. Masukkan token rahasia tersebut untuk mengklaim <strong class="text-amber-300 font-mono font-bold">+500 poin bonus</strong>!
+                            </p>
+                        </div>
+
+                        <!-- Action Container -->
+                        <div id="actionContainerStageBonus" class="pt-2 border-t border-gray-800">
+                            <form id="formStageBonus" class="space-y-2">
+                                <div class="flex items-center justify-between text-[11px] text-gray-400 font-mono">
+                                    <span><i class="fa-solid fa-key text-amber-400 mr-1"></i>Input Token Rahasia:</span>
+                                    <span class="text-[10px] text-amber-400/90 font-mono">Contoh: Z34...</span>
+                                </div>
+                                <input type="text" id="flagInputBonus" placeholder="Masukkan token rahasia..." required="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="w-full bg-[#0b0f19] border border-amber-700/60 rounded px-3 py-2 text-xs text-white focus:border-amber-400 focus:outline-none font-mono tracking-wider">
+                                <button type="submit" id="btnStageBonus" class="w-full bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-black font-mono font-bold py-2 rounded text-xs transition duration-200 shadow-lg shadow-amber-950/50 flex items-center justify-center gap-1.5 cursor-pointer">
+                                    <i class="fa-solid fa-trophy text-black"></i> Klaim Bonus 500 Poin
+                                </button>
+                                <div id="fbBonus" class="text-[11px] min-h-[16px]"></div>
+                            </form>
+                            <div id="solvedBannerStageBonus" class="hidden p-3 rounded-lg bg-amber-950/80 border border-amber-500/80 text-amber-300 text-xs font-mono font-bold flex items-center justify-between shadow-xl">
+                                <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>MISI BONUS BERHASIL DIKLAIM (+500 POIN)</span>
+                                <span class="text-[10px] text-amber-300 font-mono bg-amber-900/80 px-2.5 py-1 rounded border border-amber-500/50">BONUS SOLVED</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+            </div> <!-- End KOLOM KIRI (lg:col-span-8) -->
+
+            <!-- KOLOM KANAN: LIVE LEADERBOARD PESERTA (lg:col-span-4 sticky top-4) -->
+            <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-4">
+
+                <!-- Live Leaderboard Cyber Widget -->
+                <div class="cyber-card rounded-lg p-5 space-y-4"><h3 class="font-bold text-emerald-400">🏆 PAPAN PROGRES GUARDIAN</h3><p class="text-xs text-gray-400">Latihan mandiri • progres tersimpan pada browser ini.</p><table class="w-full text-xs"><thead><tr><th>GUARDIAN</th><th>STAGE</th><th>SKOR</th></tr></thead><tbody><tr><td class="py-4">Guardian LinuxLab</td><td id="localStages">0 / 5</td><td id="localPoints">0</td></tr></tbody></table><p class="text-xs text-gray-400">Sumber skenario: MOFCG CTF — Jejak Digital.</p></div>
+
+                <!-- Strategic Investigation Tips Card -->
+                <div class="cyber-card p-4 rounded-xl border border-gray-800/80 bg-gray-950/60 text-xs font-mono space-y-2.5">
+                    <div class="text-gray-300 font-bold flex items-center gap-1.5 text-[11px] text-amber-400">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <span>CATATAN UNTUK GUARDIAN:</span>
+                    </div>
+                    <ul class="text-[11px] text-gray-400 space-y-1.5 list-disc pl-4 font-sans leading-relaxed">
+                        <li>Semua bukti digital saling berkaitan membentuk alur kronologis insiden.</li>
+                        <li>Format penulisan flag selalu diawali <code class="text-emerald-400 font-mono">MOFCG{</code> dan diakhiri <code class="text-emerald-400 font-mono">}</code>.</li>
+                        <li>Submit salah dikenakan penalti <span class="text-rose-400 font-bold">-10 poin</span>. Pastikan format sudah benar sebelum submit.</li>
+                    </ul>
+                </div>
+
+            </aside> <!-- End KOLOM KANAN (lg:col-span-4) -->
+
+        </div> <!-- End Main Layout Grid (lg:grid-cols-12) -->
+
+    </main>
+<div id="modalMySubmissions" role="dialog" aria-modal="true" aria-labelledby="modalMySubmissionsTitle" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="cyber-card max-w-2xl w-full p-6 rounded-lg space-y-4 shadow-2xl relative border-blue-900">
+            <button class="absolute top-4 right-4 text-gray-400 hover:text-white" aria-label="Tutup modal riwayat">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="flex items-center space-x-2 text-blue-400">
+                <i class="fa-solid fa-clock-rotate-left text-lg"></i>
+                <h3 id="modalMySubmissionsTitle" class="text-base font-bold text-white">Riwayat Pengumpulan Flag Saya</h3>
+            </div>
+            <p class="text-xs text-gray-400">Catatan audit riwayat submit, status validasi, dan penalti pengurangan nilai.</p>
+
+            <div class="overflow-x-auto max-h-80 border border-gray-800 rounded">
+                <table class="w-full text-left text-xs border-collapse font-mono">
+                    <thead class="bg-gray-900 text-gray-400 sticky top-0">
+                        <tr class="border-b border-gray-800">
+                            <th class="py-2.5 px-3">WAKTU (WIB)</th>
+                            <th class="py-2.5 px-3">STAGE</th>
+                            <th class="py-2.5 px-3">HASIL</th>
+                            <th class="py-2.5 px-3 text-right">PENALTI</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mySubmissionsTableBody" class="divide-y divide-gray-800">
+                <tr class="hover:bg-gray-800/40">
+                    <td class="py-2.5 px-3 text-gray-300 font-mono text-[11px]">15/10/26, 13.29.55 WIB</td>
+                    <td class="py-2.5 px-3 font-bold text-white">Stage 5</td>
+                    <td class="py-2.5 px-3"><span class="text-emerald-400 font-bold bg-emerald-950/60 border border-emerald-800 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-check mr-1"></i>BENAR</span></td>
+                    <td class="py-2.5 px-3 text-right font-mono text-gray-500">-</td>
+                </tr>
+            
+                <tr class="hover:bg-gray-800/40">
+                    <td class="py-2.5 px-3 text-gray-300 font-mono text-[11px]">15/10/26, 13.23.03 WIB</td>
+                    <td class="py-2.5 px-3 font-bold text-white">Stage 4</td>
+                    <td class="py-2.5 px-3"><span class="text-emerald-400 font-bold bg-emerald-950/60 border border-emerald-800 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-check mr-1"></i>BENAR</span></td>
+                    <td class="py-2.5 px-3 text-right font-mono text-gray-500">-</td>
+                </tr>
+            
+                <tr class="hover:bg-gray-800/40">
+                    <td class="py-2.5 px-3 text-gray-300 font-mono text-[11px]">15/10/26, 13.09.19 WIB</td>
+                    <td class="py-2.5 px-3 font-bold text-white">Stage 3</td>
+                    <td class="py-2.5 px-3"><span class="text-emerald-400 font-bold bg-emerald-950/60 border border-emerald-800 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-check mr-1"></i>BENAR</span></td>
+                    <td class="py-2.5 px-3 text-right font-mono text-gray-500">-</td>
+                </tr>
+            
+                <tr class="hover:bg-gray-800/40">
+                    <td class="py-2.5 px-3 text-gray-300 font-mono text-[11px]">15/10/26, 11.42.46 WIB</td>
+                    <td class="py-2.5 px-3 font-bold text-white">Stage 2</td>
+                    <td class="py-2.5 px-3"><span class="text-emerald-400 font-bold bg-emerald-950/60 border border-emerald-800 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-check mr-1"></i>BENAR</span></td>
+                    <td class="py-2.5 px-3 text-right font-mono text-gray-500">-</td>
+                </tr>
+            
+                <tr class="hover:bg-gray-800/40">
+                    <td class="py-2.5 px-3 text-gray-300 font-mono text-[11px]">15/10/26, 11.39.19 WIB</td>
+                    <td class="py-2.5 px-3 font-bold text-white">Stage 1</td>
+                    <td class="py-2.5 px-3"><span class="text-emerald-400 font-bold bg-emerald-950/60 border border-emerald-800 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-check mr-1"></i>BENAR</span></td>
+                    <td class="py-2.5 px-3 text-right font-mono text-gray-500">-</td>
+                </tr>
+            
+                <tr class="hover:bg-gray-800/40">
+                    <td class="py-2.5 px-3 text-gray-300 font-mono text-[11px]">15/10/26, 11.36.59 WIB</td>
+                    <td class="py-2.5 px-3 font-bold text-white">Stage 1</td>
+                    <td class="py-2.5 px-3"><span class="text-rose-400 font-bold bg-rose-950/60 border border-rose-800 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-xmark mr-1"></i>SALAH</span></td>
+                    <td class="py-2.5 px-3 text-right font-mono text-rose-400 font-bold">-10 Pts</td>
+                </tr>
+            
+                <tr class="hover:bg-gray-800/40">
+                    <td class="py-2.5 px-3 text-gray-300 font-mono text-[11px]">15/10/26, 11.06.57 WIB</td>
+                    <td class="py-2.5 px-3 font-bold text-white">Stage 1</td>
+                    <td class="py-2.5 px-3"><span class="text-rose-400 font-bold bg-rose-950/60 border border-rose-800 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-xmark mr-1"></i>SALAH</span></td>
+                    <td class="py-2.5 px-3 text-right font-mono text-rose-400 font-bold">-10 Pts</td>
+                </tr>
+            
+                <tr class="hover:bg-gray-800/40">
+                    <td class="py-2.5 px-3 text-gray-300 font-mono text-[11px]">15/10/26, 11.06.47 WIB</td>
+                    <td class="py-2.5 px-3 font-bold text-white">Stage 1</td>
+                    <td class="py-2.5 px-3"><span class="text-rose-400 font-bold bg-rose-950/60 border border-rose-800 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-xmark mr-1"></i>SALAH</span></td>
+                    <td class="py-2.5 px-3 text-right font-mono text-rose-400 font-bold">-10 Pts</td>
+                </tr>
+            
+                <tr class="hover:bg-gray-800/40">
+                    <td class="py-2.5 px-3 text-gray-300 font-mono text-[11px]">15/10/26, 11.06.32 WIB</td>
+                    <td class="py-2.5 px-3 font-bold text-white">Stage 1</td>
+                    <td class="py-2.5 px-3"><span class="text-rose-400 font-bold bg-rose-950/60 border border-rose-800 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-xmark mr-1"></i>SALAH</span></td>
+                    <td class="py-2.5 px-3 text-right font-mono text-rose-400 font-bold">-10 Pts</td>
+                </tr>
+            
+                <tr class="hover:bg-gray-800/40">
+                    <td class="py-2.5 px-3 text-gray-300 font-mono text-[11px]">15/10/26, 10.21.20 WIB</td>
+                    <td class="py-2.5 px-3 font-bold text-white">Stage 1</td>
+                    <td class="py-2.5 px-3"><span class="text-rose-400 font-bold bg-rose-950/60 border border-rose-800 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-xmark mr-1"></i>SALAH</span></td>
+                    <td class="py-2.5 px-3 text-right font-mono text-rose-400 font-bold">-10 Pts</td>
+                </tr>
+            
+                <tr class="hover:bg-gray-800/40">
+                    <td class="py-2.5 px-3 text-gray-300 font-mono text-[11px]">15/10/26, 10.14.25 WIB</td>
+                    <td class="py-2.5 px-3 font-bold text-white">Stage 1</td>
+                    <td class="py-2.5 px-3"><span class="text-rose-400 font-bold bg-rose-950/60 border border-rose-800 px-2 py-0.5 rounded text-[10px]"><i class="fa-solid fa-xmark mr-1"></i>SALAH</span></td>
+                    <td class="py-2.5 px-3 text-right font-mono text-rose-400 font-bold">-10 Pts</td>
+                </tr>
+            </tbody>
+                </table>
+            </div>
+
+            <div class="flex justify-between items-center text-[11px] text-gray-400 pt-2 border-t border-gray-800">
+                <span>Riwayat disimpan pada browser ini. Isi flag tidak disimpan.</span>
+            </div>
+        </div>
+    </div>
+<footer class="border-t border-gray-800 py-6 text-center text-xs text-gray-400 tracking-wider">
+        Presented by MOF CG 2026
+    </footer></body></html>

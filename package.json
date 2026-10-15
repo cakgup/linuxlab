@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test:core": "node scripts/core-test.cjs",
+    "test:ctf": "node scripts/ctf-test.cjs",
     "test:export": "node scripts/check-export.cjs"
   },
   "dependencies": {

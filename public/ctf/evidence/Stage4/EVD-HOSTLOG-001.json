@@ -1,0 +1,6033 @@
+[
+  {
+    "timestamp": "2026-07-05T00:09:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\79e73a65",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T00:09:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d506eede",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T00:17:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\594052f2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T00:18:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\985fd4b4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T00:19:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\dd9307f0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T00:21:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e2a3ad16",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T00:44:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7a6787f5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T00:45:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\78b185f2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T01:17:12+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ed1b96f9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T01:28:04+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\232a021f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T01:53:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\39714160",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T01:57:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c3db512b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T02:30:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b3b178a6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T03:07:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a0f05de1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T03:44:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ce71d541",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T03:57:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\94cdf4d9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T04:32:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5b189560",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T04:38:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3cb1c1a1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T04:47:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6e9ac346",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T04:48:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b2a2c8e2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T04:49:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\16c31e01",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T05:11:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\82c90dc7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T05:12:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\279b6f62",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T05:25:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c8201699",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T05:29:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\365fc455",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T05:49:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5cf9081e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T05:52:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e8001a7a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T06:16:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4b3bc28e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T06:23:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\69aa5772",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T06:29:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8678f3ff",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T06:41:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0c84fd66",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T07:00:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7b6d80d7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T07:19:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4d500f4f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T08:00:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\da80c295",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T08:04:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c428a79b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T08:16:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\dc2d45e5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T08:44:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\66324b9e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T08:52:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9f3f7ff1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T08:56:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0a549f96",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T09:06:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\628aca12",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T09:24:40+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\36ea5a7d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T09:34:33+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\86e14986",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T09:36:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ee3ad24b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T09:41:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\150d3f15",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T09:57:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\64606339",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T10:12:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\339b436a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T10:16:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\de839923",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T10:22:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0e3d0c4c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T10:28:49+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\457a0465",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T10:38:14+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\46699ce1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T10:53:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e5495021",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T10:54:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\59717121",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T11:06:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\095ca088",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T11:19:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e3746447",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T11:23:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d799fb12",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T11:50:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c0694fe1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T11:57:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e49b3f86",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T11:59:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\07fd9d67",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T12:05:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b0592375",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T12:08:39+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\96d3d967",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T12:14:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a6637d71",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T12:22:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f0ede023",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T12:28:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\42411188",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T12:49:33+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ceee1bbb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T13:12:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\366e7b23",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T13:14:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\94870429",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T13:14:39+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e50b3991",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T13:20:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5e733635",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T13:34:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5f129d53",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T14:07:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b570ec66",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T14:13:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9ab450aa",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T14:27:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e74f59c1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T14:54:33+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3407c009",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T14:56:49+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\abfd439d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T15:32:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0dd4202b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T15:37:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3c43968c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T15:54:12+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1f26e992",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T15:58:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d9eb3f77",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T16:13:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6cc45fd1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T16:34:14+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fc172e45",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T16:51:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\59a73d52",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T17:42:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bc7e89fb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T17:44:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\29b2c0cf",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T17:45:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\51a9452a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T17:52:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e4d24d75",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T17:53:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6c5f448c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T18:02:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bc1c7239",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T18:18:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d1cbb166",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T18:21:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5fc08d00",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T18:22:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ee5c4dc8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T18:48:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\60797733",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T18:53:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1b86cb07",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T19:18:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ed42e7f5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T19:30:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\007585e4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T19:32:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\388f858b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T19:33:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f29fffc3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T19:40:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\51602aae",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T19:40:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\01ea7d43",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T20:02:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\acb7efb1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T20:04:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bf1e56b2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T20:10:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\67cfef02",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T20:17:16+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e755118a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T20:30:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b7b4b511",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T20:32:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\29ef9d46",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T20:46:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3389d15c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T20:51:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bc9c6d7b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T21:06:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\eb3782a8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T21:20:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a50003d6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T21:33:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7d9988cc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T21:59:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\15a6e416",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T22:08:04+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\52e2497c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T22:16:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cd10aff4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T22:21:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b1a8ff89",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T22:24:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e80b122e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T22:56:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2a7cd2b4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T22:58:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7da1d8ff",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T22:58:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\837f2606",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T23:07:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3b3e3f70",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T23:52:03+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5d4be1f3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-05T23:55:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\78ac7c69",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T00:08:40+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2d8a7312",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T00:13:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e3627223",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T00:22:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\010535e2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T00:37:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2f92343a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T00:42:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b8ae91f3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T00:46:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f35a7323",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T00:49:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\14a11c8f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T00:50:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\789b51b9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T00:51:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e5e7422b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T01:17:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\09f9ee23",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T01:45:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4bcf7b48",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T02:05:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\16a57c0c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T02:08:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4f85f4dd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T02:11:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\93d7e8dd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T02:17:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f425f57b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T02:29:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\78cd4c52",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T02:40:16+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cb69b450",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T02:40:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\39634d76",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T02:45:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\49104a55",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T03:37:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0eb0925b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T04:14:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f2f87fe5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T04:20:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f5a437f2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T04:20:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\71a95f7b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T04:33:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a2aa22fb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T04:35:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\de833f9b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T04:41:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\40517a17",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T04:47:17+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ab9e0619",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T05:01:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a9869b4f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T05:18:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9bdf9294",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T05:24:39+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cd4274f5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T06:16:40+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\05c789df",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T06:25:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5fbc84be",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T06:30:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\34cbf587",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T06:37:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\17c529d4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T06:44:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\29cbe460",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T06:51:16+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ca6ac0fe",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T07:01:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2cc2211d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T07:20:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5d94e3db",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T07:48:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2d097a37",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T07:59:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bea4e41f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T08:04:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a0c0bf6a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T08:22:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\00d911b4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T08:48:39+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7a4d6f93",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T09:05:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0c64ce03",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T09:11:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ddd8ec6d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T09:21:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3eca594a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T09:23:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d299d043",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T09:24:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\29c3e844",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T09:25:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b5188a79",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T09:26:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f29ec234",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T09:39:40+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\55d34508",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T10:00:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\aed966c0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T10:00:22+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1867aa19",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T10:01:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bd5254a6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T10:34:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8cc0a55d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T10:52:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ee7df7ab",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T11:10:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d290aedf",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T11:12:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\12e761bb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T11:26:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\43e9a9d4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T11:31:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6f4d9af1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T11:32:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\83c7c8c4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T11:34:14+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7ca9bacd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T11:39:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1bd08b94",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T11:47:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\227e0845",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T11:55:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6500a0df",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T12:01:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\276125f3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T12:09:17+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\464bc9c6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T12:12:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3f32cc75",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T12:17:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2e37ce95",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T12:27:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\af5b03ad",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T12:37:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b6af4064",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T12:42:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3df54fb5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T12:46:23+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\46fb9897",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T12:50:33+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\033b0587",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T13:14:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e2be9a9d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T13:16:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1be6bdfe",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T13:20:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d32e7076",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T13:21:16+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f35a966b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T13:23:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\df1e77da",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T13:26:03+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\89506377",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T14:14:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b81f3ee8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T14:43:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c0d9180a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T14:49:33+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\08e0fa25",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T15:48:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\04893380",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T15:57:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\75285a6d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T16:01:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\85210424",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T16:04:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d7dd165f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T16:30:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\862caa5c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T16:33:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bfe690ba",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T16:54:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\569cdde9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T17:04:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\77536ab4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T17:07:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fbdf858e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T17:13:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\204efe2e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T17:22:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\588d1bea",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T17:34:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\79772cf5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T17:49:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2000c5e4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T17:49:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6ee1deb4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T18:06:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\722da5a5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T18:12:23+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\42cf867c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T18:13:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b55dc368",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T18:25:39+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bd83fc76",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T18:52:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5c4ec55f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T18:54:49+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b4157907",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T19:06:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\87346781",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T19:18:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\621d31db",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T19:21:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2e386938",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T19:48:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c3fd837b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T19:54:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bc9a98c9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T19:56:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a13349f6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T20:03:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5f197b6b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T20:35:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ce44dc52",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T20:51:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\87dc99b1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T20:53:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ae1f7cb0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T21:04:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\40532c34",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T21:30:22+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b65f7d62",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T22:13:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2bbdb772",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T22:44:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a6a7f82b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T22:57:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\491f54f3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T23:34:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\658fb525",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T23:37:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a665f27f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-06T23:55:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\96acc2de",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T00:09:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\95fa9400",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T00:29:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2b51cc8a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T00:46:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\58090318",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T00:48:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9deeaabc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T01:05:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a437c32e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T01:07:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ee55ca8e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T01:10:12+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d65499ea",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T01:19:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\87ec99b1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T01:43:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1861977b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T01:46:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\391a13fd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T01:50:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\913d1f59",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T01:51:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\85f1eb8a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T02:01:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0a414400",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T02:07:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\753a39b9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T02:17:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e0bd9e42",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T02:50:49+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ffca41a9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T02:53:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8a30632d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T03:35:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6a47f773",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T03:47:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f39e77ee",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T04:03:03+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\263bb294",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T04:08:40+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c26db18c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T04:34:12+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c5f14ffd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T04:36:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\de1f4c9b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T04:42:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\71a43062",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T04:45:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c239ed6e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T04:46:14+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b74b3b13",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T04:48:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\df8d88ed",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T04:56:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2a54e7db",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T05:09:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\21342d06",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T05:11:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\aebbe14a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T06:26:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\79a4399a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T06:29:33+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\68482b80",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T06:57:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\15940f3e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T08:00:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\61710f6e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T08:03:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\009539c0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T08:08:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d3d1865f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T08:10:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\09bb786b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T08:15:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\84f390dc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T08:16:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9424e2ac",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T08:17:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\514eceb5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T08:18:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3fb2735a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T08:22:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\73540e61",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T09:13:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\83551feb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T09:16:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\46035458",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T09:19:46+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1a2e9118",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T09:30:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\acac4824",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T09:41:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\79f63f47",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T10:00:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9bebd4f7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T10:11:16+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\98ef29e1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T11:09:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f22916ed",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T11:29:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4fb05cd9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T11:31:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cb03f17b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T11:35:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f29346b1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T11:46:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f75647b3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T12:01:22+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2867318e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T12:01:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ae422bc5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T12:06:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0c15250d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T12:21:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\959726a9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T12:21:33+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\29608820",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T12:37:39+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d9eb18f6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T12:55:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6570e79e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T13:05:22+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7460619b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T13:21:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\04378931",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T13:51:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bdf3c3bb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T15:06:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4519b36d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T15:32:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ee84e4df",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T15:42:46+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\aa99bc2d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T15:52:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\460c81a5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T16:13:46+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\81fb4950",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T16:25:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\11485cf1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T16:42:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\aeda6498",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T16:57:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0e81065c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T17:12:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cca7d339",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T17:29:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ab2741ae",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T17:45:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c0b4c31d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T18:18:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\43ded078",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T19:00:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b28831e0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T19:13:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ea04ff25",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T19:31:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2b9c4225",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T19:38:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\dab46f0b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T19:50:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\563314ae",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T19:52:03+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fd8c3143",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T20:00:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e6b105d0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T20:00:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\edf69822",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T20:03:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\024776bd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T20:13:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\34f9923e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T20:27:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7795b548",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T20:29:14+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e9877835",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T20:33:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b3aa5d9a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T20:56:49+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3d7bb755",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T21:11:12+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\95a9f1f8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T21:19:12+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\34f28186",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T21:24:23+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\33f8be2d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T21:28:22+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e6c35e97",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T21:50:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fc01c402",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T21:58:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\09bb4260",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T22:12:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e0270bd1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T22:20:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e1d56eab",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T22:23:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7392bcd3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T22:41:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c939c604",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T22:45:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6be353c7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T23:02:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\66f4085b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T23:07:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\22bb41f1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T23:15:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\67fc070c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T23:24:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f29c7225",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T23:39:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\dd4848e0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T23:40:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\92ce4421",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-07T23:55:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\72d24784",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T00:07:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\936c2a62",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T00:32:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e9f3f398",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T00:32:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\00b6e804",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T01:21:16+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8fa7a7b2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T01:24:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\caa68e6e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T01:24:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9297c87c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T01:24:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\06081f78",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T01:30:14+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\269c15a4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T01:59:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\84ce80fa",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T02:03:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\01fdbc78",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T02:19:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0a250d1e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T02:32:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b2f82e04",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T02:38:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e25eccd4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T02:40:40+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\72c5697d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T02:55:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bc37102c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T03:01:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3ab01816",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T03:08:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\477d3334",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T03:14:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fd171e2a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T03:45:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\315fc70b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T04:16:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\26567865",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T04:25:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3fa161f1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T04:32:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\556dd8f3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T04:43:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c0c595f1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T04:52:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\715fdafb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T04:54:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\82326fcd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T04:59:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\51bc0832",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T05:02:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\86959d8f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T05:19:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\dde26792",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T05:21:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d7ccac13",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T05:30:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c5863b52",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T05:33:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\381cc201",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T05:43:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5bd50715",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T05:50:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3adde7f7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T06:03:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\87cd063b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T06:11:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d6638909",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T06:17:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ddb35a1e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T06:37:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f38eda03",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T06:53:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f78bf3fa",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T07:07:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\80debd74",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T07:15:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2f659490",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T07:52:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\eb3821fe",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T07:59:14+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cb73943d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T08:01:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\85688cd0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T08:17:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\407e5909",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T08:29:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\53a93c7e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T08:49:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\de43029f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T08:52:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f68cf5dc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T09:01:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\41c4ab63",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T09:07:33+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a3072ded",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T09:10:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ff6d804c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T09:15:39+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f8687533",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T09:17:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\77cefc4c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T09:24:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c43a757d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T09:28:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ab64f4b3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T09:34:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\47df3153",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T09:36:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fc4ca3c8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T09:37:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0039f451",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T09:43:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\74b90cda",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T09:55:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\93786515",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T10:16:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4d2bd170",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T11:08:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fa0d418d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T11:09:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\30325e64",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T11:16:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1b485808",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T11:19:14+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c169752e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T11:22:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ef6279f1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T11:24:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\507d33ac",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T11:50:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b28a4e91",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T11:53:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f9c17172",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T11:57:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b34d3cbd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T12:02:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\dc22f5f8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T12:06:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\27ae925b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T12:25:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\52ab6764",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T12:30:39+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\45ffe317",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T12:53:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\475dc102",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T13:06:03+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9056cc00",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T13:21:17+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\13feb961",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T13:25:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\68b073e0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T13:34:17+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6743bc96",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T13:45:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e6113599",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T13:51:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4aa4bdad",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T14:16:04+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cca37d26",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T14:35:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\453bc8b5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T14:43:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4a5d3f8c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T15:01:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9f3dbfcb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T15:06:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\88045f29",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T15:12:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\091153b1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T15:13:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0bd6e1f6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T15:18:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\839e3a68",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T15:23:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\62ddf263",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T15:31:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ef609a51",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T16:12:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7f42f896",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T16:35:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\acd75358",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T17:01:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9eec59ed",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T17:15:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d79a5322",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T17:22:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b92039fb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T18:33:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\515bd428",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T18:46:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b5bc0e8a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T18:47:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cc7c0de3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T18:49:03+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\94cdeff9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T19:05:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0bfb48a5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T19:08:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\36177588",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T19:39:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5f432793",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T19:51:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\825e409d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T19:56:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3dcf42b3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T20:05:49+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a0cff9f0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T20:07:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\92a9ce6c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T20:10:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a52ae4e6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T20:18:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9c86d434",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T20:25:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c271d5ec",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T21:01:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\27970caf",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T21:10:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f34ffbac",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T21:22:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4cc78d0f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T21:56:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3f63d63b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T22:16:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bab86ea8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T22:29:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\870b09a0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T22:37:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1c5eded6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T23:09:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b113f9a8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T23:11:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8ffa1b24",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T23:13:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\07ccaa98",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T23:35:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a504852a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T23:37:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b886b3ac",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T23:40:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5dce52e3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-08T23:47:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\020ff7b1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T00:05:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1908fe63",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T00:15:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\23d9397b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T00:26:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\80dd1448",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T00:49:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f22e095b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T00:59:22+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e96c3e24",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T01:22:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\38919c39",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T01:29:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2381c28c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T02:03:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b4b3b81d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T02:05:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1f9def19",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T02:07:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d0f3e82c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T02:43:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\71b3ee2d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T02:44:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9a418758",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T02:59:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4b439e9f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T03:00:03+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8aa9380b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T03:01:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\11f16d86",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T03:09:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\16a973e4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T03:12:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bdbad274",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T03:38:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\47a6fab8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T03:47:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\29d12e67",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T03:49:04+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1d55a218",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T04:28:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5742b650",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T04:48:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4db94360",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T04:55:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\69a48f24",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T05:28:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f3187550",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T05:35:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0bba9014",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T05:47:49+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9b58319c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T05:51:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c715a516",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T05:58:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\529b698e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T06:20:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\751e6cc2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T06:21:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3500f8fc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T06:32:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\78f03b70",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T07:04:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\92ca3c39",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T07:20:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\afa4dac0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T07:24:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6e763c81",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T07:29:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\968abbf9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T07:35:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\37049ccb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T07:50:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8786311a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T08:27:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\724e6923",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T08:35:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\144ab728",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T08:40:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\05aa45fb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T08:42:46+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\eecfdb9f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T09:13:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f88cbe41",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T09:24:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\245fbcbf",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T09:38:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\98e5472f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T09:39:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2e7e9bdf",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T09:43:22+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\01d4f048",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T10:07:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3f531197",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T10:40:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1e8cd685",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T11:17:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a461c5b0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T11:19:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\179cfff3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T11:30:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0a33b312",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T11:32:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1a449fc3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T11:44:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\50b09632",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T11:45:14+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0e5d6fb1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T11:47:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2891c457",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T11:55:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\84102022",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T12:11:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bc8ba9ae",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T12:11:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9f05aa00",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T12:25:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b0ac311e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T12:33:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f69c559d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T12:50:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e5e43d3d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T12:55:12+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\04e6f0af",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T13:01:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3c336e47",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T13:05:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\47f41e17",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T13:11:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3005a12c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T13:15:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\88b061be",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T13:26:14+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5629f300",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T13:44:49+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a19fea7a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T13:54:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\caf735b8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T14:02:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\51a6eeca",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T14:11:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\aa0f2900",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T14:23:22+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a145dd13",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T14:42:49+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d09bdd26",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T14:50:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0890dc59",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T14:50:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\528aec6f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T15:23:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b25ac2df",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T15:24:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\91759597",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T15:34:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b5961d9a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T15:46:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a5605fff",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T15:48:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8c95f0bc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T16:04:39+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\78187818",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T16:23:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a2e59b06",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T16:33:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fc5624b0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T16:46:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\38e581d6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T17:03:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1165523a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T17:19:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\57be9d7d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T17:29:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\71bd3940",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T18:04:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\af83957f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T18:16:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\591552ef",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T18:29:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7ecf92f5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T18:32:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6f9f5338",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T19:03:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\31606a45",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T19:09:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\63ae1e9f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T19:09:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\66755403",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T19:19:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0fb71931",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T20:08:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\64dba396",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T20:15:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\16e3a43e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T21:01:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\49706124",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T21:08:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\dcb0287b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T21:24:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\dd97c788",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T21:34:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1d90f7e5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T21:36:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\369c3498",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T21:42:22+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1ac8674b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T21:57:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e65bce32",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T22:40:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0e8ef1b3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T22:40:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\47052c3c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T22:41:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cded12af",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T23:10:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d3ceec31",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T23:14:23+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\718ef7d4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T23:22:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8b6c25a9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-09T23:55:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\559d24ad",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T00:12:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2755e7e4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T00:21:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\13076a2d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T00:33:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\65b145f4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T00:50:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3dccb2f9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T01:21:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8a0006fc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T01:41:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3f4878a6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T02:12:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7fe7987b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T02:24:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1edd8f81",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T02:36:40+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bc374e9d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T02:42:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cef5066f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T02:48:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\78c4799a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T02:55:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e8ec4ebd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T03:02:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2dacca03",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T03:50:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fdad6707",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T04:08:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\05040ced",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T04:24:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\17e9e132",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T04:27:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\06777ada",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T05:04:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f29387c3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T05:28:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0f42a973",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T06:11:46+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bc596641",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T06:34:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f46157d9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T06:59:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6ecb2aaf",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T07:04:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\da538c0f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T07:14:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ce1bf94c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T07:15:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ba70bdb0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T07:24:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5ff42760",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T07:30:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b1d5503d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T07:31:46+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6a38a26a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T09:37:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ed50caa4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T09:42:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8b91983e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T09:42:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\40184785",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T09:57:03+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\52f5c3ae",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T10:00:00+07:00",
+    "src_ip": "10.0.0.12",
+    "dst_ip": "192.0.2.205",
+    "method": "GET",
+    "url": "http://192.0.2.205/assets/logo.png",
+    "status": 200,
+    "user_agent": "Mozilla/5.0"
+  },
+  {
+    "timestamp": "2026-07-10T10:07:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7b907202",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T10:17:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\96cd611d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T10:18:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a138e9cd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T10:32:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1aa3dd94",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T10:47:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cdb6b2d4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T10:49:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a6553916",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T10:53:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c8c6e959",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T11:11:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d1a5ed0a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T11:22:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f7f360ce",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T12:12:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f05e2fec",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T12:17:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1a97a10a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T12:29:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\09edbb6b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T12:40:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7b6e9c31",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T12:43:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\421b9f1e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T12:44:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\949b34be",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T12:55:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\75ed67f3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T13:01:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ad96f797",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T13:28:16+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\70ebca08",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T13:28:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\64aa522c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T13:33:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b6504daa",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T13:41:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6956f458",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T13:50:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cab2ed81",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T14:08:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f052675f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T14:08:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3684ee82",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T14:17:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2d68267d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T14:17:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bfc25b46",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T14:18:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\96a7dcd5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T14:30:03+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7bb85224",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T14:30:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d1596e13",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T14:50:12+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9144aa25",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T15:42:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e0098745",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T15:49:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b9ae174a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T16:08:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d759247c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T16:10:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\66ad86ee",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T16:23:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e9e0c6da",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T16:32:16+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1e424ba8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T16:59:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9dc85192",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T17:36:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\80df829e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T17:38:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\97a4a0c5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T17:52:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\375a11d6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T18:02:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b9200060",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T18:15:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8275190f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T18:26:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\01a5c22b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T18:29:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6989745b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T18:34:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8eea8067",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T18:35:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bdaf9c21",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T18:44:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d0f3e6ee",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T18:49:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8ffd69b6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T19:11:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e8a1bcc6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T19:15:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b20a659b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T19:29:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bed5ee20",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T19:32:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bbea9e5d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T19:58:39+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d285bce5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T20:09:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3e466b44",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T20:12:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\19f20c41",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T20:14:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\db1913be",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T20:39:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\66491489",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T20:50:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d30b6dd0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T20:53:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\17408df2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T21:08:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\992846cd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T21:12:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\55683f39",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T21:34:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ac3bd6a3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T21:42:03+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a327d945",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T21:44:23+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\20148952",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T21:49:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cef3b72d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T22:04:49+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6fd4cd01",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T22:10:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\230558dc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T22:41:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d6482f86",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T22:45:46+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2e4e9ec4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T23:00:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0618b23b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T23:13:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6d16d87d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T23:28:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e6568d18",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T23:46:04+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f78681f9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-10T23:51:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\69a14824",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T00:06:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\06197411",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T00:07:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\93906c72",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T00:32:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3a67a277",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T02:05:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f40848ec",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T02:34:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5901126e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T02:40:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\67b34689",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T02:56:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\486dad4f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T03:09:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\295ee344",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T03:33:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\24217992",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T03:57:23+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0d2020a5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T04:25:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ab606c9b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T04:29:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\af4e6bd7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T04:31:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5aea536e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T04:35:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f51b6c99",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T04:35:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f2407b1d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T04:36:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5ea0a724",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T04:46:12+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3467d5b1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T05:03:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b34139b7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T05:12:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9a50514f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T05:32:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4649bc70",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T05:39:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0063a4de",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T05:58:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\11b87f1e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T06:10:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\65b9c8c0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T06:21:40+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d7e261ea",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T06:22:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\88fa1957",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T06:52:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a561a536",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T07:31:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\713ac3b2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T08:01:03+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1a804b1f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T08:06:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e96eb09d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T08:11:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a75c4076",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T08:39:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2dceb6c9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T08:42:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8663d4df",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T08:46:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7dde81c6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T08:58:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\926539e7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T08:59:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d1832c44",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T09:07:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\230f8098",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T09:44:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ec7c4f16",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T09:55:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0ec34e9a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T10:09:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b662d63f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T10:11:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d95a69b7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T10:29:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8cd641f1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T10:53:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7f000d7e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T11:15:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\35f77831",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T11:16:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5ba142a7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T11:27:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7bfce685",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T11:30:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6fca836c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T11:42:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7feb0289",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T11:48:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\22e5d73b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T12:16:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5800a7d4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T12:20:40+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f6b9ff23",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T12:34:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\61658bc0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T12:38:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f5bdf059",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T12:51:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8f57707c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T12:51:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\24c5679f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T13:01:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3f848e28",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T13:29:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\043c52d0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T14:00:00+07:00",
+    "src_ip": "10.0.0.9",
+    "user": "tirta.laksana",
+    "action": "ExchangeMailboxExport",
+    "target": "all_directors",
+    "bytes": 10737418240
+  },
+  {
+    "timestamp": "2026-07-11T14:32:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a1b014bf",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T14:35:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\46c76d9c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T14:55:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0cbc02df",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T15:08:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ecea10cc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T15:35:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d513d5e2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T15:40:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f4a04412",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T15:44:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ea56633a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T15:59:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4a9746b6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T16:08:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\626c5c55",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T16:32:45+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b09c3c07",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T16:49:40+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e529443e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T17:10:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6cd49cde",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T17:30:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\76a081a0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T17:37:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d7384ab5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T17:38:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\051861c7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T17:56:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a0222c83",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T17:57:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3bc0cb81",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T18:02:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\715888dd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T18:11:16+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\459c2970",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T18:12:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\90b6d687",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T18:35:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a203cb19",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T18:45:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\78369687",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T18:48:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\33a4708b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T18:57:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fba18155",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T19:20:12+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5e9e1f08",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T19:27:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3dfb9ed5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T19:44:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\50d8600c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T20:54:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0598669b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T20:55:04+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c4bde7ce",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T22:01:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5a03e9c6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T22:26:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\df9062f8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T22:27:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bea91e7f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T22:32:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b6e19734",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T23:16:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4fc51cd6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T23:23:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ab299cf2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T23:41:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\997d9894",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-11T23:56:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\456550eb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T00:02:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\267368ed",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T00:12:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\eb4ee208",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T00:33:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8c9d6ec0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T00:41:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3188f66c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T00:42:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e9bf7fa2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T00:48:16+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fd576543",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T00:49:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\55a68929",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T01:21:12+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b01ae7bc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T01:33:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\82150780",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T01:35:04+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\aee59f82",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T02:04:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f368073b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T02:27:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0bd4ed51",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T02:37:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b9c4f95f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T02:39:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0cb880b6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T02:58:40+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\503b6606",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T03:12:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3d6a5125",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T03:19:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\72048334",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T03:23:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\983a6cbd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T03:34:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d7d11aa5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T03:38:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6a7c8b42",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T04:12:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\83697050",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T04:23:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\56b2806a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T04:39:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cee457da",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T04:48:46+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8eb18c75",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T05:22:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f5f054c7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T05:25:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9b80be76",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T05:37:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b7b7a0bd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T05:38:14+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9a755446",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T05:55:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a71c05f5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T06:07:22+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\15511b76",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T06:38:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\783798c0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T06:53:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d7b5fb65",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T06:58:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3b6cb147",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T07:18:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ecfddbba",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T07:26:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bb7b14f0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T07:33:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\550ad5a7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T08:01:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0e446b19",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T08:02:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\aba5a2b1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T08:03:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\55b8fecf",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T08:33:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\21d52ba2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T08:46:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\649acb2f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T08:48:12+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\086c707b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T09:02:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a556c507",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T09:03:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0a92f8f7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T09:05:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5f5eb702",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T09:14:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1ee5a6dd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T09:27:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e0c0b4e4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T09:30:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e712dca9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T09:37:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3b60ee79",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T09:45:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\259e4b83",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T10:03:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\487abdd7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T10:10:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\347a66cc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T10:12:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5179148b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T10:29:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8607f97c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T10:38:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\669a94a6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T11:02:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fe7f8d17",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T11:12:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b20cc4e1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T11:15:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d22f0ca2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T11:49:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1d89c074",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T11:49:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a2e6288a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T11:49:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a9406bfa",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T11:58:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fee520f2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T12:10:40+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2b08f795",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T12:35:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\973037e2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T12:37:33+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9158dc9f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T12:41:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3ba7b23e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T12:49:21+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a92fc370",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T13:06:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\99c3a6af",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T13:29:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\30312b92",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T13:41:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\36610c91",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T13:47:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7f8c2c7d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T14:05:37+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fc6af675",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T14:12:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e2fa7239",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T14:19:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9585736b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T14:19:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5dda0972",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T14:28:17+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\480e6ee5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T14:31:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ec1a9d6e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T14:44:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\744476fa",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T14:51:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2e6b6920",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T14:55:17+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3a036898",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T14:56:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f2415559",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T15:11:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\22bc9d47",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T15:18:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\36bad413",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T16:21:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\99d4accf",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T16:25:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\aa2e62c3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T16:49:04+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9a61ef0c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T17:01:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\dc869834",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T17:13:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8c05fe6b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T17:55:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bb8dbd59",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T18:04:18+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1b8e1c5f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T18:14:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cf6c2ffc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T18:17:19+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\dc0b7488",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T18:17:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2809f7a1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T18:47:17+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\840d71fd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T19:31:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9538f62d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T19:57:26+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fe494914",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T20:05:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\17c695c8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T20:11:17+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\147ded4b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T20:28:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2a3760d4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T20:29:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9e6f5525",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T20:42:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\837bae91",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T20:54:11+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d0a30917",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T21:15:04+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8045b6b2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T21:23:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d5c78098",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T21:28:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b3867d3b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T21:44:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\e1f863d1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T21:48:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\dbc60df1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T21:56:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\200c6b4d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T22:28:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cd00749d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T22:33:22+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0b00c05c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T22:35:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\aa7f6087",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T22:46:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d95a8276",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T23:15:46+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fb52c447",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-12T23:35:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\edde4f80",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T00:03:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b2a6275a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T00:26:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cc246b03",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T00:55:06+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b7550472",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T01:20:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a7de01e6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T01:24:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5c16ba19",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T01:26:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4d368948",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T02:03:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\f436ed0e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T02:06:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d068abe4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T02:10:53+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5fcafc16",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T02:11:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d8d19ac7",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T02:18:35+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8f9220e0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T02:20:09+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\370e0257",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T03:01:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0cf9c59e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T03:20:39+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b1288a21",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T03:44:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3fe982da",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T04:26:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7915a51f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T04:42:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\375aebd5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T04:46:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2e91035a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T04:48:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a3727359",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T04:50:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\dd16e6cb",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T04:59:00+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ec528333",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T05:23:02+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\673ba4e6",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T05:27:58+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d188b139",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T06:02:24+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3c664e6a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T06:22:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\deea5f82",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T07:04:08+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1f8192fd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T07:24:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\46bc1dba",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T07:50:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\baaca2ca",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T08:15:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3e2c497f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T08:41:46+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\96a1811d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T08:48:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\21a7608d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T09:00:00+07:00",
+    "src_ip": "10.0.0.8",
+    "user": "ahmad.fauzi",
+    "action": "ERP_API_AUTH_TEST",
+    "success_count": 500
+  },
+  {
+    "timestamp": "2026-07-13T09:02:03+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\6cbb6765",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T09:07:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fb260852",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T09:09:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4c95b933",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T09:32:51+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ac58cfab",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T09:50:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\74e73e88",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T09:57:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3bd290b0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T09:58:57+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\d807e63d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T10:02:04+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0c544a25",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T10:04:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\48a3dbf9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T10:42:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7030bda9",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T10:44:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b85062a5",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T10:47:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0193c8a1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T10:56:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7f546563",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T11:01:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2136ec55",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T11:14:10+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\78035035",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T11:15:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\62a369e1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T11:42:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\aba02b9b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T11:42:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\34566cc3",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T12:18:50+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\00bf66b1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T12:51:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fbd40bf4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T12:53:14+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ca3d8978",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T13:00:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\fbf538e2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T13:03:47+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a27d39f8",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T13:05:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\0215c9b1",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T13:36:34+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\08ad72de",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T13:40:46+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\38eeadb0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T14:55:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b0480f1d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T15:01:01+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\850d37bd",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T15:03:05+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\5b6f0704",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T15:19:49+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\2009e19f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T15:32:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3b6a62dc",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T15:39:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c045282c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T15:52:43+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\79c07d2c",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T16:27:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9751c408",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T17:08:48+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\299ea3ec",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T17:10:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\03544265",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T17:28:30+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\87856c52",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T17:42:36+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\ae21564d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T17:44:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\56bbceff",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T17:49:23+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\444c6a9e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T18:14:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7f553172",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T18:18:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\9d5b4763",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T18:45:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\8138c940",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T18:47:38+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\94601a60",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T18:52:27+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\62bac2d0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T19:05:33+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b781a6d2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T19:15:31+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a8836d0f",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T19:17:44+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\1ecfa895",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T19:22:17+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a1887c03",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T19:25:33+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\99c737d0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T19:27:17+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\831afe53",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T19:58:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\c959cb87",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T20:19:55+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7cd7da9e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T20:41:20+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\cf5ab393",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T20:59:33+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a80aa18d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T21:10:49+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\3a48cf16",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T21:18:52+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\59b9575e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T22:04:54+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7bee3805",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T22:12:29+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4550dfa0",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T22:17:41+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\caf48def",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T22:31:32+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\b2923516",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T23:00:13+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bf248aaf",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T23:03:07+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\24b0476e",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T23:24:42+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\76083b7a",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T23:27:25+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\bf2834ad",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T23:28:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\04a2e014",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T23:34:04+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7b0f0c1d",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T23:42:15+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a09e9cbf",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T23:43:28+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\4bbaddd4",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T23:45:16+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\7f5cc807",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T23:46:59+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a762551b",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T23:51:56+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\46f02232",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-13T23:53:39+07:00",
+    "event": "Registry Modified",
+    "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\a8cb2fa2",
+    "user": "SYSTEM"
+  },
+  {
+    "timestamp": "2026-07-14T09:29:50+07:00",
+    "event": "File Created",
+    "path": "C:\\Users\\d.suherman\\Documents\\EVD-DOC-001.pdf",
+    "user": "d.suherman",
+    "notes": "PDF generation triggered immediately after stego payload extraction."
+  }
+]

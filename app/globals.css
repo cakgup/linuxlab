@@ -1,5 +1,9 @@
 @import '@xterm/xterm/css/xterm.css';
 
+.ctf-shell { height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
+.ctf-frame { width: 100%; flex: 1; min-height: 0; border: 0; background: #071a33; }
+.nav-meta a[aria-current="page"] { color: var(--accent); border-color: var(--accent); }
+
 :root {
   --bg: #071a33;
   --panel: #102b52;
