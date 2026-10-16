@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { useRef, useState, type FormEvent } from "react";
 import { ArrowLeft, BookOpen, LockKeyhole } from "lucide-react";
+import { CtfWriteUpBlocks, type WriteUpBlock } from "./CtfWriteUpBlocks";
 
-type Section = { title: string; paragraphs: string[]; code?: string; language?: string };
-type Stage = { number: number; title: string; category: string; flag: string; evidence: string[]; sections: Section[] };
-type WriteUp = { introduction: string; stages: Stage[] };
+type Section = { title: string; blocks: WriteUpBlock[] };
+type Stage = { number: number; title: string; category: string; flag: string; evidence: string[]; sections: Section[]; advanced?: { title: string; blocks: WriteUpBlock[] } };
+type WriteUp = { stages: Stage[] };
 type Envelope = { version: number; iterations: number; salt: string; iv: string; ciphertext: string };
 
 function decode(value: string) {
@@ -74,9 +75,9 @@ export function CtfWriteUp() {
           <ul>{stage.evidence.map(file => <li key={file}><code>{file}</code></li>)}</ul>
           {stage.sections.map((section, index) => <section key={index}>
             <h3>{section.title}</h3>
-            {section.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
-            {section.code && <div className="writeup-code"><span>{section.language || "Perintah / hasil"}</span><pre><code>{section.code}</code></pre></div>}
+            <CtfWriteUpBlocks blocks={section.blocks} />
           </section>)}
+          {stage.advanced && <details className="writeup-advanced"><summary>{stage.advanced.title}</summary><CtfWriteUpBlocks blocks={stage.advanced.blocks} /></details>}
         </article>)}</div>
       </div>
     </>}
