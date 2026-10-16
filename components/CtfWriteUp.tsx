@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRef, useState, type FormEvent } from "react";
-import { ArrowLeft, BookOpen, LockKeyhole, ShieldCheck } from "lucide-react";
+import { ArrowLeft, BookOpen, LockKeyhole } from "lucide-react";
 
 type Section = { title: string; paragraphs: string[]; code?: string; language?: string };
 type Stage = { number: number; title: string; category: string; flag: string; evidence: string[]; sections: Section[] };
@@ -18,7 +18,7 @@ export function CtfWriteUp() {
   const [code, setCode] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
-  const title = useRef<HTMLHeadingElement>(null);
+  const stageIndex = useRef<HTMLElement>(null);
   const input = useRef<HTMLInputElement>(null);
   const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -37,7 +37,7 @@ export function CtfWriteUp() {
       const result: WriteUp = JSON.parse(new TextDecoder().decode(plaintext));
       if (!Array.isArray(result.stages) || result.stages.length !== 9) throw new Error("load");
       setContent(result); setCode("");
-      requestAnimationFrame(() => title.current?.focus());
+      requestAnimationFrame(() => stageIndex.current?.focus());
     } catch (cause) {
       setError(cause instanceof Error && cause.message === "load" ? "Write-up belum dapat dimuat. Silakan coba kembali." : "Kode akses tidak sesuai. Silakan coba lagi.");
       input.current?.focus();
@@ -61,14 +61,8 @@ export function CtfWriteUp() {
         <p id="access-error" className="writeup-error" role="status" aria-live="polite">{error}</p>
       </form>
     </section> : <>
-      <header className="writeup-intro">
-        <span className="eyebrow">MOFCG CTF · Jejak Digital</span>
-        <h1 ref={title} tabIndex={-1}>Write-up Stage 1–9</h1>
-        <p>{content.introduction}</p>
-        <div className="writeup-verified"><ShieldCheck size={18} />Seluruh 9 tahap terverifikasi · Skor lomba 8620</div>
-      </header>
       <div className="writeup-layout">
-        <nav className="writeup-index" aria-label="Daftar stage write-up">
+        <nav ref={stageIndex} tabIndex={-1} className="writeup-index" aria-label="Daftar stage write-up">
           <strong>Daftar pembahasan</strong>
           {content.stages.map(stage => <a href={`#writeup-stage-${stage.number}`} key={stage.number}><span>{String(stage.number).padStart(2,"0")}</span>{stage.title}</a>)}
         </nav>
