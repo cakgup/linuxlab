@@ -63,8 +63,9 @@
       show(`lockOverlayStage${i}`, !unlocked);
       show(`formStage${i}`,unlocked && !solved);
       show(`solvedBannerStage${i}`,solved);
-      // Keep locked-stage descriptions readable; disable only their actions.
-      $(`bodyStage${i}`).inert = false;
+      show(`bodyStage${i}`,unlocked);
+      $(`bodyStage${i}`).inert = !unlocked;
+      $(`cardStage${i}`).classList.toggle('local-locked',!unlocked);
       $(`flagInput${i}`).disabled = !unlocked || solved;
       $(`btnStage${i}`).disabled = !unlocked || solved;
       $(`cardStage${i}`).classList.toggle('local-complete',solved);
@@ -83,7 +84,11 @@
       link.tabIndex = unlocked ? 0 : -1;
     });
     show('stageCardBonus',true);
-    show('formStageBonus',!state.bonus);
+    show('lockOverlayStageBonus',!isUnlocked(6));
+    show('bodyStageBonus',isUnlocked(6));
+    $('bodyStageBonus').inert=!isUnlocked(6);
+    $('stageCardBonus').classList.toggle('local-locked',!isUnlocked(6));
+    show('formStageBonus',isUnlocked(6)&&!state.bonus);
     $('flagInputBonus').disabled = !isUnlocked(6) || state.bonus;
     $('btnStageBonus').disabled = !isUnlocked(6) || state.bonus;
     show('solvedBannerStageBonus',state.bonus);
@@ -96,6 +101,9 @@
       $(`pipeBadge${i}`).textContent=solved?'✓ SELESAI':unlocked?'AKTIF':'TERKUNCI';
       if(i===6) continue;
       show(`lockOverlayStage${i}`,!unlocked);
+      show(`bodyStage${i}`,unlocked);
+      $(`bodyStage${i}`).inert=!unlocked;
+      $(`cardStage${i}`).classList.toggle('local-locked',!unlocked);
       show(`formStage${i}`,unlocked&&!solved);
       show(`solvedBannerStage${i}`,solved);
       $(`flagInput${i}`).disabled=!unlocked||solved;

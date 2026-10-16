@@ -136,5 +136,7 @@ button:disabled { cursor: not-allowed; opacity: .55; }
 .local-pipeline [id^="pipeNode"] { display:flex; flex-direction:column; gap:8px; justify-content:space-between; }
 .local-pipeline [id^="pipeNode"] > span:nth-child(2) { white-space:normal; overflow:visible; }
 @media(max-width:640px) { .local-pipeline { grid-template-columns:repeat(2,minmax(0,1fr)); } .local-download { flex-wrap:wrap; overflow-wrap:anywhere; } }
-/* Keep every investigation card readable while sequential actions stay locked. */
+/* Locked cards expose only the prerequisite notice, never future evidence. */
 [id^="lockOverlayStage"] { position:static !important; inset:auto !important; padding:16px !important; margin-bottom:16px; backdrop-filter:none; }
+.local-locked { justify-content:center !important; min-height:260px; }
+.local-locked [id^="lockOverlayStage"] { margin-bottom:0; }

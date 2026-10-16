@@ -1,4 +1,4 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Arena Investigasi — MOFCG CTF: JEJAK DIGITAL</title><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="layout.css"><link rel="stylesheet" href="assets/icons.css"><link rel="stylesheet" href="assets/cyber.css"><link rel="stylesheet" href="local.css?v=source-narratives-1"><script src="lab.js?v=source-narratives-1" defer></script></head><body class="min-h-screen flex flex-col" style="visibility:hidden"><a href="#main-content" class="skip-link">Lewati ke Konten Utama</a>
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Arena Investigasi — MOFCG CTF: JEJAK DIGITAL</title><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="layout.css"><link rel="stylesheet" href="assets/icons.css"><link rel="stylesheet" href="assets/cyber.css"><link rel="stylesheet" href="local.css?v=sequential-locks-1"><script src="lab.js?v=sequential-locks-1" defer></script></head><body class="min-h-screen flex flex-col" style="visibility:hidden"><a href="#main-content" class="skip-link">Lewati ke Konten Utama</a>
 <div class="bg-gray-900 border-b border-gray-800 text-[11px] text-gray-400 py-1.5 px-4 text-center flex items-center justify-between">
         <div class="flex items-center space-x-2">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -822,7 +822,16 @@
                     </div>
 
                     <!-- Description & Form -->
-                    <div class="space-y-3 relative z-10">
+                    <div id="lockOverlayStageBonus" class="absolute inset-0 bg-[#080d1a]/95 backdrop-blur-xl rounded-lg flex flex-col items-center justify-center p-6 text-center z-20 space-y-3 transition duration-500 hidden">
+                        <div class="w-14 h-14 rounded-full bg-gray-900 border border-amber-500/30 flex items-center justify-center shadow-lg shadow-black">
+                            <i class="fa-solid fa-lock text-2xl text-amber-400"></i>
+                        </div>
+                        <span class="text-xs font-mono font-bold text-amber-400 tracking-wider uppercase bg-amber-950/40 border border-amber-800/60 px-3 py-1 rounded">TAHAP 6 TERKUNCI</span>
+                        <p class="text-[11px] text-gray-400 font-mono max-w-[260px] leading-relaxed">Selesaikan Tahap 5 terlebih dahulu untuk membuka misi Token Nexus.</p>
+                        <span class="text-[10px] text-gray-400 font-mono"><i class="fa-solid fa-shield mr-1"></i>Protokol Akses Sekuensial</span>
+                    </div>
+
+                    <div class="space-y-3 relative z-10" id="bodyStageBonus">
                         <div class="p-3 rounded-lg bg-black/50 border border-amber-500/30 text-xs text-gray-300 leading-relaxed space-y-1.5">
                             <p class="text-gray-200">
                                 Selamat telah membongkar konspirasi Dadan Suherman! Ada hal tersembunyi lainnya. Masukkan token rahasia tersebut untuk mengklaim <strong class="text-amber-300 font-mono font-bold">+500 poin bonus</strong>!
