@@ -48,10 +48,10 @@ export function createInitialState(): LabState {
   ].forEach((p) => add(fs, node(p, "dir", p === "/home/analyst" ? 0o750 : 0o755, p.startsWith("/home/analyst") ? "analyst" : "root", p.startsWith("/home/analyst") ? "analyst" : "root")));
 
   add(fs, node("/home/analyst/README.txt", "file", 0o644, "analyst", "analyst",
-`LinuxLab Cyber training host\n\nThis environment is a browser simulation. No host commands are executed.\nStart with: pwd, ls -la, cd, cat, help\n`));
+`Terminal latihan LinuxLab Cyber\n\nLingkungan ini adalah simulasi di peramban. Perintah tidak dijalankan pada perangkat kita.\nMulai dengan: pwd, ls -la, cd, cat, help\n`));
 
   add(fs, node("/home/analyst/training/notes.txt", "file", 0o644, "analyst", "analyst",
-`Linux basics checklist\n1. Navigate with pwd, ls, and cd\n2. Manage files with mkdir, touch, cp, mv, and rm\n3. Read text with cat, head, tail, and less\n4. Search with grep and find\n5. Understand permissions before changing them\n6. Inspect processes before taking action\n`));
+`Catatan belajar dasar Linux\n1. Jelajahi direktori dengan pwd, ls, dan cd\n2. Kelola berkas dengan mkdir, touch, cp, mv, dan rm\n3. Baca teks dengan cat, head, tail, dan less\n4. Cari teks dan berkas dengan grep serta find\n5. Pahami izin akses sebelum mengubahnya\n6. Periksa proses sebelum mengambil tindakan\n`));
   add(fs, node("/home/analyst/training/logs/access.log", "file", 0o644, "analyst", "analyst",
 `2026-09-22T08:00:01Z INFO GET / 200\n2026-09-22T08:00:04Z INFO GET /login 200\n2026-09-22T08:00:08Z ERROR POST /login 401 user=admin\n2026-09-22T08:00:12Z WARN GET /admin 403\n2026-09-22T08:00:15Z ERROR POST /login 401 user=root\n`));
   add(fs, node("/home/analyst/training/logs/system.log", "file", 0o644, "analyst", "analyst",
@@ -83,7 +83,7 @@ export function createInitialState(): LabState {
   add(fs, node("/usr/local/bin/health-check", "file", 0o755, "root", "root", "#!/bin/sh\necho healthy\n"));
 
   add(fs, node("/opt/incident/briefing.txt", "file", 0o640, "root", "soc",
-`INCIDENT IR-2026-0922\n\n1. Suspected SSH brute-force source: 10.10.14.23\n2. Review application secret permissions at /srv/app/.env\n3. Investigate high CPU process; SOC notes mention PID 31337\n4. Apply containment only after confirming evidence\n`));
+`INSIDEN IR-2026-0922\n\n1. Dugaan sumber percobaan kata sandi SSH berulang: 10.10.14.23\n2. Periksa izin berkas rahasia aplikasi di /srv/app/.env\n3. Periksa proses dengan penggunaan CPU tinggi. Catatan SOC menyebut PID 31337\n4. Lakukan pembatasan dampak setelah bukti terkonfirmasi\n`));
 
   add(fs, node("/etc/hostname", "file", 0o644, "root", "root", "training-web-01\n"));
   add(fs, node("/etc/os-release", "file", 0o644, "root", "root", `NAME="LinuxLab OS"\nVERSION="1.0 Training"\nID=linuxlab\n`));

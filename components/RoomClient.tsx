@@ -8,7 +8,7 @@ import { createInitialState } from "@/lib/fs";
 import { executeLine } from "@/lib/shell";
 import { isTaskComplete } from "@/lib/validator";
 import { readProgress, writeProgress } from "@/lib/progress";
-import { getRoom, isRoomComplete, isRoomUnlocked, rooms } from "@/lib/tracks";
+import { difficultyLabels, getRoom, isRoomComplete, isRoomUnlocked, learningPathLabels, rooms } from "@/lib/tracks";
 import { BrowserTerminal, TerminalCommandResponse } from "./BrowserTerminal";
 import { Nav } from "./Nav";
 import { RoomIcon } from "./RoomIcon";
@@ -64,7 +64,7 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
     return (
       <div className="shell">
         <Nav xp={0} completed={0} />
-        <main className="container locked-room-page"><div className="small">Loading learning progress…</div></main>
+        <main className="container locked-room-page"><div className="small">Memuat kemajuan belajar…</div></main>
       </div>
     );
   }
@@ -77,21 +77,21 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
         <main className="container locked-room-page">
           <div className="locked-room-card">
             <div className="locked-room-icon"><Lock size={30} /></div>
-            <div className="eyebrow">Room locked</div>
+            <div className="eyebrow">Latihan terkunci</div>
             <h1>{room.title}</h1>
-            <p>Complete the required room{prerequisites.length === 1 ? "" : "s"} before entering this lab.</p>
+            <p>Selesaikan latihan prasyarat berikut untuk membuka latihan ini.</p>
             <div className="prerequisite-list">
               {prerequisites.map((prereq) => (
                 <div key={prereq.slug}>
                   <Circle size={15} />
                   <span>{prereq.title}</span>
-                  <strong>{isRoomComplete(prereq, completed) ? "Complete" : "Required"}</strong>
+                  <strong>{isRoomComplete(prereq, completed) ? "Selesai" : "Wajib diselesaikan"}</strong>
                 </div>
               ))}
             </div>
             <div className="hero-actions">
-              <Link className="btn btn-primary" href={prerequisites[0] ? `/room/${prerequisites[0].slug}` : "/"}>Go to prerequisite <ChevronRight size={16} /></Link>
-              <Link className="btn" href="/">Back to learning paths</Link>
+              <Link className="btn btn-primary" href={prerequisites[0] ? `/room/${prerequisites[0].slug}` : "/"}>Buka latihan prasyarat <ChevronRight size={16} /></Link>
+              <Link className="btn" href="/">Kembali ke jalur belajar</Link>
             </div>
           </div>
         </main>
@@ -102,10 +102,10 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
   return (
     <div className="shell">
       <Nav xp={xp} completed={completed.length} />
-      <main className="room-layout" lang="en">
+      <main className="room-layout" lang="id">
         <section className="lesson-pane" id="lesson">
           <div className="lesson-inner">
-            <div className="breadcrumb"><Link href="/">Learning paths</Link><span>/</span><span>{room.path}</span><span>/</span><span>{room.title}</span></div>
+            <div className="breadcrumb"><Link href="/">Jalur belajar</Link><span>/</span><span>{learningPathLabels[room.path]}</span><span>/</span><span>{room.title}</span></div>
             <div className="lesson-heading">
               <RoomIcon icon={room.icon} />
               <div>
@@ -116,14 +116,14 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
             </div>
 
             <div className="tag-row" style={{ marginTop: 18 }}>
-              <span className={`badge badge-${room.difficulty.toLowerCase()}`}>{room.difficulty}</span>
+              <span className={`badge badge-${room.difficulty.toLowerCase()}`}>{difficultyLabels[room.difficulty]}</span>
               <span className="tag">{room.duration}</span>
-              <span className="tag">{roomDone}/{room.tasks.length} complete</span>
+              <span className="tag">{roomDone}/{room.tasks.length} selesai</span>
             </div>
-            <a className="btn btn-primary mobile-terminal-link" href="#terminal">Go to terminal <ChevronRight size={16} /></a>
+            <a className="btn btn-primary mobile-terminal-link" href="#terminal">Buka terminal <ChevronRight size={16} /></a>
 
             <div className="lesson-card">
-              <h3>What you&apos;ll learn</h3>
+              <h3>Yang akan kita pelajari</h3>
               <ul>{room.learning.map((item) => <li key={item}>{item}</li>)}</ul>
             </div>
 
@@ -132,7 +132,7 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
                 const done = completed.includes(task.id);
                 return (
                   <button key={task.id} className={`task-tab ${index === activeIndex ? "active" : ""} ${done ? "done" : ""}`} onClick={() => { setActiveIndex(index); setShowHint(false); }}>
-                    <span><span className="task-number">TASK {index + 1}</span>{task.title}</span>
+                    <span><span className="task-number">TUGAS {index + 1}</span>{task.title}</span>
                     {done ? <Check size={17} /> : <Circle size={15} />}
                   </button>
                 );
@@ -140,48 +140,48 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
             </div>
 
             <div className="lesson-card objective">
-              <h3><Target size={17} style={{ verticalAlign: "-3px", marginRight: 7 }} />Mission context</h3>
+              <h3><Target size={17} style={{ verticalAlign: "-3px", marginRight: 7 }} />Latar belakang tugas</h3>
               <p>{activeTask.context}</p>
-              <div className="question">Objective: {activeTask.objective}</div>
-              <div className="small">Reward: +{activeTask.xp} XP · Validation checks command history, filesystem state, permissions, or simulated processes.</div>
+              <div className="question">Tujuan: {activeTask.objective}</div>
+              <div className="small">Poin: +{activeTask.xp} XP · Tugas diperiksa otomatis berdasarkan riwayat perintah, keadaan berkas, izin akses, atau proses dalam simulasi.</div>
             </div>
 
             {completed.includes(activeTask.id) && (
               <div className="lesson-card success">
-                <h3><Trophy size={17} style={{ verticalAlign: "-3px", marginRight: 7 }} />Task completed</h3>
-                <p>This objective has been validated. Continue exploring or move to the next task.</p>
+                <h3><Trophy size={17} style={{ verticalAlign: "-3px", marginRight: 7 }} />Tugas selesai</h3>
+                <p>Tujuan tugas sudah tercapai. Kita dapat melanjutkan percobaan atau beralih ke tugas berikutnya.</p>
               </div>
             )}
 
             {room.badge && room.tasks.every((t) => completed.includes(t.id)) && (
               <div className="lesson-card badge-award">
-                <h3><Award size={17} style={{ verticalAlign: "-3px", marginRight: 7 }} />Badge unlocked: {room.badge}</h3>
-                <p>You completed every objective in this milestone room.</p>
+                <h3><Award size={17} style={{ verticalAlign: "-3px", marginRight: 7 }} />Lencana diperoleh: {room.badge}</h3>
+                <p>Seluruh tugas pada latihan ini sudah selesai.</p>
               </div>
             )}
 
             {showHint && (
-              <div className="lesson-card hint"><h3><Lightbulb size={17} style={{ verticalAlign: "-3px", marginRight: 7 }} />Hint</h3><p>{activeTask.hint}</p></div>
+              <div className="lesson-card hint"><h3><Lightbulb size={17} style={{ verticalAlign: "-3px", marginRight: 7 }} />Petunjuk</h3><p>{activeTask.hint}</p></div>
             )}
 
             <div className="hero-actions" style={{ marginTop: 16 }}>
-              <button className="btn" onClick={() => setShowHint((v) => !v)}><Lightbulb size={16} /> {showHint ? "Hide hint" : "Show hint"}</button>
-              {activeIndex > 0 && <button className="btn" onClick={() => { setActiveIndex((i) => i - 1); setShowHint(false); }}><ChevronLeft size={16} /> Previous task</button>}
-              {activeIndex < room.tasks.length - 1 && <button className="btn btn-primary" onClick={() => { setActiveIndex((i) => i + 1); setShowHint(false); }}>Next task <ChevronRight size={16} /></button>}
-              {activeIndex === room.tasks.length - 1 && nextRoom && room.tasks.every((t) => completed.includes(t.id)) && <Link className="btn btn-primary" href={`/room/${nextRoom.slug}`}>Unlock next room <ChevronRight size={16} /></Link>}
+              <button className="btn" onClick={() => setShowHint((v) => !v)}><Lightbulb size={16} /> {showHint ? "Sembunyikan petunjuk" : "Tampilkan petunjuk"}</button>
+              {activeIndex > 0 && <button className="btn" onClick={() => { setActiveIndex((i) => i - 1); setShowHint(false); }}><ChevronLeft size={16} /> Tugas sebelumnya</button>}
+              {activeIndex < room.tasks.length - 1 && <button className="btn btn-primary" onClick={() => { setActiveIndex((i) => i + 1); setShowHint(false); }}>Tugas berikutnya <ChevronRight size={16} /></button>}
+              {activeIndex === room.tasks.length - 1 && nextRoom && room.tasks.every((t) => completed.includes(t.id)) && <Link className="btn btn-primary" href={`/room/${nextRoom.slug}`}>Buka latihan berikutnya <ChevronRight size={16} /></Link>}
             </div>
 
-            {previousRoom && <div className="small room-sequence-note">Previous room: {previousRoom.title} · Next: {nextRoom?.title || "Learning path complete"}</div>}
+            {previousRoom && <div className="small room-sequence-note">Latihan sebelumnya: {previousRoom.title} · Berikutnya: {nextRoom?.title || "Seluruh jalur belajar selesai"}</div>}
           </div>
         </section>
 
-        <section className="terminal-pane" id="terminal" aria-label="Training terminal">
+        <section className="terminal-pane" id="terminal" aria-label="Terminal latihan">
           <div className="terminal-toolbar">
-            <div style={{ display: "flex", alignItems: "center", gap: 11 }}><span className="terminal-dots"><i /><i /><i /></span><span>training-web-01 · isolated simulator</span></div>
-            <div className="terminal-actions"><a className="mobile-terminal-link" href="#lesson">Back to lesson</a><button onClick={resetLab}><RotateCcw size={12} style={{ verticalAlign: "-2px", marginRight: 5 }} />Reset lab</button></div>
+            <div style={{ display: "flex", alignItems: "center", gap: 11 }}><span className="terminal-dots"><i /><i /><i /></span><span>training-web-01 · simulasi terisolasi</span></div>
+            <div className="terminal-actions"><a className="mobile-terminal-link" href="#lesson">Kembali ke materi</a><button onClick={resetLab}><RotateCcw size={12} style={{ verticalAlign: "-2px", marginRight: 5 }} />Atur ulang latihan</button></div>
           </div>
           <div className="terminal-wrap"><BrowserTerminal onCommand={handleCommand} cwd={labState.cwd} resetToken={resetToken} /></div>
-          {justCompleted && <div className="objective-toast">✓ Objective validated · XP awarded</div>}
+          {justCompleted && <div className="objective-toast">✓ Tugas selesai · XP bertambah</div>}
         </section>
       </main>
     </div>

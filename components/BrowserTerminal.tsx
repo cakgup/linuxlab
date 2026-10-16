@@ -59,8 +59,8 @@ export function BrowserTerminal({ onCommand, cwd, resetToken }: { onCommand: (li
     term.open(hostRef.current);
     terminalRef.current = term;
 
-    term.writeln("\x1b[1;38;2;141;252;101mLinuxLab Cyber Training Host\x1b[0m");
-    term.writeln("Safe browser simulation. Type \x1b[36mhelp\x1b[0m for available commands.\r\n");
+    term.writeln("\x1b[1;38;2;141;252;101mTerminal Latihan LinuxLab Cyber\x1b[0m");
+    term.writeln("Simulasi di peramban. Ketik \x1b[36mhelp\x1b[0m untuk melihat perintah yang tersedia.\r\n");
     term.write(prompt(cwdRef.current));
     fit.fit();
 
@@ -155,9 +155,9 @@ export function BrowserTerminal({ onCommand, cwd, resetToken }: { onCommand: (li
     bufferRef.current = "";
     historyRef.current = [];
     historyIndexRef.current = -1;
-    term.writeln("\x1b[33mLab environment reset.\x1b[0m\r\n");
+    term.writeln("\x1b[33mLingkungan latihan telah diatur ulang.\x1b[0m\r\n");
     term.write(prompt(cwd));
   }, [resetToken, cwd]);
 
-  return <div ref={hostRef} className="terminal-host" aria-label="Linux training terminal" />;
+  return <div ref={hostRef} className="terminal-host" aria-label="Terminal latihan Linux" />;
 }

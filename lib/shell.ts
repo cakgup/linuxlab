@@ -86,18 +86,18 @@ function applySymbolicMode(current: number, spec: string) {
 
 function commandHelp() {
   return [
-    "LinuxLab Cyber shell — safe browser simulator",
+    "Terminal LinuxLab Cyber — simulasi di peramban",
     "",
-    "Navigation:  pwd  ls  cd",
-    "Files:       cat  less  head  tail  mkdir  touch  cp  mv  rm  rmdir  stat",
-    "Search:      grep  find  wc",
-    "Security:    chmod  id  groups  whoami",
-    "Processes:   ps  kill",
-    "Network:     ip  ss",
-    "System:      hostname  uname  history  echo  clear  help  man",
-    "Streams:     |  >  >>  tee",
+    "Navigasi:    pwd  ls  cd",
+    "Berkas:      cat  less  head  tail  mkdir  touch  cp  mv  rm  rmdir  stat",
+    "Pencarian:   grep  find  wc",
+    "Keamanan:    chmod  id  groups  whoami",
+    "Proses:      ps  kill",
+    "Jaringan:    ip  ss",
+    "Sistem:      hostname  uname  history  echo  clear  help  man",
+    "Keluaran:    |  >  >>  tee",
     "",
-    "Useful examples:",
+    "Contoh penggunaan:",
     "  ls -la /home/analyst/training",
     "  chmod +x /home/analyst/training/scripts/deploy.sh",
     "  grep -n \"ERROR\" /home/analyst/training/logs/access.log",
@@ -128,7 +128,7 @@ function runStage(state: LabState, stage: string, stdin = ""): { state: LabState
 
   switch (command) {
     case "help": return { state: s, output: commandHelp() };
-    case "man": return { state: s, output: tokens[0] ? `LINUXLAB(1) ${tokens[0]}\n\nTraining manual: run 'help' for supported syntax and examples.` : "What manual page do you want?" };
+    case "man": return { state: s, output: tokens[0] ? `LINUXLAB(1) ${tokens[0]}\n\nPanduan latihan: jalankan 'help' untuk melihat bentuk perintah dan contoh yang tersedia.` : "Panduan perintah apa yang ingin dibuka?" };
     case "clear": return { state: s, output: "", clear: true };
     case "pwd": return { state: s, output: s.cwd };
     case "whoami": return { state: s, output: "analyst" };
@@ -143,7 +143,7 @@ function runStage(state: LabState, stage: string, stdin = ""): { state: LabState
         "2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 state UP",
         "    inet 10.20.30.15/24 brd 10.20.30.255 scope global eth0",
       ].join("\n") };
-      return { state: s, output: `Object "${tokens[0]}" is unknown in this simulator. Try: ip addr` };
+      return { state: s, output: `Pilihan "${tokens[0]}" belum tersedia dalam simulator ini. Gunakan: ip addr` };
     }
     case "ss": return { state: s, output: [
       "State  Recv-Q Send-Q Local Address:Port  Peer Address:Port Process",
@@ -302,7 +302,7 @@ function runStage(state: LabState, stage: string, stdin = ""): { state: LabState
       const existing = s.fs[path];
       if (!existing) return { state: s, output: `chmod: cannot access '${fileArg}': No such file or directory` };
       const mode = /^[0-7]{3,4}$/.test(modeArg) ? parseInt(modeArg, 8) : applySymbolicMode(existing.mode, modeArg);
-      if (mode === undefined) return { state: s, output: `chmod: unsupported mode '${modeArg}' in this training simulator` };
+      if (mode === undefined) return { state: s, output: `chmod: mode '${modeArg}' belum didukung dalam simulator latihan ini` };
       s.fs[path] = { ...existing, mode };
       return { state: s, output: "" };
     }
@@ -338,7 +338,7 @@ function runStage(state: LabState, stage: string, stdin = ""): { state: LabState
       const srcPath = normalizePath(srcArg, s.cwd);
       const src = s.fs[srcPath];
       if (!src) return { state: s, output: `cp: cannot stat '${srcArg}': No such file or directory` };
-      if (src.type === "dir") return { state: s, output: "cp: omitting directory (recursive copy not enabled in this lab)" };
+      if (src.type === "dir") return { state: s, output: "cp: direktori dilewati (penyalinan seluruh isi direktori belum tersedia dalam latihan ini)" };
       let dstPath = normalizePath(dstArg, s.cwd);
       if (s.fs[dstPath]?.type === "dir") dstPath = normalizePath(`${dstPath}/${src.name}`, "/");
       if (!s.fs[parentPath(dstPath)]) return { state: s, output: `cp: cannot create regular file '${dstArg}': No such file or directory` };
@@ -412,7 +412,7 @@ function runStage(state: LabState, stage: string, stdin = ""): { state: LabState
     }
 
     default:
-      return { state: s, output: `bash: ${command}: command not found\nType 'help' to see commands implemented by LinuxLab.` };
+      return { state: s, output: `bash: ${command}: command not found\nKetik 'help' untuk melihat perintah yang tersedia di LinuxLab.` };
   }
 }
 

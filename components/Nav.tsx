@@ -15,7 +15,7 @@ export function Nav({ xp = 0, completed = 0 }: { xp?: number; completed?: number
         </Link>
         <div className="nav-meta">
           <Link href="/ctf/" className="pill" aria-current={pathname.startsWith("/ctf") ? "page" : undefined}><Flag size={14} style={{ verticalAlign: "-2px", marginRight: 6 }} />CTF</Link>
-          <span className="pill hide-mobile"><ShieldCheck size={14} style={{ verticalAlign: "-2px", marginRight: 6 }} />Simulasi browser</span>
+          <span className="pill hide-mobile"><ShieldCheck size={14} style={{ verticalAlign: "-2px", marginRight: 6 }} />Simulasi peramban</span>
           <span className="pill">{completed} tugas</span>
           <span className="pill" style={{ color: "var(--accent)" }}>{xp} XP</span>
         </div>
