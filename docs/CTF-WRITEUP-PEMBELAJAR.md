@@ -3,7 +3,7 @@
 **Tingkat:** Pemula–menengah | **Cakupan:** Stage 1–9 | **Lingkungan:** Bash di Kali Linux/WSL dan Python 3  
 **Bidang:** Digital forensics, analisis log, jaringan, steganografi, memori, rekayasa balik, dan artefak browser
 
-> **Catatan untuk mahasiswa:** Dokumen ini merupakan versi pembelajaran dari *CTF-WRITEUP-PEMBELAJAR.md*. Nama file, petunjuk, alur, dan jawaban Stage 1–9 dipertahankan dari dokumen sumber. Keluaran yang disebutkan adalah **keluaran rujukan dalam write-up**, bukan hasil eksekusi ulang pada seluruh evidence dalam penyusunan modul ini. Jika keluaran praktik berbeda, periksa versi evidence, folder aktif, dan pengetikan perintah terlebih dahulu.
+> **Catatan pembelajaran:** Dokumen ini merupakan versi pembelajaran dari *CTF-WRITEUP-PEMBELAJAR.md*. Nama file, petunjuk, alur, dan jawaban Stage 1–9 dipertahankan dari dokumen sumber. Keluaran yang disebutkan adalah **keluaran rujukan dalam write-up**, bukan hasil eksekusi ulang pada seluruh evidence dalam penyusunan modul ini. Jika keluaran praktik berbeda, periksa versi evidence, folder aktif, dan pengetikan perintah terlebih dahulu.
 >
 > **Etika dan ruang lingkup:** Jalankan seluruh teknik hanya terhadap *evidence* latihan yang memang boleh dianalisis. Jangan menjalankan biner atau makro yang belum dipercaya, menggunakan kredensial latihan pada layanan sungguhan, atau menghubungi endpoint yang ditemukan dalam evidence.
 
@@ -60,7 +60,7 @@ ls -lah
 
 ### 2.2. Lokasi evidence untuk seluruh stage
 
-Dalam modul ini, **semua file evidence diasumsikan sudah tersedia** dalam folder stage masing-masing pada sistem Linux. Mahasiswa **tidak perlu mencari folder sumber di Windows atau menyalin seluruh evidence** sebelum memulai praktikum.
+Dalam modul ini, **semua file evidence diasumsikan sudah tersedia** dalam folder stage masing-masing pada sistem Linux. Kita **tidak perlu mencari folder sumber di Windows atau menyalin seluruh evidence** sebelum memulai praktikum.
 
 Struktur direktori yang digunakan:
 
@@ -130,7 +130,7 @@ sha256sum nama_file
 
 ## A. Tujuan dan gambaran masalah
 
-Anda menerima arsip email terenkripsi. Untuk menemukan flag, Anda harus membuka arsip dengan private key latihan, lalu memeriksa **header** serta isi email. Mahasiswa perlu memahami perbedaan **kunci**, **arsip terenkripsi**, dan **file hasil dekripsi**.
+Anda menerima arsip email terenkripsi. Untuk menemukan flag, Anda harus membuka arsip dengan private key latihan, lalu memeriksa **header** serta isi email. Kita perlu memahami perbedaan **kunci**, **arsip terenkripsi**, dan **file hasil dekripsi**.
 
 Evidence menurut write-up:
 
@@ -635,7 +635,7 @@ Instruction: Change amount to 8M. TU9GQ0d7RDRsNG19
 
 Dua informasi muncul:
 
-1. `Instruction: Change amount to 8M.` merupakan **isi pesan di dalam evidence**. Ini bukan instruksi untuk mahasiswa menjalankan transaksi atau mengubah catatan keuangan.
+1. `Instruction: Change amount to 8M.` merupakan **isi pesan di dalam evidence**. Ini bukan instruksi untuk kita menjalankan transaksi atau mengubah catatan keuangan.
 2. `TU9GQ0d7RDRsNG19` merupakan string token bonus yang diminta validator Stage 6.
 
 Jika string tersebut di-decode Base64, hasilnya adalah `MOFCG{D4l4m}`. Namun **jawaban Stage 6 harus tetap string Base64 mentah**, bukan teks hasil decoding, karena itulah format yang diminta validator menurut write-up.
@@ -1201,7 +1201,7 @@ Skrip ini tidak dirancang untuk semua program. Ia memakai format bytecode, S-box
 
 ## A.2. Simpan kode berikut menjadi file `solve_vault.py`
 
-Komentar `# ...` ditambahkan agar mahasiswa paham tujuannya. Pernyataan komputasi utama tetap mengikuti solver write-up.
+Komentar `# ...` ditambahkan agar kita memahami tujuannya. Pernyataan komputasi utama tetap mengikuti solver write-up.
 
 ```python
 # pathlib menyediakan Path untuk membaca file secara lebih jelas.
@@ -1365,7 +1365,7 @@ Skrip ini membaca **salinan profil Firefox latihan** secara lokal menggunakan NS
 
 **Konsep yang perlu diperhatikan:**
 
-| Istilah | Penjelasan mahasiswa |
+| Istilah | Penjelasan sederhana |
 |---|---|
 | `sys.argv` | List argumen yang diberikan dari terminal kepada skrip. `sys.argv[0]` nama skrip; `[1]` path profil. |
 | `Path(...).resolve()` | Mengubah path menjadi path absolut untuk mengurangi ambiguitas direktori. |
@@ -1498,7 +1498,7 @@ Skrip tersebut akan mencetak nama `Host:` dan nama field aslinya, yaitu `encrypt
 | 8 | Bytecode dan rolling hash program vault | Reverse engineering statis | `MOFCG{R3_M3nyen4ngkan_Sek4l!}` |
 | 9 | Array `rawBytes` pada modul VBA | Firefox → ZIP → SHA-256 → VBA | `MOF{CG20}26` |
 
-## 4. Lembar kerja praktik untuk mahasiswa
+## 4. Lembar kerja praktik
 
 Salin templat berikut dan isi **untuk setiap stage**, bukan hanya jawaban akhirnya:
 
@@ -1573,4 +1573,4 @@ Referensi berikut berasal dari rujukan yang dicantumkan dalam write-up awal. Mod
 
 ---
 
-**Penutup untuk mahasiswa:** Pada analisis keamanan siber, yang dinilai bukan hanya kecepatan menemukan flag, melainkan kemampuan menerangkan **petunjuk → alasan memilih metode → perintah yang dijalankan → output → kesimpulan yang didukung evidence**. Seluruh identitas, domain, akun, dan kejadian di dalam latihan MOFCG digunakan dalam skenario pembelajaran. Jangan menjadikan output CTF sebagai dasar kesimpulan tentang pihak nyata tanpa bukti tambahan.
+**Penutup:** Pada analisis keamanan siber, yang dinilai bukan hanya kecepatan menemukan flag, melainkan kemampuan menerangkan **petunjuk → alasan memilih metode → perintah yang dijalankan → output → kesimpulan yang didukung evidence**. Seluruh identitas, domain, akun, dan kejadian di dalam latihan MOFCG digunakan dalam skenario pembelajaran. Jangan menjadikan output CTF sebagai dasar kesimpulan tentang pihak nyata tanpa bukti tambahan.
