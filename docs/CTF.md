@@ -1,30 +1,25 @@
 # CTF — Jejak Digital
 
-Menu **CTF** membuka `/ctf/`. Halaman lab ada di `public/ctf/lab.html`, diisolasi dalam iframe agar stylesheet MOFCG tidak mengubah halaman LinuxLab lainnya. Tata letak, briefing, judul tahapan, narasi hasil, logo, dan gaya berasal dari halaman referensi https://ctf.eranusasiber.my.id/lab pada 15 Oktober 2026. Kredit sumber tetap ditampilkan.
+Menu **CTF** membuka `/ctf/`, menggunakan `public/ctf/lab.html` dalam iframe dengan tema biru LinuxLab Cyber. Seluruh kartu Stage 1–9 terlihat sejak awal. Form dan unduhan dibuka berurutan setelah inisiasi operasi serta penyelesaian tahap sebelumnya.
 
-Tema lokal di `public/ctf/local.css` mengikuti LinuxLab Cyber: latar biru tua `#071a33`, panel `#102b52` / `#1a3a6b`, aksen kuning `#ffca1a`, kartu membulat, dan tipografi yang seragam dengan dashboard. Warna hijau dipakai sebagai penanda tahap selesai.
-
-Semua aset disajikan lokal: CSS hasil render, tema asli, Font Awesome 6.4.0 (beserta pemberitahuan lisensinya dalam stylesheet), logo, dan 13 evidence dari folder MOFCG pengguna. Tidak ada koneksi ke API lomba, pelacak, login, atau sesi peserta asal. Banner jadwal dan leaderboard diganti dengan mode latihan serta papan progres lokal.
+Semua aset dan 16 berkas evidence disajikan lokal. Stage 7 menambahkan citra memori terkompresi (sekitar 38 MB), Stage 8 biner agen brankas, dan Stage 9 arsip 64 artefak workstation. Tidak ada koneksi ke API lomba, login, atau sesi peserta asal.
 
 ## Perilaku latihan
 
-- Inisiasi operasi membuka briefing dan tahap pertama.
-- Lima stage dibuka berurutan; setiap jawaban benar memberi 1.000 poin.
-- Jawaban salah mengurangi 10 poin. Nilai dapat negatif sesuai penalti.
-- Bonus terbuka setelah lima stage selesai dan bernilai 500 poin.
-- Jawaban dibandingkan secara peka huruf besar-kecil setelah spasi tepi dihapus.
-- Progres, skor, dan riwayat tanpa isi jawaban disimpan dalam localStorage `linuxlab-mofcg-ctf-v1`.
-- Reset meminta konfirmasi sebelum menghapus progres CTF saja.
-- Riwayat ditampilkan dalam WIB.
+- Stage 1–5: masing-masing 1000 poin.
+- Stage 6: bonus Token Nexus, 500 poin.
+- Stage 7: forensik memori, 1500 poin.
+- Stage 8: rekayasa balik agen brankas, 2500 poin.
+- Stage 9: forensik workstation, 3000 poin.
+- Maksimum latihan 12500 poin. Skor tetap untuk latihan mandiri; tidak memakai decay berdasarkan jumlah solver pada lomba.
+- Salah pada Stage 1–8: penalti 10 poin. Salah pada Stage 9: penalti 100 poin.
+- Token dibandingkan persis, peka huruf besar-kecil, setelah spasi tepi dihapus. Stage 6 dan 9 menerima token hasil temuan tanpa memaksakan format MOFCG{...}.
+- Seluruh kunci SHA-256 telah dikonfigurasi di `public/ctf/answers.json` berdasarkan hasil yang diterima server asal. Konfigurasi tidak tersedia tidak mengenakan penalti.
+- Progres tetap memakai localStorage `linuxlab-mofcg-ctf-v1`; progres versi lima tahap dipertahankan. Field `advanced` menyimpan jumlah tahap lanjutan 7–9 yang selesai.
+- Riwayat tidak menyimpan isi jawaban, memakai WIB. Reset meminta konfirmasi dan hanya menghapus progres CTF lokal.
 
-## Kunci jawaban
-
-`public/ctf/answers.json` berisi SHA-256 UTF-8 untuk jawaban stage `1`–`5` yang diberikan pengguna. Entri `6` merupakan token bonus dan masih `null` sampai token diberikan. Entri kosong atau kegagalan memuat konfigurasi tidak menilai jawaban dan tidak mengenakan penalti. Ganti entri dengan hash token persis untuk mengaktifkan penilaian bonus.
-
-Ini latihan statis mandiri: hash, bukti, dan progres dapat diperiksa atau diubah dari browser. Penilaian untuk kompetisi bersama memerlukan backend dan penyimpanan skor tersendiri.
+Penilaian ini latihan statis: hash, bukti, dan progres dapat diperiksa dari browser. Kompetisi bersama memerlukan backend tersendiri.
 
 ## Verifikasi
 
-Jalankan `npm run test:ctf`, `npm run build`, dan `npm run test:export`. Build dan pemeriksaan ekspor juga mendukung `NEXT_PUBLIC_BASE_PATH=/linuxlab`.
-
-Pengujian browser mencakup inisiasi, penalti, lima kunci asli, pembukaan bonus, persistensi setelah reload, riwayat, serta reset. Bonus 500 poin diuji dengan kunci sementara yang kemudian dihapus.
+Jalankan `npm run test:ctf`, `npm run build`, dan `npm run test:export`. Pemeriksaan mencakup aset lokal, 16 evidence, dan sembilan kunci. Pengujian browser memeriksa progres berurutan, validasi token akhir nonstandar, skor, dan persistensi.

@@ -3,19 +3,23 @@
   const key = 'linuxlab-mofcg-ctf-v1';
   const $ = id => document.getElementById(id);
   const show = (id, visible) => { const el = $(id); if (el) { el.hidden = !visible; el.classList.toggle('hidden', !visible); } };
-  const fresh = () => ({ started:false, solved:0, bonus:false, penalty:0, history:[] });
+  const fresh = () => ({ started:false, solved:0, bonus:false, advanced:0, penalty:0, history:[] });
   let state = fresh();
   let storageAvailable = true;
   try {
     const saved = JSON.parse(localStorage.getItem(key));
     if (saved && Number.isInteger(saved.solved) && saved.solved >= 0 && saved.solved <= 5 && Array.isArray(saved.history)) {
-      state = { started:!!saved.started, solved:saved.solved, bonus:saved.solved === 5 && !!saved.bonus, penalty:Math.max(0, Number(saved.penalty) || 0), history:saved.history.slice(-200) };
+      state = { started:!!saved.started, solved:saved.solved, bonus:saved.solved === 5 && !!saved.bonus, advanced:saved.solved===5 && saved.bonus && Number.isInteger(saved.advanced) ? Math.max(0,Math.min(3,saved.advanced)) : 0, penalty:Math.max(0, Number(saved.penalty) || 0), history:saved.history.slice(-200) };
     }
   } catch { storageAvailable = false; }
-  const score = () => state.solved * 1000 + (state.bonus ? 500 : 0) - state.penalty;
+  const points = {6:500,7:1500,8:2500,9:3000};
+  const completed = () => state.solved + Number(state.bonus) + state.advanced;
+  const isSolved = stage => stage<=5 ? state.solved>=stage : stage===6 ? state.bonus : state.advanced>=stage-6;
+  const isUnlocked = stage => state.started && (stage===1 || isSolved(stage-1));
+  const score = () => state.solved * 1000 + (state.bonus ? 500 : 0) + [0,1500,4000,7000][state.advanced] - state.penalty;
   const save = () => { try { localStorage.setItem(key, JSON.stringify(state)); } catch { storageAvailable = false; } };
   const downloads = [];
-  $('labScheduleBanner').innerHTML = '<div><span class="bg-emerald-500 text-black text-xs font-bold px-2 py-1 rounded">MODE LATIHAN</span><p class="text-sm mt-2">Selesaikan 5 tahapan investigasi secara berurutan dan temukan Token Nexus.</p></div><div class="bg-black/50 p-3 rounded text-xs font-mono text-emerald-300">OPERASI JEJAK DIGITAL<br>AKSES LATIHAN TANPA BATAS WAKTU</div>';
+  $('labScheduleBanner').innerHTML = '<div><span class="bg-emerald-500 text-black text-xs font-bold px-2 py-1 rounded">MODE LATIHAN</span><p class="text-sm mt-2">Selesaikan 9 tahapan: investigasi awal, Token Nexus, memori, rekayasa balik, dan forensik workstation.</p></div><div class="bg-black/50 p-3 rounded text-xs font-mono text-emerald-300">OPERASI JEJAK DIGITAL<br>AKSES LATIHAN TANPA BATAS WAKTU</div>';
   document.querySelectorAll('[class*="stage-dl-btn-"]').forEach(button => {
     const stage = Number(button.className.match(/stage-dl-btn-(\d)/)?.[1]);
     const file = button.textContent.match(/EVD-[\w.-]+/)?.[0];
@@ -28,6 +32,7 @@
     button.replaceWith(link);
     downloads.push({link, stage, url});
   });
+  document.querySelectorAll('[data-evidence-stage]').forEach(link => downloads.push({link,stage:Number(link.dataset.evidenceStage),url:link.getAttribute('href')}));
   // Reference capture was made after completion. Remove its stale completion styling.
   for (let i=1;i<=5;i++) {
     const card = $(`cardStage${i}`);
@@ -38,12 +43,16 @@
   }
   $('flagInputBonus').setAttribute('aria-label','Token rahasia bonus');
   $('formStageBonus').addEventListener('submit', event => submit(event,6));
+  for(let i=7;i<=9;i++) {
+    $(`flagInput${i}`).setAttribute('aria-label',`Flag Stage ${i}`);
+    $(`formStage${i}`).addEventListener('submit',event=>submit(event,i));
+  }
   document.querySelectorAll('[id^="fb"]').forEach(el => { el.setAttribute('role','status'); el.setAttribute('aria-live','polite'); });
   function render() {
     $('localScore').textContent = `Skor: ${score()}${storageAvailable ? '' : ' • penyimpanan tidak tersedia'}`;
-    $('localStages').textContent = `${state.solved} / 5`;
+    $('localStages').textContent = `${completed()} / 9`;
     $('localPoints').textContent = String(score());
-    $('pipelineProgressText').textContent = `Progres: ${state.solved} / 5 Stage Selesai (${state.solved*20}%)${state.solved===5 ? ' • MISI BONUS TERBUKA!' : ''}`;
+    $('pipelineProgressText').textContent = `Progres: ${completed()} / 9 Stage Selesai (${Math.round(completed()/9*100)}%)${completed()===9 ? ' • OPERASI TUNTAS 100%' : ''}`;
     show('operationGate',!state.started);
     show('operationActiveBanner',state.started);
     show('briefingNarrativeSection',state.started);
@@ -66,15 +75,32 @@
     $('lockBadgeStage1').textContent = 'TAHAP 1 TERKUNCI';
     $('lockDescStage1').textContent = 'Inisiasi operasi dan baca briefing untuk memulai investigasi.';
     downloads.forEach(({link,stage,url}) => {
-      const unlocked = state.started && state.solved >= stage-1;
+      const unlocked = isUnlocked(stage);
       if(unlocked) link.setAttribute('href',url); else link.removeAttribute('href');
       link.setAttribute('aria-disabled',String(!unlocked));
       link.tabIndex = unlocked ? 0 : -1;
     });
-    show('stageCardBonus',state.solved===5);
+    show('stageCardBonus',true);
     show('formStageBonus',!state.bonus);
+    $('flagInputBonus').disabled = !isUnlocked(6) || state.bonus;
+    $('btnStageBonus').disabled = !isUnlocked(6) || state.bonus;
     show('solvedBannerStageBonus',state.bonus);
-    $('badgeStageBonus').textContent = state.bonus ? 'BONUS SOLVED' : 'BONUS TERBUKA';
+    $('badgeStageBonus').textContent = state.bonus ? 'BONUS SOLVED' : isUnlocked(6) ? 'BONUS TERBUKA' : 'TERKUNCI — SELESAIKAN STAGE 5';
+    for(let i=6;i<=9;i++) {
+      const solved=isSolved(i), unlocked=isUnlocked(i);
+      $(`pipeNode${i}`).classList.toggle('local-complete',solved);
+      $(`pipeNode${i}`).classList.toggle('local-pending',!unlocked);
+      $(`pipeNode${i}`).classList.toggle('local-active',unlocked&&!solved);
+      $(`pipeBadge${i}`).textContent=solved?'✓ SELESAI':unlocked?'AKTIF':'TERKUNCI';
+      if(i===6) continue;
+      show(`lockedStage${i}`,!unlocked);
+      show(`formStage${i}`,!solved);
+      show(`solvedBannerStage${i}`,solved);
+      $(`flagInput${i}`).disabled=!unlocked||solved;
+      $(`btnStage${i}`).disabled=!unlocked||solved;
+      $(`cardStage${i}`).classList.toggle('local-complete',solved);
+      $(`badgeStateStage${i}`).textContent=solved?'✓ SELESAI':unlocked?'MISI AKTIF':'TERKUNCI';
+    }
     $('btnGasken').textContent = 'GASKEN — MULAI ANALISIS BUKTI';
     $('btnGasken').disabled = false;
     show('modalMySubmissions',false);
@@ -82,7 +108,7 @@
   }
   async function submit(event,stage) {
     event.preventDefault();
-    if(!state.started || (stage<=5 ? state.solved!==stage-1 : state.solved!==5 || state.bonus)) return;
+    if(!isUnlocked(stage) || isSolved(stage)) return;
     const suffix = stage===6 ? 'Bonus' : String(stage);
     const input = $('flagInput'+suffix);
     const feedback = $('fb'+suffix);
@@ -104,15 +130,15 @@
       const correct = digest===expected;
       state.history.push({time:new Date().toISOString(),stage,correct});
       state.history = state.history.slice(-200);
-      if(correct) { if(stage===6) state.bonus=true; else state.solved=stage; }
-      else state.penalty+=10;
+      if(correct) { if(stage===6) state.bonus=true; else if(stage>=7) state.advanced=stage-6; else state.solved=stage; }
+      else state.penalty+=stage===9?100:10;
       save(); render();
-      feedback.textContent = correct ? 'Flag terverifikasi. Tahap berikutnya terbuka!' : 'Flag belum tepat. Penalti −10 poin. Periksa kembali bukti dan format jawaban.';
+      feedback.textContent = correct ? (stage===9?'Operasi tuntas! Seluruh 9 stage terverifikasi.':`Flag terverifikasi. +${points[stage]||1000} poin. Tahap berikutnya terbuka!`) : `Flag belum tepat. Penalti −${stage===9?100:10} poin. Periksa kembali bukti dan token jawaban.`;
       feedback.style.color = correct ? '#6ee7b7' : '#fca5a5';
       input.value = '';
     } catch {
       feedback.textContent = 'Validasi belum tersedia. Coba kembali; tidak ada penalti.';
-    } finally { button.disabled = stage===6 ? state.bonus : state.solved>=stage; }
+    } finally { button.disabled = !isUnlocked(stage) || isSolved(stage); }
   }
   const start = () => { state.started=true; save(); render(); $('briefingNarrativeSection').scrollIntoView({behavior:'smooth'}); };
   $('btnStartOperation').disabled = false;
@@ -151,7 +177,7 @@
     if(!state.history.length) { const row=tbody.insertRow(); const cell=row.insertCell();cell.colSpan=4;cell.textContent='Belum ada pengumpulan flag.'; }
     state.history.slice().reverse().forEach(item=>{
       const row=tbody.insertRow();
-      [new Date(item.time).toLocaleString('id-ID',{timeZone:'Asia/Jakarta'}),item.stage===6?'Bonus':`Stage ${item.stage}`,item.correct?'VALID':'SALAH',item.correct?'0':'−10'].forEach(text=>{row.insertCell().textContent=text;});
+      [new Date(item.time).toLocaleString('id-ID',{timeZone:'Asia/Jakarta'}),item.stage===6?'Stage 6 (Bonus)':`Stage ${item.stage}`,item.correct?'VALID':'SALAH',item.correct?'0':item.stage===9?'−100':'−10'].forEach(text=>{row.insertCell().textContent=text;});
     });
     show('modalMySubmissions',true); $('modalMySubmissions').setAttribute('aria-modal','true');$('modalMySubmissions').setAttribute('role','dialog');
     document.querySelector('#modalMySubmissions button')?.focus();

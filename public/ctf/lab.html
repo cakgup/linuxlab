@@ -66,12 +66,12 @@
             <div class="flex items-center justify-between text-xs pb-2 border-b border-gray-800">
                 <span class="font-bold text-emerald-400 flex items-center space-x-1.5 uppercase tracking-wider">
                     <i class="fa-solid fa-network-wired"></i>
-                    <span>Visual Pipeline Investigasi 5 Stages</span>
+                    <span>Visual Pipeline Investigasi 9 Stages</span>
                 </span>
-                <span id="pipelineProgressText" class="font-mono text-gray-400 text-[11px]"><span class="text-amber-400 font-bold">Progres: 5 / 5 Stage Selesai (100%) • MISI BONUS TERBUKA!</span></span>
+                <span id="pipelineProgressText" class="font-mono text-gray-400 text-[11px]"><span class="text-amber-400 font-bold">Progres: 0 / 9 Stage Selesai (0%)</span></span>
             </div>
             
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 text-center text-xs font-mono">
+            <div class="local-pipeline grid grid-cols-2 sm:grid-cols-3 gap-2 text-center text-xs font-mono">
                 <div id="pipeNode1" class="p-2.5 rounded border border-emerald-500 bg-emerald-950/60 space-y-1 transition duration-300 shadow-lg shadow-emerald-950/50 ring-1 ring-emerald-500/50">
                     <span class="block text-[10px] text-gray-400 font-bold">STAGE 1</span>
                     <span class="font-bold text-white block truncate text-[11px]">Titik Nol</span>
@@ -97,13 +97,17 @@
                     <span class="font-bold text-gray-300 block truncate text-[11px]">The Nexus</span>
                     <span id="pipeBadge5" class="inline-block text-[9px] px-1.5 py-0.5 rounded font-bold bg-emerald-500 text-black"><i class="fa-solid fa-check mr-1"></i>SELESAI</span>
                 </div>
+<div id="pipeNode6" class="p-2.5 rounded border space-y-1"><span class="block text-gray-400">STAGE 6</span><span class="font-bold block">Token Nexus (Bonus)</span><span id="pipeBadge6">TERKUNCI</span></div>
+<div id="pipeNode7" class="p-2.5 rounded border space-y-1"><span class="block text-gray-400">STAGE 7</span><span class="font-bold block">Penelusuran Memori Workstation</span><span id="pipeBadge7">TERKUNCI</span></div>
+<div id="pipeNode8" class="p-2.5 rounded border space-y-1"><span class="block text-gray-400">STAGE 8</span><span class="font-bold block">Penanganan Agen Brankas Otomatis</span><span id="pipeBadge8">TERKUNCI</span></div>
+<div id="pipeNode9" class="p-2.5 rounded border space-y-1"><span class="block text-gray-400">STAGE 9</span><span class="font-bold block">Forensik Perangkat Pribadi — Jejak Terakhir</span><span id="pipeBadge9">TERKUNCI</span></div>
             </div>
         </section>
 
         <!-- Main Layout: 2-Kolom (Kiri: Arena Investigasi, Kanan: Live Leaderboard Peserta) -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
 
-            <!-- KOLOM KIRI: Briefing Dossier & 5 Stages Investigasi (lg:col-span-8) -->
+            <!-- KOLOM KIRI: Briefing Dossier & 9 Stages Investigasi (lg:col-span-8) -->
             <div class="lg:col-span-8 space-y-8">
 
                 <!-- 1. Incident Briefing Dossier -->
@@ -346,12 +350,12 @@
             </div>
         </section>
 
-        <!-- 2. Tahapan Investigasi (5 Stages Berurutan) -->
+        <!-- 2. Tahapan Investigasi (9 Stages Berurutan) -->
         <section class="space-y-4">
             <div>
                 <h3 class="text-lg font-bold text-white flex items-center space-x-2">
                     <i class="fa-solid fa-cubes text-emerald-400"></i>
-                    <span>Tahapan Investigasi (5 Stages Berurutan)</span>
+                    <span>Tahapan Investigasi (9 Stages Berurutan)</span>
                 </h3>
                 <p class="text-xs text-gray-400">Penyelesaian stage bersifat sekuensial. Stage berikutnya hanya akan terbuka jika stage sebelumnya selesai!</p>
             </div>
@@ -806,7 +810,7 @@
                             </div>
                             <div>
                                 <div class="flex items-center gap-2">
-                                    <h3 class="text-sm font-bold text-amber-300 font-mono tracking-wider">MISI RAHASIA BONUS: TOKEN NEXUS</h3>
+                                    <h3 class="text-sm font-bold text-amber-300 font-mono tracking-wider">STAGE 6 — MISI BONUS: TOKEN NEXUS</h3>
                                     <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/20 text-amber-400 border border-amber-500/40">+500 POIN BONUS</span>
                                 </div>
                                 <p class="text-[11px] text-gray-400 font-mono">Tantangan Ekstra: Deklasifikasi String Token Steganografi</p>
@@ -830,7 +834,7 @@
                             <form id="formStageBonus" class="space-y-2">
                                 <div class="flex items-center justify-between text-[11px] text-gray-400 font-mono">
                                     <span><i class="fa-solid fa-key text-amber-400 mr-1"></i>Input Token Rahasia:</span>
-                                    <span class="text-[10px] text-amber-400/90 font-mono">Contoh: Z34...</span>
+                                    <span class="text-[10px] text-amber-400/90 font-mono">Token hasil ekstraksi steganografi</span>
                                 </div>
                                 <input type="text" id="flagInputBonus" placeholder="Masukkan token rahasia..." required="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="w-full bg-[#0b0f19] border border-amber-700/60 rounded px-3 py-2 text-xs text-white focus:border-amber-400 focus:outline-none font-mono tracking-wider">
                                 <button type="submit" id="btnStageBonus" class="w-full bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 hover:from-amber-500 hover:to-yellow-500 text-black font-mono font-bold py-2 rounded text-xs transition duration-200 shadow-lg shadow-amber-950/50 flex items-center justify-center gap-1.5 cursor-pointer">
@@ -846,6 +850,30 @@
                     </div>
                 </div>
 
+<article id="cardStage7" class="cyber-card local-extra-stage md:col-span-2 lg:col-span-2 p-5 rounded-lg space-y-4">
+ <div class="local-stage-heading"><div><span class="text-emerald-400">STAGE 7 · 1,500 POIN</span><h3>Penelusuran Memori Workstation</h3><p>Analisis rekaman aktivitas komputer kerja pelaku saat insiden.</p></div><span id="badgeStateStage7">TERKUNCI</span></div>
+ <p>Tim tanggap darurat mengamankan citra memori komputer yang digunakan pelaku tepat saat transaksi ilegal terjadi. Periksa proses, instruksi tersembunyi, dan jejak pengendali transaksi untuk menemukan kode rahasia.</p>
+ <a class="local-download" data-evidence-stage="7" href="evidence/Stage7/EVD-MEM-002.raw.zip" download="EVD-MEM-002.raw.zip"><span>↓ Unduh evidence</span><strong>EVD-MEM-002.raw.zip</strong></a>
+ <p id="lockedStage7" class="local-lock-note">Selesaikan Stage 6 terlebih dahulu untuk membuka analisis tahap ini.</p>
+ <form id="formStage7" class="space-y-2"><label for="flagInput7">Input token Stage 7</label><input class="w-full" id="flagInput7" type="text" placeholder="Masukkan token hasil temuan..." required autocomplete="off" autocapitalize="off" spellcheck="false"><button class="cyber-bg-accent w-full" id="btnStage7" type="submit">Validasi Stage 7 (+1,500 Poin)</button><div id="fb7" class="local-feedback"></div></form>
+ <div id="solvedBannerStage7" class="local-solved" hidden><strong>✓ STAGE 7 SELESAI</strong><p>Modul pengendali terselubung terungkap. Jejak memori mengarah ke agen otomatis yang ditinggalkan di server kliring perbankan.</p></div>
+ </article>
+<article id="cardStage8" class="cyber-card local-extra-stage md:col-span-2 lg:col-span-2 p-5 rounded-lg space-y-4">
+ <div class="local-stage-heading"><div><span class="text-emerald-400">STAGE 8 · 2,500 POIN</span><h3>Penanganan Agen Brankas Otomatis</h3><p>Rekayasa balik program pengendali transaksi darurat.</p></div><span id="badgeStateStage8">TERKUNCI</span></div>
+ <p>Program agen otomatis disiapkan untuk memindahkan dana cadangan Rp 17,48 miliar. Pelajari logika biner, rekonstruksi kunci pemulihan, dan temukan token tanda terima pembatalan transaksi.</p>
+ <a class="local-download" data-evidence-stage="8" href="evidence/Stage8/EVD-VAULT-001" download="EVD-VAULT-001"><span>↓ Unduh evidence</span><strong>EVD-VAULT-001</strong></a>
+ <p id="lockedStage8" class="local-lock-note">Selesaikan Stage 7 terlebih dahulu untuk membuka analisis tahap ini.</p>
+ <form id="formStage8" class="space-y-2"><label for="flagInput8">Input token Stage 8</label><input class="w-full" id="flagInput8" type="text" placeholder="Masukkan token hasil temuan..." required autocomplete="off" autocapitalize="off" spellcheck="false"><button class="cyber-bg-accent w-full" id="btnStage8" type="submit">Validasi Stage 8 (+2,500 Poin)</button><div id="fb8" class="local-feedback"></div></form>
+ <div id="solvedBannerStage8" class="local-solved" hidden><strong>✓ STAGE 8 SELESAI</strong><p>Agen brankas berhasil dilucuti. Dana cadangan Rp 17,48 miliar terselamatkan. Workstation pribadi pelaku kini diamankan untuk pemeriksaan terakhir.</p></div>
+ </article>
+<article id="cardStage9" class="cyber-card local-extra-stage md:col-span-2 lg:col-span-2 p-5 rounded-lg space-y-4">
+ <div class="local-stage-heading"><div><span class="text-emerald-400">STAGE 9 · 3,000 POIN</span><h3>Forensik Perangkat Pribadi — Jejak Terakhir</h3><p>Analisis workstation target dan rekonstruksi bukti digital.</p></div><span id="badgeStateStage9">TERKUNCI</span></div>
+ <p>Periksa 64 artefak workstation Dadan Suherman: riwayat aktivitas, konfigurasi, arsip pemulihan, serta dokumentasi internal. Ungkap kebenaran di balik tindakan pelaku dan temukan token terakhir.</p>
+ <a class="local-download" data-evidence-stage="9" href="evidence/Stage9/EVD-DEV-001.zip" download="EVD-DEV-001.zip"><span>↓ Unduh evidence</span><strong>EVD-DEV-001.zip</strong></a>
+ <p id="lockedStage9" class="local-lock-note">Selesaikan Stage 8 terlebih dahulu untuk membuka analisis tahap ini.</p>
+ <form id="formStage9" class="space-y-2"><label for="flagInput9">Input token Stage 9</label><input class="w-full" id="flagInput9" type="text" placeholder="Masukkan token hasil temuan..." required autocomplete="off" autocapitalize="off" spellcheck="false"><button class="cyber-bg-accent w-full" id="btnStage9" type="submit">Validasi Stage 9 (+3,000 Poin)</button><div id="fb9" class="local-feedback"></div></form>
+ <div id="solvedBannerStage9" class="local-solved" hidden><strong>✓ STAGE 9 SELESAI</strong><p>OPERASI TUNTAS 100%. Seluruh 9 tahap investigasi selesai. Catatan pribadi dan artefak pemulihan mengungkap pengakuan pelaku serta motif di balik konspirasi internal.</p></div>
+ </article>
             </div>
         </section>
 
@@ -855,7 +883,7 @@
             <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-4">
 
                 <!-- Live Leaderboard Cyber Widget -->
-                <div class="cyber-card rounded-lg p-5 space-y-4"><h3 class="font-bold text-emerald-400">🏆 PAPAN PROGRES GUARDIAN</h3><p class="text-xs text-gray-400">Latihan mandiri • progres tersimpan pada browser ini.</p><table class="w-full text-xs"><thead><tr><th>GUARDIAN</th><th>STAGE</th><th>SKOR</th></tr></thead><tbody><tr><td class="py-4">Guardian LinuxLab</td><td id="localStages">0 / 5</td><td id="localPoints">0</td></tr></tbody></table><p class="text-xs text-gray-400">Sumber skenario: MOFCG CTF — Jejak Digital.</p></div>
+                <div class="cyber-card rounded-lg p-5 space-y-4"><h3 class="font-bold text-emerald-400">🏆 PAPAN PROGRES GUARDIAN</h3><p class="text-xs text-gray-400">Latihan mandiri • progres tersimpan pada browser ini.</p><table class="w-full text-xs"><thead><tr><th>GUARDIAN</th><th>STAGE</th><th>SKOR</th></tr></thead><tbody><tr><td class="py-4">Guardian LinuxLab</td><td id="localStages">0 / 9</td><td id="localPoints">0</td></tr></tbody></table><p class="text-xs text-gray-400">Sumber skenario: MOFCG CTF — Jejak Digital.</p></div>
 
                 <!-- Strategic Investigation Tips Card -->
                 <div class="cyber-card p-4 rounded-xl border border-gray-800/80 bg-gray-950/60 text-xs font-mono space-y-2.5">
@@ -865,8 +893,8 @@
                     </div>
                     <ul class="text-[11px] text-gray-400 space-y-1.5 list-disc pl-4 font-sans leading-relaxed">
                         <li>Semua bukti digital saling berkaitan membentuk alur kronologis insiden.</li>
-                        <li>Format penulisan flag selalu diawali <code class="text-emerald-400 font-mono">MOFCG{</code> dan diakhiri <code class="text-emerald-400 font-mono">}</code>.</li>
-                        <li>Submit salah dikenakan penalti <span class="text-rose-400 font-bold">-10 poin</span>. Pastikan format sudah benar sebelum submit.</li>
+                        <li>Stage 1–5, 7–8 menggunakan awalan <code class="text-emerald-400 font-mono">MOFCG{</code> dan diakhiri <code class="text-emerald-400 font-mono">}</code>. Stage 6 dan 9 menerima token persis hasil temuan.</li>
+                        <li>Submit salah dikenakan penalti <span class="text-rose-400 font-bold">-10 poin</span>. Stage 9: penalti -100 poin. Pastikan token sesuai evidence sebelum submit.</li>
                     </ul>
                 </div>
 
