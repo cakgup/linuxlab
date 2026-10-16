@@ -20,6 +20,8 @@ Semua aset dan 16 berkas evidence disajikan lokal. Stage 7 menambahkan citra mem
 
 Penilaian ini latihan statis: hash, bukti, dan progres dapat diperiksa dari browser. Kompetisi bersama memerlukan backend tersendiri.
 
+Narasi diperiksa terhadap halaman sumber pada 16 Oktober 2026. Briefing dan narasi Stage 1–5 sudah cocok. Narasi awal, tugas penyelidikan, subjudul, kesimpulan setelah selesai, serta penghubung Stage 6–9 telah dilengkapi dengan teks sumber, termasuk epilog Stage 9. Layout kartu dan mekanisme skor tetap mengikuti mode latihan LinuxLab.
+
 ## Verifikasi
 
 Jalankan `npm run test:ctf`, `npm run build`, dan `npm run test:export`. Pemeriksaan mencakup aset lokal, 16 evidence, dan sembilan kunci. Pengujian browser memeriksa progres berurutan, validasi token akhir nonstandar, skor, dan persistensi.

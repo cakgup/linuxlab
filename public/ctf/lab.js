@@ -45,6 +45,7 @@
   $('formStageBonus').addEventListener('submit', event => submit(event,6));
   for(let i=7;i<=9;i++) {
     $(`flagInput${i}`).setAttribute('aria-label',`Flag Stage ${i}`);
+    $(`btnStage${i}`).classList.remove('opacity-50','cursor-not-allowed');
     $(`formStage${i}`).addEventListener('submit',event=>submit(event,i));
   }
   document.querySelectorAll('[id^="fb"]').forEach(el => { el.setAttribute('role','status'); el.setAttribute('aria-live','polite'); });
@@ -62,7 +63,8 @@
       show(`lockOverlayStage${i}`, !unlocked);
       show(`formStage${i}`,unlocked && !solved);
       show(`solvedBannerStage${i}`,solved);
-      $(`bodyStage${i}`).inert = !unlocked;
+      // Keep locked-stage descriptions readable; disable only their actions.
+      $(`bodyStage${i}`).inert = false;
       $(`flagInput${i}`).disabled = !unlocked || solved;
       $(`btnStage${i}`).disabled = !unlocked || solved;
       $(`cardStage${i}`).classList.toggle('local-complete',solved);
@@ -93,13 +95,13 @@
       $(`pipeNode${i}`).classList.toggle('local-active',unlocked&&!solved);
       $(`pipeBadge${i}`).textContent=solved?'✓ SELESAI':unlocked?'AKTIF':'TERKUNCI';
       if(i===6) continue;
-      show(`lockedStage${i}`,!unlocked);
-      show(`formStage${i}`,!solved);
+      show(`lockOverlayStage${i}`,!unlocked);
+      show(`formStage${i}`,unlocked&&!solved);
       show(`solvedBannerStage${i}`,solved);
       $(`flagInput${i}`).disabled=!unlocked||solved;
       $(`btnStage${i}`).disabled=!unlocked||solved;
       $(`cardStage${i}`).classList.toggle('local-complete',solved);
-      $(`badgeStateStage${i}`).textContent=solved?'✓ SELESAI':unlocked?'MISI AKTIF':'TERKUNCI';
+      $(`badgeStateStage${i}`).textContent=solved?'✓ SELESAI':unlocked?'AKTIF':'TERKUNCI';
     }
     $('btnGasken').textContent = 'GASKEN — MULAI ANALISIS BUKTI';
     $('btnGasken').disabled = false;

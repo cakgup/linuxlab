@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 
 export default function CtfPage() {
   const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
-  return <div className="ctf-shell"><Nav /><iframe className="ctf-frame" title="CTF MOFCG: Jejak Digital" src={`${base}/ctf/lab.html`} /></div>;
+  return <div className="ctf-shell"><Nav /><iframe className="ctf-frame" title="CTF MOFCG: Jejak Digital" src={`${base}/ctf/lab.html?v=source-narratives-1`} /></div>;
 }

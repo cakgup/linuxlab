@@ -7,7 +7,7 @@ assert(!/\son\w+=/i.test(html),'Unexpected original inline event handler');
 assert(!/https?:\/\/|__INITIAL_PARTICIPANT__|085717119171/.test(html),'Remote URL or original session data retained');
 for(const [,url] of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
   if(url==='../../') continue;
-  assert(fs.existsSync(path.resolve(root,url)),`Missing local resource ${url}`);
+  assert(fs.existsSync(path.resolve(root,url.split(/[?#]/)[0])),`Missing local resource ${url}`);
 }
 const answers=JSON.parse(fs.readFileSync(path.join(root,'answers.json'),'utf8'));
 for(let stage=1;stage<=9;stage++) {
