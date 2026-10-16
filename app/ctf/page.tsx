@@ -3,7 +3,7 @@ import { Nav } from "@/components/Nav";
 
 export const metadata: Metadata = {
   title: "CTF: Jejak Digital | LinuxLab Cyber",
-  description: "Arena investigasi forensik MOFCG: lima tahapan, evidence digital, dan misi rahasia Token Nexus.",
+  description: "Arena investigasi forensik MOFCG: sembilan tahapan, Token Nexus, analisis memori, rekayasa balik, dan forensik workstation.",
 };
 
 export default function CtfPage() {
