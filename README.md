@@ -43,7 +43,6 @@ Seluruh latihan berjalan sebagai simulasi di browser. Perintah diproses oleh mes
 - Validasi tugas berdasarkan hasil perubahan host virtual dan riwayat perintah.
 - XP, badge, petunjuk, dan indikator progres pembelajaran.
 - Progres tersimpan di browser melalui `localStorage`.
-- Menu CTF Jejak Digital dengan 9 stage berurutan, 16 evidence, validasi flag, riwayat, dan misi bonus. Lihat [panduan CTF](docs/CTF.md).
 - Ekspor statis untuk deployment melalui GitHub Pages.
 - Tema biru tua dan kuning yang seragam dengan Simple Toolkit Pentest, navigasi cepat antarjalur, dan tombol lanjut belajar.
 
@@ -148,13 +147,6 @@ npm run test:export
 | Progres berbeda di perangkat lain | Progres tersimpan pada browser dan origin yang digunakan, tanpa sinkronisasi akun. |
 
 ---
-
-## Dokumentasi
-
-- [Architecture](docs/ARCHITECTURE.md) — struktur aplikasi dan mekanisme simulasi.
-- [Curriculum Map](docs/CURRICULUM.md) — materi dan urutan pembelajaran.
-- [Pro Bash Coverage](docs/PRO_BASH_COVERAGE.md) — cakupan perintah dan batasan shell.
-- [Roadmap](docs/ROADMAP.md) — rencana pengembangan.
 
 ## Catatan Penggunaan
 
