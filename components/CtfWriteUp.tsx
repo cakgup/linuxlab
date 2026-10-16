@@ -53,7 +53,6 @@ export function CtfWriteUp() {
       <div className="locked-room-icon"><LockKeyhole size={27} /></div>
       <span className="eyebrow">LinuxLab Cyber · CTF</span>
       <h1 id="access-title">Write-up Jejak Digital</h1>
-      <p>Pembahasan lengkap Stage 1–9, dari analisis email hingga forensik workstation. Masukkan kode akses untuk membuka seluruh pembahasan.</p>
       <form onSubmit={unlock} className="writeup-access">
         <label htmlFor="writeup-code">Kode akses</label>
         <input ref={input} id="writeup-code" type="password" autoComplete="off" autoCapitalize="off" spellCheck={false} required value={code} onChange={event => setCode(event.target.value)} aria-describedby={error ? "access-error" : undefined} aria-invalid={!!error} />
