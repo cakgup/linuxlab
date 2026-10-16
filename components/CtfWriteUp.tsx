@@ -27,7 +27,7 @@ export function CtfWriteUp() {
     if (busy || !code) return;
     setBusy(true); setError("");
     try {
-      const response = await fetch(`${base}/ctf/write-up.enc.json`);
+      const response = await fetch(`${base}/ctf/write-up.enc.json`, { cache: "no-store" });
       if (!response.ok) throw new Error("load");
       const data: Envelope = await response.json();
       if (data.version !== 1) throw new Error("load");
