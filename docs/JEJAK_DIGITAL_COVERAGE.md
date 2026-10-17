@@ -33,9 +33,13 @@ Setiap modul memiliki konsep, interpretasi hasil, fungsi/sintaks/contoh alat, em
 
 `npm run test:core`: seluruh urutan prasyarat 39 modul / 154 tugas. `npm run test:forensics`: 40/40 tugas melalui 59 perintah, bukti sumber tidak berubah, hash independen, penolakan kunci/password/filter salah, UTF-16LE, query baca, pemulihan arsip, completion, dan cakupan stage 1–9. Test ini juga dijalankan di CI.
 
+Pemeriksaan browser pada 18 Oktober 2026 juga menyelesaikan **10/10 modul forensik, 40/40 tugas** melalui terminal UI. Progres dan pembukaan prasyarat diuji secara berurutan setelah enam modul keamanan. Hasil akhir laporan diverifikasi dengan manifest SHA-256 (`OK`). Halaman panduan menampilkan pemetaan seluruh stage 1–9 dan rujukan resmi.
+
 ## Rujukan resmi untuk alat nyata
 
 - [GnuPG operational commands](https://gnupg.org/documentation/manuals/gnupg/Operational-GPG-Commands.html) — impor, dekripsi, verifikasi.
 - [Wireshark TShark manual](https://www.wireshark.org/docs/man-pages/tshark.html) — pembacaan offline, display filter, field.
 - [Volatility 3 Windows tutorial](https://github.com/volatilityfoundation/volatility3/blob/develop/doc/source/getting-started-windows-tutorial.rst) — proses, command line, simbol.
 - [SQLite CLI](https://www.sqlite.org/cli.html) — query dan membuka database read-only.
+
+- [Mozilla: Firefox profile files](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data) — places.sqlite, logins.json, key4.db.

@@ -12,7 +12,7 @@ const events=[
   {timestamp:"2026-07-14T01:05:00Z",event:"TaskCreated",user:"operator",task:"Updater",image:"agent.exe",pid:4200},
 ];
 const packets=[
-  {"frame.time_epoch":"1783990920","ip.src":"10.0.0.10","ip.dst":"10.0.0.20","tcp.dstport":"443","http.host":"intranet.invalid","http.request.uri":"/status","http.request.method":"GET"},
+  {"frame.time_epoch":"1783990920","ip.src":"10.0.0.10","ip.dst":"10.0.0.20","tcp.dstport":"80","http.host":"intranet.invalid","http.request.uri":"/status","http.request.method":"GET"},
   {"frame.time_epoch":"1783990980","ip.src":"10.0.0.20","ip.dst":"192.0.2.44","tcp.dstport":"80","http.host":"lab.control.invalid","http.request.uri":"/assets/banner.jpg","http.request.method":"GET"},
 ];
 const mail="From: Security Training <briefing@lab.control.invalid>\nReply-To: help@other.invalid\nDate: Tue, 14 Jul 2026 08:02:00 +0700\nSubject: Tinjau dokumen latihan\nReceived: from mail.lab.control.invalid by mx.training.invalid\n\nTinjau lampiran secara offline; jangan membuka URL.\n";
