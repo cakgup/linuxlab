@@ -129,6 +129,7 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
               <ul>{room.learning.map((item) => <li key={item}>{item}</li>)}</ul>
             </div>
 
+            {room.notes && <section className="lesson-card command-guide" aria-label="Konsep dan metode analisis"><h3>Konsep dan metode analisis</h3>{room.notes.map((note,index)=><details key={note.title} open={index===0}><summary>{note.title}</summary><p>{note.body}</p></details>)}</section>}
             <div className="task-list">
               {room.tasks.map((task, index) => {
                 const done = completed.includes(task.id);
@@ -184,7 +185,7 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
             <div style={{ display: "flex", alignItems: "center", gap: 11 }}><span className="terminal-dots"><i /><i /><i /></span><span>{identity ? `${identity.user}@${identity.host}` : "training-web-01"} · simulasi terisolasi</span></div>
             <div className="terminal-actions"><a className="mobile-terminal-link" href="#lesson">Kembali ke materi</a><button onClick={resetLab}><RotateCcw size={12} style={{ verticalAlign: "-2px", marginRight: 5 }} />Atur ulang latihan</button></div>
           </div>
-          {sessionAdvice && <div className="room-session-guide" role="status"><strong>{sessionAdvice.label}</strong><p>{sessionAdvice.message}</p>{sessionAdvice.commands.map(command=><code key={command}>{command}</code>)}<span>Modul administrasi memakai server latihan yang sama dengan Warm Up. SSH: admin1234! · MySQL: baca DB_PASSWORD di wp-config.php. Modul setelah SSH dimulai pada shell server; login MySQL tetap dipraktikkan sendiri.</span></div>}
+          {sessionAdvice && <div className="room-session-guide" role="status"><strong>{sessionAdvice.label}</strong><p>{sessionAdvice.message}</p>{sessionAdvice.commands.map(command=><code key={command}>{command}</code>)}<span>{room.environment==="forensics" ? "Alat forensik dan format biner dimodelkan untuk mempelajari alur. Helper memory bukan Volatility. Bukti latihan tidak berisi jawaban Jejak Digital; baca konsep untuk menerapkan alat nyata pada CTF." : "Modul administrasi memakai server latihan yang sama dengan Warm Up. SSH: admin1234! · MySQL: baca DB_PASSWORD di wp-config.php. Modul setelah SSH dimulai pada shell server; login MySQL tetap dipraktikkan sendiri."}</span></div>}
           <div className="terminal-wrap"><BrowserTerminal onCommand={handleCommand} cwd={labState.cwd} identity={identity} resetToken={resetToken} onComplete={line => completeRoomCommand(room,labState,line)} onCancel={()=>{const next=cancelRoomInput(room,labState);setLabState(next);return {prompt:Reflect.get(next,"mysql") ? "mysql> " : undefined};}} /></div>
           {justCompleted && <div className="objective-toast">✓ Tugas selesai · XP bertambah</div>}
         </section>

@@ -31,6 +31,7 @@ const { isTaskComplete } = require(path.join(tmp, 'validator.js'));
 const { rooms, isRoomUnlocked } = require(path.join(tmp, 'tracks.js'));
 
 const recipes = {
+  ...require('./forensics-recipes.cjs'),
   'basic-help-tools': ['help','man grep','type cd','which grep','file /home/analyst/training/scripts/deploy.sh'],
   'basic-text-processing': ['sort /home/analyst/training/visitors.txt | uniq -c',"awk '{print $1}' /home/analyst/training/logs/access.log", "echo warning | tr 'a-z' 'A-Z'", "sed -n '1,3p' /home/analyst/training/notes.txt", "cut -d ' ' -f1 /home/analyst/training/logs/access.log"],
   'basic-links-discovery': ['find /home/analyst/training -type f','find /home/analyst/training -name deploy.sh','ln -s /home/analyst/training/notes.txt /home/analyst/notes-link','readlink /home/analyst/notes-link','file /home/analyst/notes-link','cat /home/analyst/notes-link'],
@@ -137,7 +138,7 @@ assert(!sqlState.mysqlVerified,'wrong MySQL password rejected');
 for(const cmd of ['mysql -u root -p','Admin1234!.','SELECT COUNT(*) FROM wp_users;']) sqlState=executeRoomCommand(sqlRoom,sqlState,cmd).state;
 assert(!isTaskComplete(sqlRoom.tasks[2],sqlState),'failed query without database does not complete task');
 assert(!sqlState.history.includes('Admin1234!.'),'password excluded from history');
-assert(new Set(rooms.flatMap(room=>room.tasks.map(task=>task.id))).size===114,'unique task IDs');
+assert(new Set(rooms.flatMap(room=>room.tasks.map(task=>task.id))).size===rooms.reduce((sum,room)=>sum+room.tasks.length,0),'unique task IDs');
 
 console.log(`TOTAL ${rooms.length} rooms / ${rooms.reduce((n, r) => n + r.tasks.length, 0)} tasks / failures=${failures}`);
 fs.rmSync(tmp, { recursive: true, force: true });

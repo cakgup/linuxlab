@@ -17,7 +17,7 @@ const packets=[
 ];
 const mail="From: Security Training <briefing@lab.control.invalid>\nReply-To: help@other.invalid\nDate: Tue, 14 Jul 2026 08:02:00 +0700\nSubject: Tinjau dokumen latihan\nReceived: from mail.lab.control.invalid by mx.training.invalid\n\nTinjau lampiran secara offline; jangan membuka URL.\n";
 const pdf="%PDF-1.4\nLAPORAN LATIHAN\nPersetujuan perlu diverifikasi terhadap audit trail.\n%%EOF\nAPPENDED_NOTE: REVIEW_REQUIRED\n";
-const memory="LAB_MEMORY_MODEL\nPID=4100 PPID=900 NAME=winword.exe\nPID=4200 PPID=4100 NAME=powershell.exe\nPID=4300 PPID=4200 NAME=agent.exe\nCOMMAND_LINE=powershell.exe -enc UkVWSUVXX1JFUVVJUkVE\nREMOTE=192.0.2.44:80 PID=4300\n";
+const memory="LAB_MEMORY_MODEL\nPID=4100 PPID=900 NAME=winword.exe\nPID=4200 PPID=4100 NAME=powershell.exe\nPID=4300 PPID=4200 NAME=agent.exe\nCOMMAND_LINE=powershell.exe -enc VwByAGkAdABlAC0ATwB1AHQAcAB1AHQAIABSAEUAVgBJAEUAVwBfAFIARQBRAFUASQBSAEUARAA=\nREMOTE=192.0.2.44:80 PID=4300\n";
 const agent="\u007fELF LAB_MODEL x86-64\nusage: agent --disarm DOMAIN:KEY\nlab.control.invalid\nstrcmp\nRECOVERY_RECEIPT\n";
 const diaryXml='<w:document><w:body><w:p><w:r><w:t>Catatan latihan: cocokkan transaksi dan waktu; pisahkan fakta dari dugaan.</w:t></w:r></w:p></w:body></w:document>';
 const archiveEntry=(content:string)=>({content,mode:0o644});

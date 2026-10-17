@@ -71,6 +71,23 @@ const entries:[string,string,string,string,string][]=[
   ["SHOW TABLES","SQL","Mendaftar tabel dalam database yang sudah dipilih.","SHOW TABLES;","SHOW TABLES;"],
   ["DESCRIBE","SQL","Menampilkan struktur kolom dan tipe data tabel tanpa mengambil semua data pengguna.","DESCRIBE TABLE;","DESCRIBE wp_users;"],
   ["SELECT","SQL","Mengambil kolom yang relevan atau menghitung baris dengan COUNT(*). Hasil hitungan bukan jumlah akun Linux.","SELECT COLUMNS FROM TABLE;","SELECT user_login,user_registered FROM wp_users;"],
+  ["sha256sum","Forensik","Menghitung SHA-256 isi berkas; -c memverifikasi manifest. Hash cocok tidak membuktikan asal atau kebenaran isi.","sha256sum FILE; sha256sum -c MANIFEST","sha256sum evidence/events.json"],
+  ["strings","Forensik","Mengambil string terbaca untuk triage, bukan membuktikan konteks proses. -e l membaca UTF-16LE pada model lab.","strings [-n N] [-e l] FILE","strings evidence/capture.raw"],
+  ["xxd","Forensik","Melihat byte dalam heksadesimal; -l membatasi panjang. Fixture biner forensik adalah representasi model.","xxd -l N FILE","xxd -l 16 evidence/approval.pdf"],
+  ["base64","Forensik","Encoding bukan enkripsi. Decode sebagai data dan jangan jalankan hasilnya. UTF-16LE perlu interpretasi setelah Base64 decode.","base64 [-d] [FILE]","echo UkVWSUVX | base64 -d"],
+  ["jq","Forensik","Memproses JSON menurut struktur: ., length, .[].field, serta select untuk menyaring event. -r mencetak string tanpa quote JSON.","jq [-r] QUERY FILE","jq -r '.[] | select(.event == \"NetworkConnect\") | .dst_ip' evidence/events.json"],
+  ["tshark","Forensik","Membaca PCAP offline dengan -r, display filter -Y, dan field -T fields -e. Lab menggunakan dua paket model, bukan packet dissection penuh.","tshark -r FILE [-Y FILTER] [-T fields -e FIELD]","tshark -r evidence/network.pcap -Y http -T fields -e http.host"],
+  ["exiftool","Forensik","Membaca metadata gambar/dokumen. Metadata dapat diubah dan perlu dikorelasikan dengan sumber lain.","exiftool FILE","exiftool evidence/banner.jpg"],
+  ["pdfinfo","Forensik","Membaca properti PDF seperti halaman, enkripsi, creator, dan versi. Tidak menetapkan keabsahan dokumen.","pdfinfo FILE.pdf","pdfinfo evidence/approval.pdf"],
+  ["pdftotext","Forensik","Mengekstrak lapisan teks PDF ke berkas atau stdout (-). Tidak melakukan OCR halaman berupa gambar.","pdftotext INPUT.pdf OUTPUT.txt","pdftotext evidence/approval.pdf work/approval.txt"],
+  ["pdfsig","Forensik","Memeriksa signature digital PDF. Gambar tanda tangan dan signature kriptografis berbeda.","pdfsig FILE.pdf","pdfsig evidence/approval.pdf"],
+  ["gpg","Forensik","Mengimpor kunci dan mendekripsi pesan dengan kunci sesuai. Alur lab dimodelkan; pada alat nyata gunakan keyring kasus terisolasi.","gpg --import KEY; gpg --output OUTPUT --decrypt INPUT","gpg --import evidence/training-key.asc"],
+  ["steghide","Forensik","Mengekstrak payload dari carrier yang didukung menggunakan passphrase. Tidak semua gambar mengandung steganografi atau didukung steghide.","steghide extract -sf IMAGE -p PASSPHRASE -xf OUTPUT","steghide extract -sf evidence/banner.jpg -p LAB-STEG -xf work/payload.txt"],
+  ["readelf","Forensik","Membaca struktur ELF tanpa mengeksekusinya. -h memperlihatkan class, machine, dan entry point.","readelf -h FILE","readelf -h evidence/agent"],
+  ["objdump","Forensik","Disassembly membantu menelusuri cabang dan pembanding input. Model lab berbeda dari binary ELF asli CTF.","objdump -d FILE","objdump -d evidence/agent"],
+  ["sqlite3","Forensik","Membaca SQLite melalui .tables atau SELECT. Gunakan salinan dan -readonly pada alat nyata; Firefox memakai timestamp kunjungan mikrodetik.","sqlite3 [-readonly] DATABASE SQL","sqlite3 -readonly work/device/browser/places.sqlite 'SELECT url,title FROM moz_places;'"],
+  ["7z","Forensik","l menginventaris dan x mengekstrak ke -oDIR. Arsip model memakai password latihan; pada alat nyata masukkan password interaktif.","7z l ARCHIVE; 7z x ARCHIVE -oDIR","7z l evidence/workstation.zip"],
+  ["memory","Helper lab","Helper pedagogis khusus browser: BUKAN perintah Linux atau Volatility. Pelajari padanan windows.pslist/cmdline/netscan pada materi.","memory pslist|cmdline|netscan FILE","memory pslist evidence/capture.raw"],
 ];
 
 export const commandReferences:CommandReference[]=entries.map(([name,category,summary,syntax,example])=>({name,category,summary,syntax,example}));

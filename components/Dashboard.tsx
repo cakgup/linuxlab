@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { ArrowRight, Award, CheckCircle2, Lock, RotateCcw, Shield, TerminalSquare, Trophy, Waypoints } from "lucide-react";
-import { difficultyLabels, getRoomsForPath, isRoomComplete, isRoomUnlocked, learningPathLabels, learningPaths, rooms, totalTasks, totalXp } from "@/lib/tracks";
+import { difficultyLabels, getRoom,getRoomsForPath, isRoomComplete, isRoomUnlocked, learningPathLabels, learningPaths, rooms, totalTasks, totalXp } from "@/lib/tracks";
+import { digitalCoverage } from "@/lib/curriculum-forensics";
 import { clearProgress, readProgress } from "@/lib/progress";
 import { useEffect, useMemo, useState } from "react";
 import { Nav } from "./Nav";
@@ -58,7 +59,7 @@ export function Dashboard() {
 
         <section className="learning-route" id="rute-belajar" aria-labelledby="route-title">
           <div className="eyebrow">Mulai di sini</div><h2 id="route-title">Rute materi Linux</h2>
-          <p>Ikuti {learningPaths.length} tahap materi dan tugas terpandu: dasar, administrasi server, keamanan, lalu penanganan insiden. Materi administrasi mencakup keterampilan yang dipakai pada CTF Warm Up. CTF tetap dapat dimainkan kapan saja melalui menu terpisah.</p>
+          <p>Ikuti {learningPaths.length} tahap materi dan tugas terpandu: dasar, administrasi server, keamanan, forensik digital, lalu penanganan insiden. Materi administrasi membekali CTF Warm Up; jalur forensik membekali seluruh stage CTF Jejak Digital. CTF tetap dapat dimainkan kapan saja melalui menu terpisah.</p>
           <ol>{learningPaths.map((path,index)=><li key={path.name}><a href={`#path-${index+1}`}><span>{index+1}</span><strong>{learningPathLabels[path.name]}</strong><small>{getRoomsForPath(path.name).length} modul terpandu</small></a></li>)}</ol>
           <div className="route-next"><strong>Langkah berikutnya untuk kamu</strong><Link href={nextHref}>{nextLabel} <ArrowRight size={16} /></Link></div>
         </section>
@@ -96,6 +97,7 @@ export function Dashboard() {
                 <div className="path-locked-banner"><Lock size={15} /> Selesaikan jalur sebelumnya untuk membuka latihan ini. Pilih latihan untuk melihat prasyaratnya.</div>
               )}
 
+              {path.name==="Digital Forensics" && <div className="digital-coverage"><Link className="btn" href="/materi/jejak-digital/">Panduan bekal Jejak Digital · 9 stage</Link><details><summary>Peta stage dan modul latihan</summary><p>Materi menggunakan bukti latihan berbeda. Stage 6 adalah bonus Token Nexus. Pelajari konsep dan alur alat sebelum menerapkannya pada artefak CTF.</p><ol>{digitalCoverage.map(item=><li key={item.stage}><strong>Stage {item.stage} · {item.topic}</strong><div>{item.rooms.map(slug=><Link key={slug} href={"/room/"+slug}>{getRoom(slug)?.title}</Link>)}</div></li>)}</ol></details></div>}
               <div className="rooms">
                 {pathRooms.map((room,roomIndex) => {
                   const done = room.tasks.filter((t) => completed.includes(t.id)).length;

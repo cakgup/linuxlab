@@ -37,8 +37,8 @@ Seluruh latihan berjalan sebagai simulasi di browser. Perintah diproses oleh mes
 
 ## Fitur Utama
 
-- 29 room interaktif dengan 114 tugas praktik dan 71 entri referensi perintah yang dapat dicari.
-- Empat learning path dengan prasyarat untuk membuka room berikutnya.
+- 39 room interaktif dengan 154 tugas praktik dan 88 entri referensi perintah yang dapat dicari.
+- Lima learning path dengan prasyarat untuk membuka room berikutnya.
 - Terminal berbasis xterm.js dengan simulasi filesystem, proses, dan jaringan.
 - Validasi tugas berdasarkan hasil perubahan host virtual dan riwayat perintah.
 - XP, badge, petunjuk, dan indikator progres pembelajaran.
@@ -48,7 +48,7 @@ Seluruh latihan berjalan sebagai simulasi di browser. Perintah diproses oleh mes
 
 ## Alur Pembelajaran
 
-Navigasi dibagi menjadi **Materi Linux** dan **CTF**. Halaman materi menampilkan empat tahap berurutan: Dasar Linux, Administrasi Server Linux, Linux untuk Keamanan Siber, dan Penanganan Insiden, beserta tombol untuk melanjutkan materi berikutnya. CTF terpisah di `/ctf/arena/` dan seluruh arenanya dapat dibuka langsung tanpa menyelesaikan materi atau CTF lain.
+Navigasi dibagi menjadi **Materi Linux** dan **CTF**. Halaman materi menampilkan lima tahap berurutan: Dasar Linux, Administrasi Server Linux, Linux untuk Keamanan Siber, Forensik Digital, dan Penanganan Insiden, beserta tombol untuk melanjutkan materi berikutnya. CTF terpisah di `/ctf/arena/` dan seluruh arenanya dapat dibuka langsung tanpa menyelesaikan materi atau CTF lain.
 
 Arena CTF berisi:
 
@@ -66,9 +66,12 @@ Tampilan terminal dimulai ulang saat pindah akun. Plain `su levelN` mempertahank
 | Linux Basics | 14 | Navigasi, berkas, teks, permission, proses, pipe, bantuan, pengolahan teks, symbolic link, arsip, kapasitas, dan environment. |
 | Linux Administration | 8 | SSH, OS/kernel/akun, systemd/journal, jaringan, Apache/virtual host, access log, autentikasi dan query MySQL. |
 | Linux for Cybersecurity | 6 | Hardening, investigasi log, SUID, proses mencurigakan, jaringan, dan persistence. |
+| Digital Forensics | 10 | Preservasi/hash, PGP/email, JSON/CSV, PCAP, endpoint, PDF/stego, memori, ELF, browser SQLite, arsip, dan timeline. |
 | Incident Response | 1 | Skenario gabungan untuk investigasi, containment, dan pencatatan hasil. |
 
 Setiap modul menyertakan fungsi, sintaks, dan contoh perintah. Referensi lengkap tersedia di `/materi/perintah/`. Jalur administrasi memakai engine dan fixture yang sama dengan CTF Warm Up; setelah modul SSH, peserta mulai di shell server, sedangkan login MySQL tetap dilakukan sendiri. Password SSH adalah `admin1234!` tanpa titik; password MySQL dibaca dari konfigurasi aplikasi.
+
+Bekal Jejak Digital tersedia di `/materi/jejak-digital/`, termasuk pemetaan seluruh 9 stage ke 10 modul/40 tugas, konsep analisis, bukti mini sintetis, dan batas alat browser. Alat forensik tingkat lanjut dimodelkan; helper `memory` bukan Volatility. CTF tetap dapat diakses langsung. Lihat [pemetaan Jejak Digital](docs/JEJAK_DIGITAL_COVERAGE.md).
 
 Rincian materi tersedia di [Curriculum Map](docs/CURRICULUM.md).
 

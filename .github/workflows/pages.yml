@@ -26,6 +26,7 @@ jobs:
         uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm run test:core
+      - run: npm run test:forensics
       - run: npm run test:terminal
       - run: npm run test:warm-up
       - run: npm run test:warm-up:audit

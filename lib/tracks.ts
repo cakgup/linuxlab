@@ -1,10 +1,12 @@
 import { Difficulty, LearningPath, RoomDefinition } from "./types";
 import { additionalBasics, administrationRooms } from "./curriculum-expanded";
+import { forensicRooms } from "./curriculum-forensics";
 
 export const learningPathLabels: Record<LearningPath, string> = {
   "Linux Basics": "Dasar Linux",
   "Linux Administration": "Administrasi Server Linux",
   "Linux for Cybersecurity": "Linux untuk Keamanan Siber",
+  "Digital Forensics": "Forensik Digital",
   "Incident Response": "Penanganan Insiden",
 };
 
@@ -29,6 +31,11 @@ export const learningPaths: { name: LearningPath; description: string; accent: s
     name: "Linux for Cybersecurity",
     description: "Gunakan Linux untuk mengamankan sistem, menganalisis log, memeriksa SUID, serta menelusuri proses dan jaringan yang mencurigakan.",
     accent: "Pengamanan Sistem",
+  },
+  {
+    name:"Digital Forensics",
+    description:"Pelajari preservasi bukti, PGP/email, JSON/CSV, PCAP, endpoint, PDF/steganografi, memori, ELF, SQLite, dan rekonstruksi kasus sebagai bekal seluruh stage Jejak Digital.",
+    accent:"Jejak Digital",
   },
   {
     name: "Incident Response",
@@ -822,7 +829,8 @@ export const rooms:RoomDefinition[] = [
   ...additionalBasics,
   ...administrationRooms,
   ...originalRooms.filter(room=>room.path === "Linux for Cybersecurity").map((room,i)=>i===0 ? {...room,prerequisites:[administrationRooms[administrationRooms.length-1].slug]} : room),
-  ...originalRooms.filter(room=>room.path === "Incident Response"),
+  ...forensicRooms,
+  ...originalRooms.filter(room=>room.path === "Incident Response").map(room=>({...room,prerequisites:[forensicRooms[forensicRooms.length-1].slug]})),
 ];
 
 export function getRoom(slug: string) {

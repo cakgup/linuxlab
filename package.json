@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test:core": "node scripts/core-test.cjs",
+    "test:forensics": "node scripts/forensics-test.cjs",
     "test:terminal": "node scripts/terminal-test.cjs",
     "test:warm-up": "node scripts/warm-up-test.cjs",
     "test:warm-up:audit": "node scripts/warm-up-audit.cjs",
