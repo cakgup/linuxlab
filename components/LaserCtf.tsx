@@ -21,6 +21,7 @@ export function LaserCtf() {
   const [hint, setHint] = useState(false);
   const [reset, setReset] = useState(0);
   const state = useRef(createLaserState(0));
+  const session = useRef(0);
   const [cwd, setCwd] = useState(state.current.cwd);
   const flagInput = useRef<HTMLInputElement>(null);
   const missionTitle = useRef<HTMLHeadingElement>(null);
@@ -44,6 +45,7 @@ export function LaserCtf() {
   }, []);
 
   function openLevel(index: number, environment?: LaserState) {
+    session.current += 1;
     setRoot(false);
     state.current = environment || createLaserState(index); setCwd(state.current.cwd); setActive(index);
     setAnswer(""); setFeedback(""); setHint(false); setReset(v => v + 1);
@@ -54,6 +56,19 @@ export function LaserCtf() {
   function select(index: number) {
     if ((index >= completed && index !== active) || index >= laserLevels.length) return;
     openLevel(index);
+  }
+
+  function resetGame() {
+    setStorageError("");
+    setCompleted(0);
+    openLevel(0);
+    try {
+      localStorage.setItem(LASER_PROGRESS_KEY, "0");
+      localStorage.setItem(LASER_ACTIVE_KEY, "0");
+      localStorage.removeItem("linuxlab-laser-progress-v1");
+      localStorage.removeItem("linuxlab-laser-active-v1");
+    }
+    catch { setStorageError("Latihan dimulai ulang dari level0, tetapi reset progres tidak dapat disimpan di browser."); }
   }
 
   function submit(event: FormEvent) {
@@ -92,12 +107,14 @@ export function LaserCtf() {
           <div className="laser-mission-top"><span className="eyebrow">{`Level ${active} / 30`}</span><span className="tag">{level.topic} · {level.points} poin</span></div>
           <h2 ref={missionTitle} tabIndex={-1} id="laser-title">{level.title}</h2><h3 className="laser-objective-label">Tujuan level</h3><p>{level.mission}</p>
           {active < laserLevels.length - 1 && <p className="laser-notice">{solved ? "Flag terverifikasi. " : ""}Lanjutkan dengan <code>su level{active + 1}</code>, lalu masukkan isi flag tanpa <code>Cakgup&#123;&#125;</code> sebagai password.</p>}
-          <div className="laser-hint-actions"><button className="btn" aria-expanded={hint} onClick={() => setHint(!hint)}><Lightbulb size={15} />{hint ? "Tutup petunjuk" : "Petunjuk"}</button><button className="btn" onClick={() => select(active)}><RotateCcw size={14} />Ulangi terminal</button></div>
+          <div className="laser-hint-actions"><button className="btn" aria-expanded={hint} onClick={() => setHint(!hint)}><Lightbulb size={15} />{hint ? "Tutup petunjuk" : "Petunjuk"}</button><button className="btn" onClick={resetGame} title="Hapus progres CTF dan mulai kembali dari level0"><RotateCcw size={14} />Reset ke level0</button></div>
           {hint && <div className="laser-notice">{level.hint}</div>}
         </section>
         <section className="laser-terminal" aria-label="Terminal CTF Laser"><div className="laser-terminal-bar"><span><i /><i /><i /></span><code>{identity.user}@{identity.host} — {cwd}</code><span>terminal</span></div>
           <BrowserTerminal key={`${active}-${reset}`} cwd={cwd} resetToken={0} identity={identity} onComplete={line => completeLaser(state.current, line)} onCommand={async line => {
+            const commandSession = session.current;
             const result = await executeLaserWithOriginalFiles(state.current, line);
+            if (commandSession !== session.current) return { output: "", cwd: state.current.cwd };
             if (result.switchLevel !== undefined) {
               const next = Math.max(completed, result.switchLevel);
               setCompleted(next);
