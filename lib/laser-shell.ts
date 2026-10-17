@@ -7,6 +7,7 @@ import { completeTerminal, ctfCommands } from "./terminal-completion";
 
 export interface LaserState extends LabState { level: number; root: boolean; pendingSu?: number; pendingLogin?: boolean; pendingSudo?: string[]; sudoUntil?: number }
 export const laserHome = (level: number) => `/home/level${level}`;
+export const laserHostname = "Cakgup";
 export function formatVmDate(timestamp?: number) {
   if (timestamp === undefined) return "—";
   const parts = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23", timeZoneName: "longOffset" }).formatToParts(new Date(timestamp * 1000));
@@ -36,7 +37,7 @@ function put(s: LaserState, path: string, content?: string, mode = 0o644, owner 
 export function createLaserState(level: number): LaserState {
   const s: LaserState = { level, root: false, cwd: laserHome(level), fs: Object.fromEntries(laserVmNodes.map(n => [n.path, { ...n }])), history: [], processes: [], killedPids: [] };
   put(s, "/etc", undefined, 0o755, "root", "root");
-  put(s, "/etc/hostname", "Laser\n", 0o644, "root", "root");
+  put(s, "/etc/hostname", `${laserHostname}\n`, 0o644, "root", "root");
   put(s, "/etc/os-release", 'NAME="Ubuntu"\nVERSION="16.04.4 LTS (Xenial Xerus)"\nID=ubuntu\nID_LIKE=debian\nPRETTY_NAME="Ubuntu 16.04.4 LTS"\nVERSION_ID="16.04"\nHOME_URL="http://www.ubuntu.com/"\nSUPPORT_URL="http://help.ubuntu.com/"\nBUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"\nVERSION_CODENAME=xenial\nUBUNTU_CODENAME=xenial\n', 0o644, "root", "root");
   return s;
 }
@@ -82,14 +83,14 @@ function run(s: LaserState, args: string[], stdin: string): { state: LaserState;
   if (cmd === "pwd") return ok(s.cwd);
   if (cmd === "echo") return ok((a[0] === "-n" ? a.slice(1) : a).join(" "));
   if (cmd === "history") return ok(s.history.map((v, i) => `${i+1}  ${v}`).join("\n"));
-  if (cmd === "hostname") return ok("Laser");
-  if (cmd === "uname") return ok(a.includes("-a") ? "Linux Laser 4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:22:43 UTC 2018 i686 i686 i686 GNU/Linux" : "Linux");
+  if (cmd === "hostname") return ok(laserHostname);
+  if (cmd === "uname") return ok(a.includes("-a") ? `Linux ${laserHostname} 4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:22:43 UTC 2018 i686 i686 i686 GNU/Linux` : "Linux");
   if (cmd === "getent" && a[0] === "passwd") return ok(laserVmAccounts.filter(user => !a[1] || user.name === a[1]).map(user => `${user.name}:x:${user.uid}:${user.gid}::${user.home}:${user.shell}`).join("\n"));
   if (cmd === "whoami") return ok(s.root ? "root" : `level${s.level}`);
   if (cmd === "id") return ok(s.root ? "uid=0(root) gid=0(root) groups=0(root)" : `uid=${1001+s.level}(level${s.level}) gid=${1001+s.level}(level${s.level}) groups=${1001+s.level}(level${s.level})`);
   if (cmd === "sudo") {
     if (s.level < 30) return ok("sudo: pengguna ini tidak memiliki hak sudo dalam level ini.");
-    if (a[0] === "-l") return ok("User level30 may run the following commands on Laser:\n    (ALL : ALL) ALL");
+    if (a[0] === "-l") return ok(`User level30 may run the following commands on ${laserHostname}:\n    (ALL : ALL) ALL`);
     if (a.length === 1 && a[0] === "su") return { state: { ...s, root: true }, output: "Sekarang kamu root. Baca flag.txt, lalu cari GoldenTiket.txt." };
     if (!a.length) return ok("usage: sudo COMMAND");
     const result = run({ ...s, root: true }, a, stdin);

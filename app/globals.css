@@ -38,7 +38,7 @@
 .laser-terminal-bar i:nth-child(2) { background:var(--accent); }
 .laser-terminal-bar i:nth-child(3) { background:var(--green); }
 .laser-terminal-bar code { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-.laser-terminal .terminal-host { height:410px; padding:14px 12px; }
+.laser-terminal .terminal-host { height:clamp(460px,60dvh,720px); padding:14px 12px; }
 .laser-submit label { display:block; font-size:14px; font-weight:700; margin-bottom:10px; }
 .laser-submit form > div { display:flex; gap:10px; }
 .laser-submit input { min-width:0; flex:1; border:1px solid #b7c8e540; background:var(--bg); color:var(--text); border-radius:10px; padding:12px 14px; font-family:monospace; }

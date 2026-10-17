@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { CheckCircle2, Flag, Lightbulb, Lock, RotateCcw, Terminal, Trophy } from "lucide-react";
 import { laserLevels, LASER_ACTIVE_KEY, LASER_PROGRESS_KEY, migrateLaserProgress, readLaserProgress } from "@/lib/laser-levels";
-import { cancelLaserAuthentication, completeLaser, createLaserState, laserHome } from "@/lib/laser-shell";
+import { cancelLaserAuthentication, completeLaser, createLaserState, laserHome, laserHostname } from "@/lib/laser-shell";
 import type { LaserState } from "@/lib/laser-shell";
 import { executeLaserWithOriginalFiles } from "@/lib/laser-vm-loader";
 import { BrowserTerminal } from "./BrowserTerminal";
@@ -27,7 +27,7 @@ export function LaserCtf() {
   const level = laserLevels[active];
   const solved = active < completed;
   const earnedPoints = laserLevels.slice(0, completed).reduce((sum, entry) => sum + entry.points, 0);
-  const identity = { user: root ? "root" : `level${active}`, host: "Laser", home: root ? "/root" : laserHome(active) };
+  const identity = { user: root ? "root" : `level${active}`, host: laserHostname, home: root ? "/root" : laserHome(active) };
 
   useEffect(() => {
     let progress = 0;
@@ -95,7 +95,7 @@ export function LaserCtf() {
           <div className="laser-hint-actions"><button className="btn" aria-expanded={hint} onClick={() => setHint(!hint)}><Lightbulb size={15} />{hint ? "Tutup petunjuk" : "Petunjuk"}</button><button className="btn" onClick={() => select(active)}><RotateCcw size={14} />Ulangi terminal</button></div>
           {hint && <div className="laser-notice">{level.hint}</div>}
         </section>
-        <section className="laser-terminal" aria-label="Terminal CTF Laser"><div className="laser-terminal-bar"><span><i /><i /><i /></span><code>{identity.user}@Laser — {cwd}</code><span>terminal</span></div>
+        <section className="laser-terminal" aria-label="Terminal CTF Laser"><div className="laser-terminal-bar"><span><i /><i /><i /></span><code>{identity.user}@{identity.host} — {cwd}</code><span>terminal</span></div>
           <BrowserTerminal key={`${active}-${reset}`} cwd={cwd} resetToken={0} identity={identity} onComplete={line => completeLaser(state.current, line)} onCommand={async line => {
             const result = await executeLaserWithOriginalFiles(state.current, line);
             if (result.switchLevel !== undefined) {
@@ -107,7 +107,7 @@ export function LaserCtf() {
               setFeedback(`Berhasil masuk ke level${result.switchLevel}${result.switchLevel === 30 ? " · tantangan akhir" : ""}. Direktori sekarang: ${result.state.cwd}. Ketik cd untuk masuk home akun ini.`);
               requestAnimationFrame(() => missionTitle.current?.focus());
             } else { state.current = result.state; setCwd(result.state.cwd); setRoot(result.state.root); }
-            return { output: result.output, cwd: result.state.cwd, clear: result.clear, password: result.password, passwordPrompt: result.passwordPrompt, identity: { user: result.state.root ? "root" : `level${result.state.level}`, host: "Laser", home: result.state.root ? "/root" : laserHome(result.state.level) } };
+            return { output: result.output, cwd: result.state.cwd, clear: result.clear, password: result.password, passwordPrompt: result.passwordPrompt, identity: { user: result.state.root ? "root" : `level${result.state.level}`, host: laserHostname, home: result.state.root ? "/root" : laserHome(result.state.level) } };
           }} onCancel={() => { state.current = cancelLaserAuthentication(state.current); }} />
         </section>
         {active !== laserLevels.length - 1 && feedback && <p className="laser-success" role="status" aria-live="polite">{feedback}</p>}
