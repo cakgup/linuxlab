@@ -26,6 +26,9 @@ jobs:
         uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm run test:core
+      - run: npm run test:terminal
+      - run: npm run test:laser
+      - run: python3 scripts/check-laser-artifacts.py
       - run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}

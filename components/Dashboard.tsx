@@ -40,6 +40,7 @@ export function Dashboard() {
             Semua latihan berjalan di peramban, tanpa memasang mesin virtual atau mengakses terminal perangkat kita.
           </p>
           <div className="hero-actions">
+            <Link className="btn" href="/ctf/linux/">CTF Linux: Laser <ArrowRight size={17} /></Link>
             <Link className="btn btn-primary" href={`/room/${nextRoom?.slug || rooms[0].slug}`}>{completed.length === 0 ? "Mulai Belajar" : nextRoom ? "Lanjutkan Belajar" : "Ulangi Latihan"} <ArrowRight size={17} /></Link>
             {learningPaths.map((path, index) => <a className="btn" key={path.name} href={`#path-${index + 1}`}>{learningPathLabels[path.name]}</a>)}
           </div>

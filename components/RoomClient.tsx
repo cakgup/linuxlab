@@ -6,6 +6,7 @@ import { Award, Check, ChevronLeft, ChevronRight, Circle, Lightbulb, Lock, Rotat
 import { RoomDefinition } from "@/lib/types";
 import { createInitialState } from "@/lib/fs";
 import { executeLine } from "@/lib/shell";
+import { completeTerminal, labCommands } from "@/lib/terminal-completion";
 import { isTaskComplete } from "@/lib/validator";
 import { readProgress, writeProgress } from "@/lib/progress";
 import { difficultyLabels, getRoom, isRoomComplete, isRoomUnlocked, learningPathLabels, rooms } from "@/lib/tracks";
@@ -180,7 +181,7 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
             <div style={{ display: "flex", alignItems: "center", gap: 11 }}><span className="terminal-dots"><i /><i /><i /></span><span>training-web-01 · simulasi terisolasi</span></div>
             <div className="terminal-actions"><a className="mobile-terminal-link" href="#lesson">Kembali ke materi</a><button onClick={resetLab}><RotateCcw size={12} style={{ verticalAlign: "-2px", marginRight: 5 }} />Atur ulang latihan</button></div>
           </div>
-          <div className="terminal-wrap"><BrowserTerminal onCommand={handleCommand} cwd={labState.cwd} resetToken={resetToken} /></div>
+          <div className="terminal-wrap"><BrowserTerminal onCommand={handleCommand} cwd={labState.cwd} resetToken={resetToken} onComplete={line => completeTerminal(line, labState.fs, labState.cwd, "/home/analyst", labCommands)} /></div>
           {justCompleted && <div className="objective-toast">✓ Tugas selesai · XP bertambah</div>}
         </section>
       </main>

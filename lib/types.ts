@@ -47,6 +47,11 @@ export interface VNode {
   group: string;
   mode: number;
   content?: string;
+  size?: number;
+  modified?: number;
+  digests?: Record<string, string>;
+  blob?: string;
+  binary?: boolean;
 }
 
 export interface FakeProcess {

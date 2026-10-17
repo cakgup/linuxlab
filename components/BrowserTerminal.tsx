@@ -3,11 +3,15 @@
 import { useEffect, useRef } from "react";
 import { Terminal } from "@xterm/xterm";
 import { FitAddon } from "@xterm/addon-fit";
+import { editTerminalInput, terminalTextWidth, InputAction } from "@/lib/terminal-input";
 
 export interface TerminalCommandResponse {
   output: string;
   cwd: string;
   clear?: boolean;
+  password?: boolean;
+  passwordPrompt?: string;
+  identity?: { user: string; host: string; home: string };
 }
 
 function promptPath(cwd: string) {
@@ -16,21 +20,32 @@ function promptPath(cwd: string) {
   return cwd;
 }
 
-function prompt(cwd: string) {
-  return `\x1b[38;2;141;252;101manalyst@training-web-01\x1b[0m:\x1b[38;2;76;201;240m${promptPath(cwd)}\x1b[0m$ `;
+function prompt(cwd: string, identity?: { user: string; host: string; home: string }) {
+  const path = identity ? (cwd === identity.home ? "~" : cwd.startsWith(identity.home + "/") ? "~" + cwd.slice(identity.home.length) : cwd) : promptPath(cwd);
+  return `\x1b[38;2;141;252;101m${identity ? `${identity.user}@${identity.host}` : "analyst@training-web-01"}\x1b[0m:\x1b[38;2;76;201;240m${path}\x1b[0m${identity?.user === "root" ? "#" : "$"} `;
 }
 
-export function BrowserTerminal({ onCommand, cwd, resetToken }: { onCommand: (line: string) => TerminalCommandResponse; cwd: string; resetToken: number }) {
+export function BrowserTerminal({ onCommand, cwd, resetToken, identity, onComplete, onCancel }: { onCommand: (line: string) => TerminalCommandResponse | Promise<TerminalCommandResponse>; cwd: string; resetToken: number; identity?: { user: string; host: string; home: string }; onComplete?: (line: string) => string; onCancel?: () => void }) {
   const hostRef = useRef<HTMLDivElement | null>(null);
   const commandRef = useRef(onCommand);
   const cwdRef = useRef(cwd);
   const terminalRef = useRef<Terminal | null>(null);
   const bufferRef = useRef("");
+  const cursorRef = useRef(0);
   const historyRef = useRef<string[]>([]);
   const historyIndexRef = useRef(-1);
+  const identityRef = useRef(identity);
+  const completeRef = useRef(onComplete);
+  const cancelRef = useRef(onCancel);
+  const passwordRef = useRef(false);
+  const passwordPromptRef = useRef("Password: ");
+  const busyRef = useRef(false);
 
   useEffect(() => { commandRef.current = onCommand; }, [onCommand]);
   useEffect(() => { cwdRef.current = cwd; }, [cwd]);
+  useEffect(() => { identityRef.current = identity; }, [identity]);
+  useEffect(() => { completeRef.current = onComplete; }, [onComplete]);
+  useEffect(() => { cancelRef.current = onCancel; }, [onCancel]);
 
   useEffect(() => {
     if (!hostRef.current) return;
@@ -61,57 +76,122 @@ export function BrowserTerminal({ onCommand, cwd, resetToken }: { onCommand: (li
 
     term.writeln("\x1b[1;38;2;141;252;101mTerminal Latihan LinuxLab Cyber\x1b[0m");
     term.writeln("Simulasi di peramban. Ketik \x1b[36mhelp\x1b[0m untuk melihat perintah yang tersedia.\r\n");
-    term.write(prompt(cwdRef.current));
+    term.write(prompt(cwdRef.current, identityRef.current));
     fit.fit();
 
-    const rewriteBuffer = (next: string) => {
-      while (bufferRef.current.length > 0) {
-        term.write("\b \b");
-        bufferRef.current = bufferRef.current.slice(0, -1);
-      }
-      bufferRef.current = next;
-      term.write(next);
+    const writePrompt = () => {
+      term.textarea?.setAttribute("aria-label", passwordRef.current ? "Password (input disembunyikan)" : "Terminal input");
+      term.write(passwordRef.current ? passwordPromptRef.current : prompt(cwdRef.current, identityRef.current));
     };
 
-    const disposable = term.onData((data: string) => {
+    const cancelInput = () => {
+      term.write("^C\r\n");
+      bufferRef.current = "";
+      cursorRef.current = 0;
+      passwordRef.current = false;
+      cancelRef.current?.();
+      writePrompt();
+    };
+
+    term.attachCustomKeyEventHandler(event => {
+      if (passwordRef.current && event.type === "keydown" && event.ctrlKey && event.key.toLowerCase() === "c") {
+        event.preventDefault();
+        cancelInput();
+        return false;
+      }
+      return true;
+    });
+
+    const rewriteBuffer = (next: string, cursor = Array.from(next).length) => {
+      const promptWidth = terminalTextWidth(prompt(cwdRef.current, identityRef.current));
+      const oldPosition = promptWidth + terminalTextWidth(Array.from(bufferRef.current).slice(0, cursorRef.current).join(""));
+      if (!passwordRef.current) {
+        const oldRow = Math.floor(oldPosition / term.cols);
+        term.write("\r" + (oldRow ? `\x1b[${oldRow}A` : "") + "\x1b[J");
+        term.write(prompt(cwdRef.current, identityRef.current) + next);
+        const end = promptWidth + terminalTextWidth(next);
+        // Resolve xterm's pending wrap before positioning the editing cursor.
+        if (end > 0 && end % term.cols === 0) term.write("\r\n");
+        const position = promptWidth + terminalTextWidth(Array.from(next).slice(0, cursor).join(""));
+        const up = Math.floor(end / term.cols) - Math.floor(position / term.cols);
+        term.write("\r" + (up ? `\x1b[${up}A` : "") + (position % term.cols ? `\x1b[${position % term.cols}C` : ""));
+      }
+      bufferRef.current = next;
+      cursorRef.current = cursor;
+    };
+    const edit = (action: InputAction | { insert: string }) => {
+      const next = editTerminalInput({ text: bufferRef.current, cursor: cursorRef.current }, action);
+      rewriteBuffer(next.text, next.cursor);
+    };
+
+    const disposable = term.onData(async (data: string) => {
+      if (busyRef.current) return;
       if (data === "\r") {
         const line = bufferRef.current;
+        if (!passwordRef.current) rewriteBuffer(line);
         term.write("\r\n");
-        if (line.trim()) {
+        if (!passwordRef.current && line.trim()) {
           historyRef.current.push(line);
           historyIndexRef.current = historyRef.current.length;
         }
-        const result = commandRef.current(line);
+        busyRef.current = true;
+        hostRef.current?.setAttribute("aria-busy", "true");
+        let result: TerminalCommandResponse;
+        try { result = await commandRef.current(line); }
+        catch (error) {
+          cancelRef.current?.();
+          result = { output: error instanceof Error ? error.message : "Perintah tidak dapat diproses.", cwd: cwdRef.current };
+        } finally { busyRef.current = false; hostRef.current?.setAttribute("aria-busy", "false"); }
+        if (terminalRef.current !== term) return;
         if (result.clear) term.clear();
-        if (result.output) term.writeln(result.output.replace(/\n/g, "\r\n"));
+        const output = result.output.length > 200000 ? result.output.slice(0, 100000) + "\n[Keluaran terminal dipersingkat. Gunakan head, tail, atau grep untuk membaca bagian yang diperlukan.]\n" + result.output.slice(-100000) : result.output;
+        if (output) term.writeln(output.replace(/\n/g, "\r\n"));
         bufferRef.current = "";
+        cursorRef.current = 0;
         cwdRef.current = result.cwd;
-        term.write(prompt(result.cwd));
+        if (result.identity) identityRef.current = result.identity;
+        passwordRef.current = !!result.password;
+        passwordPromptRef.current = result.passwordPrompt || "Password: ";
+        writePrompt();
         return;
       }
 
-      if (data === "\u007f") {
-        if (bufferRef.current.length > 0) {
-          bufferRef.current = bufferRef.current.slice(0, -1);
-          term.write("\b \b");
+      const actions: Record<string, InputAction> = {
+        "\x1b[D": "left", "\x1bOD": "left", "\x1b[C": "right", "\x1bOC": "right",
+        "\x1b[H": "home", "\x1bOH": "home", "\x1b[1~": "home", "\x1b[7~": "home", "\x01": "home",
+        "\x1b[F": "end", "\x1bOF": "end", "\x1b[4~": "end", "\x1b[8~": "end", "\x05": "end",
+        "\u007f": "backspace", "\x08": "backspace", "\x1b[3~": "delete",
+      };
+      if (actions[data]) {
+        edit(actions[data]);
+        return;
+      }
+
+      if (data === "\t") {
+        if (!passwordRef.current && completeRef.current) {
+          const chars = Array.from(bufferRef.current);
+          const completed = completeRef.current(chars.slice(0, cursorRef.current).join(""));
+          rewriteBuffer(completed + chars.slice(cursorRef.current).join(""), Array.from(completed).length);
         }
         return;
       }
 
       if (data === "\x03") {
-        term.write("^C\r\n");
-        bufferRef.current = "";
-        term.write(prompt(cwdRef.current));
+        cancelInput();
         return;
       }
 
       if (data === "\x0c") {
         term.clear();
-        term.write(prompt(cwdRef.current) + bufferRef.current);
+        const saved = bufferRef.current, cursor = cursorRef.current;
+        bufferRef.current = ""; cursorRef.current = 0;
+        writePrompt();
+        rewriteBuffer(saved, cursor);
         return;
       }
 
       if (data === "\x1b[A") {
+        if (passwordRef.current) return;
         if (!historyRef.current.length) return;
         historyIndexRef.current = Math.max(0, historyIndexRef.current - 1);
         rewriteBuffer(historyRef.current[historyIndexRef.current] || "");
@@ -119,6 +199,7 @@ export function BrowserTerminal({ onCommand, cwd, resetToken }: { onCommand: (li
       }
 
       if (data === "\x1b[B") {
+        if (passwordRef.current) return;
         if (!historyRef.current.length) return;
         historyIndexRef.current = Math.min(historyRef.current.length, historyIndexRef.current + 1);
         rewriteBuffer(historyIndexRef.current === historyRef.current.length ? "" : historyRef.current[historyIndexRef.current]);
@@ -127,8 +208,7 @@ export function BrowserTerminal({ onCommand, cwd, resetToken }: { onCommand: (li
 
       if (data.startsWith("\x1b")) return;
       if ([...data].every((ch) => ch >= " ")) {
-        bufferRef.current += data;
-        term.write(data);
+        edit({ insert: data });
       }
     });
 
@@ -153,11 +233,15 @@ export function BrowserTerminal({ onCommand, cwd, resetToken }: { onCommand: (li
     if (!term || resetToken === 0) return;
     term.clear();
     bufferRef.current = "";
+    cursorRef.current = 0;
+    passwordRef.current = false;
+    cancelRef.current?.();
+    term.textarea?.setAttribute("aria-label", "Terminal input");
     historyRef.current = [];
     historyIndexRef.current = -1;
     term.writeln("\x1b[33mLingkungan latihan telah diatur ulang.\x1b[0m\r\n");
-    term.write(prompt(cwd));
-  }, [resetToken, cwd]);
+    term.write(prompt(cwdRef.current, identityRef.current));
+  }, [resetToken]);
 
   return <div ref={hostRef} className="terminal-host" aria-label="Terminal latihan Linux" />;
 }

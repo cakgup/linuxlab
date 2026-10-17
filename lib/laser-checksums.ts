@@ -1,0 +1,117 @@
+// Checksums of training strings after Cakgup flag rebranding.
+export const laserChecksums: Record<string, Record<string, string>> = {
+  "Bukan flag yang dicari: 1.\n": {
+    "md5sum": "4c652ea1f7a3a177f4337359ab9f3fa8",
+    "sha1sum": "82d06269e2d158756046ad796c03c4b1880a06bf",
+    "sha256sum": "73c628829b3eaaf8307198ea9bff49d34b0546e0525a9f3e32256cbedac524f6",
+    "sha512sum": "4d43deec5b2e6428c11b50230aa2addc5f1e90cd5ac4ecb4e84208f593a51965d1c605c1475c7dd2d4155e64eae37eb05a2edf1caffa1eabf53f6e1149c043db"
+  },
+  "Bukan flag yang dicari: 2.\n": {
+    "md5sum": "d8af27338788d16b62644d08788700c8",
+    "sha1sum": "177bf67aaeca44e2dc3eed63858c1f238f679ae9",
+    "sha256sum": "c016a6d79c959d0d4423b2387dd1618d91f959493dc97167dcc5143b646ce80a",
+    "sha512sum": "60c15e929205f31ec2ae604a8fb88c623f88c3ecd787799570040715575972ec50c4a5e90252ec38fa0200e8422b9139ed0e678b5064d95a080462f5e5d03217"
+  },
+  "Bukan flag yang dicari: 3.\n": {
+    "md5sum": "5457df84fa2e17edd62819850c29514d",
+    "sha1sum": "9147f9dc2ed28a1f4c1ddf3ee88542fef9d46867",
+    "sha256sum": "58205d4c2f0d2bdf38b5615e85eda80af6c1fd08cdf2977ed6cb60160c8b53dd",
+    "sha512sum": "c56debedf27f128d7c784fab05f544695f9b14e3292eb984ec27be922ec55bc58683a813c859d310543a37ebfa74c038436976f3feb0b838caa8e70fe95f02b6"
+  },
+  "Bukan flag yang dicari: 4.\n": {
+    "md5sum": "721bdd8c6f08cb76d0c9d28e138aa394",
+    "sha1sum": "2a764976ba6782259067b051f6653399a49ebb5f",
+    "sha256sum": "bf629d09051b75eb9d9ad03add2a13c8ad694e0d79d50a0dbec7f8139539d0c4",
+    "sha512sum": "a9daa0e2973c704e6193591f7cc0dcbfab7291653da273301a193fd553ed511bbddda51493d5d012eccbe99d64a0b110440193335f19bc76442ba7c2b1f31f39"
+  },
+  "Bukan flag yang dicari: 5.\n": {
+    "md5sum": "903786b347102c5e75e84f563ad47b12",
+    "sha1sum": "eaf54876ae138937f185fa16b0e47349aefdeeb6",
+    "sha256sum": "741271b8aa1233480677c92847892626333c3e60e152124a3343e5685f85a481",
+    "sha512sum": "25faedae8f6f3ccd45208dcd6818348ef716b05baf055c0c2d8916a2330b1e2404be0390f86164d9977170f78b07f1e65ce76f1afd6add16a5597ae70a61ea54"
+  },
+  "Bukan flag yang dicari: 6.\n": {
+    "md5sum": "a1d17f2fce5812be0698003158b4e385",
+    "sha1sum": "e053ab8baad200580a49243e3f930e7d4f00030c",
+    "sha256sum": "cc7c1fee553af3397722c292b8099f442d9817f26a0607e3248c9b9445c2e3c2",
+    "sha512sum": "b8e82414892923d0ff00a720bb4a91ae2dbe969e06b304e9ac455ac6f4cc1242e289b27a2c303d7c69dee429af513ea7fd5e3fe64880af2b1fc08dd86410d0d6"
+  },
+  "Bukan flag yang dicari: 7.\n": {
+    "md5sum": "61456306e51bee51e22abc5ca4abb2b6",
+    "sha1sum": "cbe463d699e34ce358f26561479441ec09dac8df",
+    "sha256sum": "836633b18ed1c89022831546d36543c9d51fd6c68dd3d0080699007548fdf61d",
+    "sha512sum": "babfa03fd555eaadf97be8ec9f49fdce39422549d403859804110ff82a35cf04fe3316434a1ba45b8c2503bf8840de1e7e8987868746e8a84c38458220acd661"
+  },
+  "Bukan flag yang dicari: 8.\n": {
+    "md5sum": "4cb066d29f456bb8d3bc614d323f92b0",
+    "sha1sum": "fd5ecf0a5152e046e6e61f9c22ab54fdb84c891f",
+    "sha256sum": "25f01a159ab041578a7ef25eb01d1e3d7487548fb169681e68a4442e8561032a",
+    "sha512sum": "38232a2d22c2fab3940ac177c6d4286f63e3e74c374dba498287fc31821614d04b40fdfdac25a500fd6ef02c486482c145416765f2d37ba4b836f2a38a3db385"
+  },
+  "Bukan flag yang dicari: 9.\n": {
+    "md5sum": "74220468015589ff87acc3a8a7a842e9",
+    "sha1sum": "37318558f558c8d63a22a81c5b84b77c8be4761c",
+    "sha256sum": "a4ecb47e540c2464660fed256c4855583056de250f9df6cf7112451d5a740aaa",
+    "sha512sum": "b1b553c02d9304115b6628c4cdfd14722f1ef27157a968d1c1469566a914668442df9aa37139e75243084416fc693fb4ae84e738eda5886a11fcd148ac6c2c2a"
+  },
+  "Bukan flag yang dicari: 10.\n": {
+    "md5sum": "5d8c017f1c379829b304e28775d88ca8",
+    "sha1sum": "b06a7902ab749761ed767c978c569f548f70e009",
+    "sha256sum": "5742203f92d72564fd07926c168cc9e27464da33d7c775861e409f7eca76e329",
+    "sha512sum": "6cb1b56af2520070cf9a83f8789077ddd000d098f57ad25e6f358541fcc0c1db681bba44a51243356e59d3b51e869cafa46d89edf6d7e33811050caf55539f9a"
+  },
+  "Bukan flag yang dicari: 11.\n": {
+    "md5sum": "dccd41ef4015e2a3fc32ea04d195b0a3",
+    "sha1sum": "f62d4dc6baf131c76a9b41967a71b1ba0b776082",
+    "sha256sum": "9ac6bf4432474d38ad4467a0d5f5a06c1509412dd12bb205995327f5afe1b198",
+    "sha512sum": "17509a9c315ad7116d9f33f2eff2cd61cc7f7aae81f7355d21229535d8fc294eb7bc56bbe2cbd610679c8e7ac1d33868258ab580f979adea281040880068865c"
+  },
+  "Bukan flag yang dicari: 12.\n": {
+    "md5sum": "45b5c44327461f4b810409ef39be19f3",
+    "sha1sum": "ed80f834839765b0bb00af622fde70e638fbb476",
+    "sha256sum": "4619d393ca7682a794fbed7ab794372bd5583edc0b4863d664c0c964d2b24ca5",
+    "sha512sum": "57c4763a4be897acd80a0f2426711faa79b0a753b625b8de9e1569842f1d541a5701b8a157e406ef71ddc476907d9873b948b31b8e8e6a60b342d412a7604ffa"
+  },
+  "Bukan flag yang dicari: 13.\n": {
+    "md5sum": "a6adefda5d96c1342c8c417e7d8fa4c5",
+    "sha1sum": "c2829af3a853d4a89d137b37063854de74b05acf",
+    "sha256sum": "3b97d846eed9f8d1fef9a604add3470a677caf5474ff5d024f3407547ae54174",
+    "sha512sum": "afdb745b27d5644f9a88a3ce304e0f7102d817b9fb1993a222a21a1099d7b27f209386237e777ac0c971a239bdcef0070ec2183995c9681bea820b5fc273db5f"
+  },
+  "Bukan flag yang dicari: 14.\n": {
+    "md5sum": "d68b082607cb26ed7b7fde43948bff7f",
+    "sha1sum": "f04f6475a66b395596824494f3dfc61d16e9687a",
+    "sha256sum": "32dd215b31d19da1f46c677b9f03dcfeae02e61ef46cd240fcbc4357410ed99c",
+    "sha512sum": "da9d726e03c4efbb28c9c81a5c697c4cb3e183abb1b61a440f20fc15c4e5d8da8e1fe22713d14c05c2f218abdf658459e1e21d0f04fc3559d928e6455a9946d3"
+  },
+  "Bukan flag yang dicari: 15.\n": {
+    "md5sum": "8ff78d7785fd5d5f0da3ca03b12cc9e7",
+    "sha1sum": "dc75d9d82628ab6cabba7e1f71864f0ca5bc766b",
+    "sha256sum": "2daec81488fa94a312d5e349806c23d0398746d1473831d8fdb8cdd89dc92e20",
+    "sha512sum": "ab37ec1e79aab7a92de2e70fb7b6835484f9847ab0458f1e79ed42e74dc2326408cbcfb9ec2a15063465b3c88553886e0152065dbad5c23af1c60855dd22fb45"
+  },
+  "Cakgup{melihatmutersenyum}\n": {
+    "md5sum": "bfa6beb7bea6ebabe77dac450efcdf20",
+    "sha1sum": "d4f4172bac9758988137fda6585b146a2b7387b9",
+    "sha256sum": "f42cca19e51215784f3c3e8039be4d1f165f43b6d880733e6bdb71be8dc9104e",
+    "sha512sum": "9e352cca9f68bc4d02f0d4e7ce20cafcac7cf19540b7b6bb7c955b4f0012da1a041daec849851c93d0a72f9ce8f75dc22733870ad7f4c62f87be582b65e4a5ed"
+  },
+  "Cakgup{youarethequeen}\n": {
+    "md5sum": "fbe96ac926b0f36c3fb40db9099fe4b3",
+    "sha1sum": "e60546abbdaabfdc2d9e17ccc02dd9192dc51339",
+    "sha256sum": "45ea310875500f1daa44381692fe90a1de29c0cda2e1db03dd304865134ee741",
+    "sha512sum": "5cda4808c8b1533560f2e77c5a59f7531f975aeff0351afff46e32fd37c9eacf07eb2dcf3e8e42840f83eade9870384e5f0ccc469fdc092a48af5e4182f91878"
+  },
+  "Cakgup{cobalahmengerti}\n": {
+    "md5sum": "b47fdfb21a0b4cbf7242e97500f0d94d",
+    "sha1sum": "306f97eb418d514c0f5d303ad0751fdb7b7f58ca",
+    "sha256sum": "d740c8e86db31ff1a3d7ead09313cb610ea9aa0bf8109b83dfff29d16bae18a2",
+    "sha512sum": "9419dabe7cfb67bdb5acbecec3f02a65c318df5e28350b5c9df8b2343cd51c2d7b3e7b702da92bf15e1047c242eb5314e244610a76cd4afe282fa42dfe5cc39a"
+  },
+  "Cakgup{kaurinduku}\n": {
+    "md5sum": "6358ebcc1887673c70d1f0d3d29278ba",
+    "sha1sum": "5dcbd7ff5f5569f97c4cbe153d2a974ed6e1c067",
+    "sha256sum": "148c15cb132103b352f163674aba2b5725582181cc6694f583708abb7de7a601",
+    "sha512sum": "d41780135c8a51c9f022839c34a1377865fc2734dc8e98f8ee2d247dd3ff6424b5ca6f7156e653607037d9e45f4fdf1e2bc830386b4f60c55c47f3651ba5f729"
+  }
+};

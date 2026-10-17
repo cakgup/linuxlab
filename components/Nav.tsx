@@ -14,7 +14,8 @@ export function Nav({ xp = 0, completed = 0 }: { xp?: number; completed?: number
           <span>LinuxLab Cyber</span>
         </Link>
         <div className="nav-meta">
-          <Link href="/ctf/" className="pill" aria-current={pathname.startsWith("/ctf") ? "page" : undefined}><Flag size={14} style={{ verticalAlign: "-2px", marginRight: 6 }} />CTF</Link>
+          <Link href="/ctf/" className="pill" aria-current={pathname.startsWith("/ctf") && !pathname.startsWith("/ctf/linux") ? "page" : undefined}><Flag size={14} style={{ verticalAlign: "-2px", marginRight: 6 }} />CTF Jejak Digital</Link>
+          <Link href="/ctf/linux/" className="pill" aria-current={pathname.startsWith("/ctf/linux") ? "page" : undefined}>CTF Linux</Link>
           <span className="pill hide-mobile"><ShieldCheck size={14} style={{ verticalAlign: "-2px", marginRight: 6 }} />Simulasi peramban</span>
           <span className="pill">{completed} tugas</span>
           <span className="pill" style={{ color: "var(--accent)" }}>{xp} XP</span>

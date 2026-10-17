@@ -48,6 +48,10 @@ Seluruh latihan berjalan sebagai simulasi di browser. Perintah diproses oleh mes
 
 ## Alur Pembelajaran
 
+Menu **CTF Linux** membuka arena **Laser** di `/ctf/linux/`: 31 level (0–30), dengan Golden Tiket sebagai tujuan akhir level30, diadaptasi dari bahan VM Laser karya Gara yang terinspirasi OverTheWire. Latihan mencakup navigasi, file tersembunyi, quoting, metadata, pencarian teks, arsip, Base64, checksum, HTTP, GPG, serta hak akses. Setiap level menyediakan terminal simulasi, petunjuk, pembahasan, dan validasi flag untuk membuka level berikutnya. Peserta berpindah melalui `su levelN`, misalnya `su level1` dari level0, lalu memasukkan isi flag level saat ini sebagai password tanpa `Cakgup{}`. Contoh: `Cakgup{sangatmudah}` menjadi `sangatmudah`. Password disembunyikan dan tidak disimpan dalam riwayat. Login su yang berhasil memverifikasi penyelesaian level. Formulir flag hanya tersedia di level30 untuk menyelesaikan Golden Tiket. Password salah ditolak. Seperti VM, password adalah milik akun tujuan: levelN menggunakan isi flag levelN-1; akun level0 menggunakan password awalnya. Ctrl+C membatalkan permintaan password. Level30 mengikuti panduan Linux Game: dapatkan root dengan `sudo su`, baca `flag.txt` sebagai petunjuk (bukan password), lalu temukan `GoldenTiket.txt` yang berisi kredensial pengguna Laser dan flag akhir. Tidak ada akun level31. Peta tantangan hanya membuka kembali level yang sudah selesai. Progres dan posisi level disimpan secara terpisah di browser; CTF Jejak Digital tetap tersedia melalui menu sendiri.
+
+Tampilan terminal dimulai ulang saat pindah akun. Plain `su levelN` mempertahankan direktori kerja dan perubahan filesystem sesi; jalankan `cd` untuk masuk home akun baru, atau gunakan `su - levelN`. Memuat ulang halaman atau mengulang latihan memulihkan fixture awal. Arsip, Python, executable, GPG, dan layanan HTTP dimodelkan dalam browser. Checksum berasal dari isi fixture latihan, termasuk newline; simulator mendukung checksum fixture tersebut. Sesuai Linux Game.pdf, level12 melatih `chmod`, level29 menggunakan passphrase GPG `12345678`, dan poin masing-masing level mengikuti kolom Points pada PDF. Audit langsung VM telah mengganti fixture buatan dengan 122 berkas tantangan dari VM beserta permission, pemilik, waktu, dan checksum. Sesuai penyesuaian Cakgup, semua flag kini berawalan `Cakgup{...}`—termasuk isi Base64, bytecode, ELF, arsip ZIP/TAR/RAR, dan GPG. Artefak dibangun ulang dengan format valid dan checksum baru; metadata permission/pemilik/waktu dipertahankan. Level12 memiliki mode awal 000; level30 sudo meminta password akun saat ini, sesuai VM. Rincian bukti dan batas simulator tersedia di [Laser VM parity audit](docs/LASER_VM_PARITY.md). Progres versi sebelumnya dimigrasikan; tahap Golden Tiket yang sebelumnya terpisah digabung ke level30.
+
 | Learning Path | Jumlah Room | Materi |
 | --- | --- | --- |
 | Linux Basics | 8 | Navigasi, operasi file, membaca teks, pencarian, permission, proses, pipes, dan identitas sistem. |
@@ -130,6 +134,7 @@ linuxlab/
 
 ```bash
 npm run test:core
+npm run test:laser
 npm run build
 npm run test:export
 ```

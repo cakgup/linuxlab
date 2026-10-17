@@ -22,3 +22,12 @@ for (const file of files) {
   }
 }
 console.log(`PASS: ${files.length} exported HTML files, ${checked} local links and assets (${basePath || '/'}).`);
+const vmFixture = fs.readFileSync(path.resolve(__dirname, '../lib/laser-vm-fixtures.ts'), 'utf8');
+const vmNodes = JSON.parse(vmFixture.split('export const laserVmNodes: VNode[] = ')[1].split(/;\r?\n/)[0]);
+for (const node of vmNodes.filter(node => node.blob)) {
+  const target = path.join(root, 'ctf/linux-vm', node.blob);
+  assert(fs.existsSync(target), `Missing lazy original VM asset: ${node.blob}`);
+  const bytes = require('node:zlib').gunzipSync(fs.readFileSync(target));
+  assert.equal(require('node:crypto').createHash('sha256').update(bytes).digest('hex'), node.digests.sha256sum, node.path);
+}
+console.log('PASS: lazy original VM assets exported with matching SHA-256.');

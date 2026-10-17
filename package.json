@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "test:core": "node scripts/core-test.cjs",
+    "test:terminal": "node scripts/terminal-test.cjs",
     "test:ctf": "node scripts/ctf-test.cjs",
+    "test:laser": "node scripts/laser-test.cjs",
     "test:export": "node scripts/check-export.cjs"
   },
   "dependencies": {
