@@ -7,10 +7,10 @@ import { clearProgress, readProgress } from "@/lib/progress";
 import { useEffect, useMemo, useState } from "react";
 import { Nav } from "./Nav";
 import { RoomIcon } from "./RoomIcon";
+import { commandReferences } from "@/lib/command-reference";
 
 export function Dashboard() {
   const [completed, setCompleted] = useState<string[]>([]);
-
   useEffect(() => setCompleted(readProgress().completedTaskIds), []);
 
   const earnedXp = useMemo(
@@ -21,6 +21,8 @@ export function Dashboard() {
   const percent = Math.round((completed.length / totalTasks) * 100) || 0;
   const badges = rooms.filter((r) => r.badge && isRoomComplete(r, completed)).map((r) => r.badge as string);
   const nextRoom = rooms.find((room) => isRoomUnlocked(room, completed) && !isRoomComplete(room, completed));
+  const nextHref = `/room/${nextRoom?.slug || rooms[0].slug}`;
+  const nextLabel = completed.length === 0 ? "Mulai materi dasar" : nextRoom ? "Lanjutkan materi" : "Ulangi materi";
 
   const reset = () => {
     if (!window.confirm("Hapus seluruh kemajuan belajar dan XP di peramban ini?")) return;
@@ -40,9 +42,9 @@ export function Dashboard() {
             Semua latihan berjalan di peramban, tanpa memasang mesin virtual atau mengakses terminal perangkat kita.
           </p>
           <div className="hero-actions">
-            <Link className="btn" href="/ctf/linux/">CTF Linux: Laser <ArrowRight size={17} /></Link>
-            <Link className="btn btn-primary" href={`/room/${nextRoom?.slug || rooms[0].slug}`}>{completed.length === 0 ? "Mulai Belajar" : nextRoom ? "Lanjutkan Belajar" : "Ulangi Latihan"} <ArrowRight size={17} /></Link>
-            {learningPaths.map((path, index) => <a className="btn" key={path.name} href={`#path-${index + 1}`}>{learningPathLabels[path.name]}</a>)}
+            <Link className="btn btn-primary" href={nextHref}>{nextLabel} <ArrowRight size={17} /></Link>
+            <Link className="btn" href="/ctf/arena/">Buka arena CTF <ArrowRight size={17} /></Link>
+            <Link className="btn" href="/materi/perintah/">Referensi {commandReferences.length} perintah</Link>
           </div>
         </div>
       </header>
@@ -52,6 +54,13 @@ export function Dashboard() {
           <div className="stat"><Waypoints size={19} /><strong>{totalTasks}</strong><span>Tugas praktik</span></div>
           <div className="stat"><Trophy size={19} /><strong>{earnedXp}/{totalXp}</strong><span>XP terkumpul</span></div>
           <div className="stat"><Shield size={19} /><strong>{percent}%</strong><span>Kemajuan belajar</span></div>
+        </section>
+
+        <section className="learning-route" id="rute-belajar" aria-labelledby="route-title">
+          <div className="eyebrow">Mulai di sini</div><h2 id="route-title">Rute materi Linux</h2>
+          <p>Ikuti {learningPaths.length} tahap materi dan tugas terpandu: dasar, administrasi server, keamanan, lalu penanganan insiden. Materi administrasi mencakup keterampilan yang dipakai pada CTF Warm Up. CTF tetap dapat dimainkan kapan saja melalui menu terpisah.</p>
+          <ol>{learningPaths.map((path,index)=><li key={path.name}><a href={`#path-${index+1}`}><span>{index+1}</span><strong>{learningPathLabels[path.name]}</strong><small>{getRoomsForPath(path.name).length} modul terpandu</small></a></li>)}</ol>
+          <div className="route-next"><strong>Langkah berikutnya untuk kamu</strong><Link href={nextHref}>{nextLabel} <ArrowRight size={16} /></Link></div>
         </section>
 
         {badges.length > 0 && (
@@ -70,10 +79,10 @@ export function Dashboard() {
           const pathUnlocked = pathRooms.some((room) => isRoomUnlocked(room, completed));
 
           return (
-            <section className="learning-path" id={`path-${pathIndex + 1}`} aria-labelledby={`path-title-${pathIndex + 1}`} key={path.name}>
+            <section key={path.name} className="learning-path" id={`path-${pathIndex + 1}`} aria-labelledby={`path-title-${pathIndex + 1}`}>
               <div className="section-title path-title">
                 <div>
-                  <div className="path-kicker">{String(pathIndex + 1).padStart(2, "0")} · {path.accent}</div>
+                  <div className="path-kicker">Tahap {pathIndex + 1} · Materi dan praktik terpandu</div>
                   <h2 id={`path-title-${pathIndex + 1}`}>{learningPathLabels[path.name]}</h2>
                   <p>{path.description}</p>
                 </div>
@@ -88,7 +97,7 @@ export function Dashboard() {
               )}
 
               <div className="rooms">
-                {pathRooms.map((room) => {
+                {pathRooms.map((room,roomIndex) => {
                   const done = room.tasks.filter((t) => completed.includes(t.id)).length;
                   const p = Math.round((done / room.tasks.length) * 100);
                   const unlocked = isRoomUnlocked(room, completed);
@@ -99,7 +108,7 @@ export function Dashboard() {
                         <RoomIcon icon={room.icon} />
                         {!unlocked ? <span className="lock-chip"><Lock size={12} /> Terkunci</span> : complete ? <span className="complete-chip"><CheckCircle2 size={12} /> Selesai</span> : <span className="complete-chip">Tersedia</span>}
                       </div>
-                      <h3>{room.title}</h3>
+                      <div className="path-kicker">Modul {roomIndex+1}</div><h3>{room.title}</h3>
                       <p>{room.description}</p>
                       <div className="tag-row">
                         <span className={`badge badge-${room.difficulty.toLowerCase()}`}>{difficultyLabels[room.difficulty]}</span>
@@ -120,6 +129,8 @@ export function Dashboard() {
             </section>
           );
         })}
+
+
 
         <section className="coverage-note">
           <strong>Belajar bertahap.</strong> Mulai dari navigasi, berkas, izin akses, dan proses sebelum masuk ke penyelidikan keamanan.

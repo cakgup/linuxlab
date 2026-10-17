@@ -1,5 +1,7 @@
 import { LabState, VNode } from "./types";
 import { listChildren, normalizePath, octal, parentPath, permissionString } from "./fs";
+import { runExtended } from "./shell-extended";
+import { getCommandReference } from "./command-reference";
 
 export interface ShellResult {
   state: LabState;
@@ -7,7 +9,7 @@ export interface ShellResult {
   clear?: boolean;
 }
 
-function tokenize(input: string) {
+export function tokenize(input: string) {
   const tokens: string[] = [];
   const re = /"([^"]*)"|'([^']*)'|([^\s]+)/g;
   let match: RegExpExecArray | null;
@@ -22,12 +24,15 @@ function cloneState(state: LabState): LabState {
     history: [...state.history],
     killedPids: [...state.killedPids],
     processes: state.processes.map((p) => ({ ...p })),
+    env: state.env ? {...state.env} : undefined,
   };
 }
 
 function resolveExisting(state: LabState, raw: string) {
   const path = normalizePath(raw || ".", state.cwd);
-  return { path, node: state.fs[path] };
+  let node=state.fs[path];
+  for(let i=0;node?.linkTarget && i<8;i++)node=state.fs[normalizePath(node.linkTarget,parentPath(node.path))];
+  return { path, node };
 }
 
 function longLine(n: VNode) {
@@ -96,6 +101,11 @@ function commandHelp() {
     "Jaringan:    ip  ss",
     "Sistem:      hostname  uname  history  echo  clear  help  man",
     "Keluaran:    |  >  >>  tee",
+    "Teks lanjut: sort, uniq -c, cut, tr, sed, awk",
+    "Berkas:      which, type, file, ln -s, readlink",
+    "Arsip:       tar, zip, unzip, gzip, gunzip (model arsip browser)",
+    "Sumber daya: df -h, du -sh, free -m, lsblk, date -u, uptime",
+    "Environment: env, printenv, export NAME=value",
     "",
     "Contoh penggunaan:",
     "  ls -la /home/analyst/training",
@@ -107,7 +117,7 @@ function commandHelp() {
   ].join("\n");
 }
 
-function writeFile(state: LabState, rawPath: string, content: string, append = false) {
+export function writeFile(state: LabState, rawPath: string, content: string, append = false) {
   const path = normalizePath(rawPath, state.cwd);
   const parent = state.fs[parentPath(path)];
   if (!parent || parent.type !== "dir") return `bash: ${rawPath}: No such file or directory`;
@@ -115,20 +125,22 @@ function writeFile(state: LabState, rawPath: string, content: string, append = f
   if (existing?.type === "dir") return `bash: ${rawPath}: Is a directory`;
   state.fs[path] = existing
     ? { ...existing, content: append ? `${existing.content || ""}${content}` : content }
-    : { type: "file", path, name: path.split("/").pop() || path, owner: "analyst", group: "analyst", mode: 0o644, content };
+    : { type: "file", path, name: path.split("/").pop() || path, owner: state.env?.USER || "analyst", group: state.env?.USER || "analyst", mode: 0o644, content };
   return "";
 }
 
-function runStage(state: LabState, stage: string, stdin = ""): { state: LabState; output: string; clear?: boolean } {
+export function runStage(state: LabState, stage: string, stdin = ""): { state: LabState; output: string; clear?: boolean } {
   const tokens = tokenize(stage.trim());
   const command = tokens.shift() || "";
   let s = state;
 
   if (!command) return { state: s, output: stdin };
+  const extended=runExtended(s,command,tokens,stdin);
+  if(extended)return extended;
 
   switch (command) {
     case "help": return { state: s, output: commandHelp() };
-    case "man": return { state: s, output: tokens[0] ? `LINUXLAB(1) ${tokens[0]}\n\nPanduan latihan: jalankan 'help' untuk melihat bentuk perintah dan contoh yang tersedia.` : "Panduan perintah apa yang ingin dibuka?" };
+    case "man": {const reference=getCommandReference(tokens.join(" "));return {state:s,output:reference ? `${reference.name.toUpperCase()} — ${reference.category}\n\n${reference.summary}\n\nSintaks: ${reference.syntax}\nContoh: ${reference.example}\n\nPerintah dijalankan dalam simulator. Untuk layanan server/SQL, gunakan modul Administrasi Server.` : "Gunakan man NAMA_PERINTAH. Referensi lengkap tersedia pada menu Materi Linux."};}
     case "clear": return { state: s, output: "", clear: true };
     case "pwd": return { state: s, output: s.cwd };
     case "whoami": return { state: s, output: "analyst" };
@@ -416,7 +428,7 @@ function runStage(state: LabState, stage: string, stdin = ""): { state: LabState
   }
 }
 
-function splitPipeline(line: string) {
+export function splitPipeline(line: string) {
   const stages: string[] = [];
   let current = "";
   let quote: string | null = null;
@@ -430,7 +442,7 @@ function splitPipeline(line: string) {
   return stages;
 }
 
-function extractRedirection(line: string) {
+export function extractRedirection(line: string) {
   let quote: string | null = null;
   for (let i = line.length - 1; i >= 0; i--) {
     const ch = line[i];

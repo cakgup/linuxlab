@@ -4,18 +4,17 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { Award, Check, ChevronLeft, ChevronRight, Circle, Lightbulb, Lock, RotateCcw, Target, Trophy } from "lucide-react";
 import { RoomDefinition } from "@/lib/types";
-import { createInitialState } from "@/lib/fs";
-import { executeLine } from "@/lib/shell";
-import { completeTerminal, labCommands } from "@/lib/terminal-completion";
+import { cancelRoomInput,completeRoomCommand,createRoomState,executeRoomCommand,roomIdentity,roomSessionAdvice } from "@/lib/lab-session";
 import { isTaskComplete } from "@/lib/validator";
 import { readProgress, writeProgress } from "@/lib/progress";
 import { difficultyLabels, getRoom, isRoomComplete, isRoomUnlocked, learningPathLabels, rooms } from "@/lib/tracks";
 import { BrowserTerminal, TerminalCommandResponse } from "./BrowserTerminal";
 import { Nav } from "./Nav";
 import { RoomIcon } from "./RoomIcon";
+import { CommandLesson } from "./CommandLesson";
 
 export function RoomClient({ room }: { room: RoomDefinition }) {
-  const [labState, setLabState] = useState(() => createInitialState());
+  const [labState, setLabState] = useState(() => createRoomState(room));
   const [completed, setCompleted] = useState<string[]>([]);
   const [activeIndex, setActiveIndex] = useState(0);
   const [showHint, setShowHint] = useState(false);
@@ -34,7 +33,9 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
   const roomDone = room.tasks.filter((t) => completed.includes(t.id)).length;
   const unlocked = isRoomUnlocked(room, completed);
 
-  const checkProgress = (nextState: ReturnType<typeof createInitialState>) => {
+  const identity=roomIdentity(room,labState);
+  const sessionAdvice=roomSessionAdvice(room,labState);
+  const checkProgress = (nextState: ReturnType<typeof createRoomState>) => {
     const newlyDone = room.tasks.filter((task) => !completed.includes(task.id) && isTaskComplete(task, nextState));
     if (!newlyDone.length) return;
     const ids = Array.from(new Set([...completed, ...newlyDone.map((t) => t.id)]));
@@ -45,14 +46,14 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
   };
 
   const handleCommand = (line: string): TerminalCommandResponse => {
-    const result = executeLine(labState, line);
+    const result = executeRoomCommand(room,labState, line);
     setLabState(result.state);
     checkProgress(result.state);
-    return { output: result.output, cwd: result.state.cwd, clear: result.clear };
+    return { ...result, cwd: result.state.cwd, identity:roomIdentity(room,result.state) };
   };
 
   const resetLab = () => {
-    setLabState(createInitialState());
+    setLabState(createRoomState(room));
     setResetToken((n) => n + 1);
     setJustCompleted(null);
   };
@@ -140,6 +141,8 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
               })}
             </div>
 
+            <CommandLesson room={room} />
+
             <div className="lesson-card objective">
               <h3><Target size={17} style={{ verticalAlign: "-3px", marginRight: 7 }} />Latar belakang tugas</h3>
               <p>{activeTask.context}</p>
@@ -169,19 +172,20 @@ export function RoomClient({ room }: { room: RoomDefinition }) {
               <button className="btn" onClick={() => setShowHint((v) => !v)}><Lightbulb size={16} /> {showHint ? "Sembunyikan petunjuk" : "Tampilkan petunjuk"}</button>
               {activeIndex > 0 && <button className="btn" onClick={() => { setActiveIndex((i) => i - 1); setShowHint(false); }}><ChevronLeft size={16} /> Tugas sebelumnya</button>}
               {activeIndex < room.tasks.length - 1 && <button className="btn btn-primary" onClick={() => { setActiveIndex((i) => i + 1); setShowHint(false); }}>Tugas berikutnya <ChevronRight size={16} /></button>}
-              {activeIndex === room.tasks.length - 1 && nextRoom && room.tasks.every((t) => completed.includes(t.id)) && <Link className="btn btn-primary" href={`/room/${nextRoom.slug}`}>Buka latihan berikutnya <ChevronRight size={16} /></Link>}
+              {activeIndex === room.tasks.length - 1 && room.tasks.every((t) => completed.includes(t.id)) && <Link className="btn btn-primary" href={nextRoom ? `/room/${nextRoom.slug}` : "/ctf/arena/"}>{nextRoom ? "Buka latihan berikutnya" : "Materi selesai · buka arena CTF"} <ChevronRight size={16} /></Link>}
             </div>
 
-            {previousRoom && <div className="small room-sequence-note">Latihan sebelumnya: {previousRoom.title} · Berikutnya: {nextRoom?.title || "Seluruh jalur belajar selesai"}</div>}
+            {previousRoom && <div className="small room-sequence-note">Latihan sebelumnya: {previousRoom.title} · Berikutnya: {nextRoom?.title || "Arena CTF (opsional)"}</div>}
           </div>
         </section>
 
         <section className="terminal-pane" id="terminal" aria-label="Terminal latihan">
           <div className="terminal-toolbar">
-            <div style={{ display: "flex", alignItems: "center", gap: 11 }}><span className="terminal-dots"><i /><i /><i /></span><span>training-web-01 · simulasi terisolasi</span></div>
+            <div style={{ display: "flex", alignItems: "center", gap: 11 }}><span className="terminal-dots"><i /><i /><i /></span><span>{identity ? `${identity.user}@${identity.host}` : "training-web-01"} · simulasi terisolasi</span></div>
             <div className="terminal-actions"><a className="mobile-terminal-link" href="#lesson">Kembali ke materi</a><button onClick={resetLab}><RotateCcw size={12} style={{ verticalAlign: "-2px", marginRight: 5 }} />Atur ulang latihan</button></div>
           </div>
-          <div className="terminal-wrap"><BrowserTerminal onCommand={handleCommand} cwd={labState.cwd} resetToken={resetToken} onComplete={line => completeTerminal(line, labState.fs, labState.cwd, "/home/analyst", labCommands)} /></div>
+          {sessionAdvice && <div className="room-session-guide" role="status"><strong>{sessionAdvice.label}</strong><p>{sessionAdvice.message}</p>{sessionAdvice.commands.map(command=><code key={command}>{command}</code>)}<span>Modul administrasi memakai server latihan yang sama dengan Warm Up. SSH: admin1234! · MySQL: baca DB_PASSWORD di wp-config.php. Modul setelah SSH dimulai pada shell server; login MySQL tetap dipraktikkan sendiri.</span></div>}
+          <div className="terminal-wrap"><BrowserTerminal onCommand={handleCommand} cwd={labState.cwd} identity={identity} resetToken={resetToken} onComplete={line => completeRoomCommand(room,labState,line)} onCancel={()=>{const next=cancelRoomInput(room,labState);setLabState(next);return {prompt:Reflect.get(next,"mysql") ? "mysql> " : undefined};}} /></div>
           {justCompleted && <div className="objective-toast">✓ Tugas selesai · XP bertambah</div>}
         </section>
       </main>

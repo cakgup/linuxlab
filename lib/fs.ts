@@ -1,4 +1,5 @@
 import { FakeProcess, LabState, VNode } from "./types";
+import { labCommands, shellBuiltins } from "./command-catalog";
 
 export function normalizePath(input: string, cwd = "/home/analyst") {
   const expanded = input === "~" ? "/home/analyst" : input.startsWith("~/") ? `/home/analyst/${input.slice(2)}` : input;
@@ -101,7 +102,12 @@ export function createInitialState(): LabState {
     { pid: 31337, user: "www-data", cpu: 88.7, mem: 6.4, command: "/tmp/.cache/kworker-update --pool mine.example", alive: true },
   ];
 
-  return { cwd: "/home/analyst", fs, history: [], killedPids: [], processes };
+  for (const command of labCommands.filter(command=>!shellBuiltins.has(command))) {
+    const path=`/usr/bin/${command}`;
+    if (!fs[path]) add(fs,node(path,"file",0o755,"root","root",`ELF executable (simulasi ${command})`));
+  }
+  add(fs,node("/home/analyst/training/visitors.txt","file",0o644,"analyst","analyst","192.168.1.10\n192.168.1.20\n192.168.1.10\n192.168.1.30\n192.168.1.20\n192.168.1.10\n"));
+  return { cwd: "/home/analyst", fs, history: [], killedPids: [], processes,env:{HOME:"/home/analyst",USER:"analyst",SHELL:"/bin/bash",PATH:"/usr/local/bin:/usr/bin:/bin",LANG:"id_ID.UTF-8"} };
 }
 
 export function listChildren(fs: Record<string, VNode>, path: string) {
@@ -116,7 +122,7 @@ export function octal(mode: number) {
 }
 
 export function permissionString(n: VNode) {
-  const type = n.type === "dir" ? "d" : "-";
+  const type = n.linkTarget ? "l" : n.type === "dir" ? "d" : "-";
   const bits = [0o400,0o200,0o100,0o040,0o020,0o010,0o004,0o002,0o001];
   const chars = ["r","w","x","r","w","x","r","w","x"];
   const out = bits.map((bit, i) => (n.mode & bit) ? chars[i] : "-");

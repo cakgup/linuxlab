@@ -29,6 +29,10 @@ export function isTaskComplete(task: RoomTask, state: LabState): boolean {
       return history.some((h) => check.fragments.every((fragment) => h.toLowerCase().includes(fragment.toLowerCase())));
     case "process-killed":
       return state.killedPids.includes(check.pid);
+    case "environment":
+      return state.env?.[check.key] === check.value;
+    case "session":
+      return Reflect.get(state,check.key) === check.value;
     default:
       return false;
   }

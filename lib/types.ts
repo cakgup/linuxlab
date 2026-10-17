@@ -1,5 +1,5 @@
 export type Difficulty = "Easy" | "Medium" | "Hard";
-export type LearningPath = "Linux Basics" | "Linux for Cybersecurity" | "Incident Response";
+export type LearningPath = "Linux Basics" | "Linux Administration" | "Linux for Cybersecurity" | "Digital Forensics" | "Incident Response";
 
 export type TaskCheck =
   | { type: "all"; checks: TaskCheck[] }
@@ -11,7 +11,9 @@ export type TaskCheck =
   | { type: "file-mode"; path: string; mode: number }
   | { type: "file-content-contains"; path: string; text: string }
   | { type: "history-contains"; fragments: string[] }
-  | { type: "process-killed"; pid: number };
+  | { type: "process-killed"; pid: number }
+  | { type: "environment"; key: string; value: string }
+  | { type: "session"; key: "sshVerified" | "mysqlVerified" | "database"; value: string | boolean };
 
 export interface RoomTask {
   id: string;
@@ -35,6 +37,9 @@ export interface RoomDefinition {
   tags: string[];
   learning: string[];
   prerequisites?: string[];
+  environment?: "warm-up" | "forensics";
+  commands?: string[];
+  notes?: { title:string; body:string }[];
   badge?: string;
   tasks: RoomTask[];
 }
@@ -52,6 +57,8 @@ export interface VNode {
   digests?: Record<string, string>;
   blob?: string;
   binary?: boolean;
+  linkTarget?: string;
+  archive?: { kind: "tar" | "zip" | "gzip"; entries: Record<string, { content: string; mode: number }> };
 }
 
 export interface FakeProcess {
@@ -69,4 +76,5 @@ export interface LabState {
   history: string[];
   killedPids: number[];
   processes: FakeProcess[];
+  env?: Record<string,string>;
 }

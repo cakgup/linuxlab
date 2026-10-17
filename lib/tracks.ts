@@ -1,7 +1,9 @@
 import { Difficulty, LearningPath, RoomDefinition } from "./types";
+import { additionalBasics, administrationRooms } from "./curriculum-expanded";
 
 export const learningPathLabels: Record<LearningPath, string> = {
   "Linux Basics": "Dasar Linux",
+  "Linux Administration": "Administrasi Server Linux",
   "Linux for Cybersecurity": "Linux untuk Keamanan Siber",
   "Incident Response": "Penanganan Insiden",
 };
@@ -19,6 +21,11 @@ export const learningPaths: { name: LearningPath; description: string; accent: s
     accent: "Dasar",
   },
   {
+    name: "Linux Administration",
+    description: "Pelajari SSH, identitas server, layanan systemd, jaringan, Apache, analisis log, dan MySQL yang dipakai dalam CTF Warm Up.",
+    accent: "Administrasi Server",
+  },
+  {
     name: "Linux for Cybersecurity",
     description: "Gunakan Linux untuk mengamankan sistem, menganalisis log, memeriksa SUID, serta menelusuri proses dan jaringan yang mencurigakan.",
     accent: "Pengamanan Sistem",
@@ -30,7 +37,7 @@ export const learningPaths: { name: LearningPath; description: string; accent: s
   },
 ];
 
-export const rooms: RoomDefinition[] = [
+const originalRooms: RoomDefinition[] = [
   {
     slug: "basic-navigation",
     title: "Dasar Navigasi Direktori",
@@ -810,6 +817,14 @@ export const rooms: RoomDefinition[] = [
   },
 ];
 
+export const rooms:RoomDefinition[] = [
+  ...originalRooms.filter(room=>room.path === "Linux Basics"),
+  ...additionalBasics,
+  ...administrationRooms,
+  ...originalRooms.filter(room=>room.path === "Linux for Cybersecurity").map((room,i)=>i===0 ? {...room,prerequisites:[administrationRooms[administrationRooms.length-1].slug]} : room),
+  ...originalRooms.filter(room=>room.path === "Incident Response"),
+];
+
 export function getRoom(slug: string) {
   return rooms.find((room) => room.slug === slug);
 }
@@ -823,6 +838,7 @@ export function isRoomComplete(room: RoomDefinition, completedTaskIds: string[])
 }
 
 export function isRoomUnlocked(room: RoomDefinition, completedTaskIds: string[]) {
+  if(isRoomComplete(room,completedTaskIds))return true;
   if (!room.prerequisites?.length) return true;
   return room.prerequisites.every((slug) => {
     const prerequisite = getRoom(slug);

@@ -1,0 +1,2 @@
+export const labCommands = "help man clear pwd whoami hostname uname id groups ip ss history echo cd ls cat less head tail grep find wc stat chmod mkdir touch cp mv rm rmdir tee ps kill which type file sort uniq cut tr sed awk ln readlink tar zip unzip gzip gunzip df du free lsblk env printenv export date uptime".split(" ");
+export const shellBuiltins = new Set(["help","cd","export","history","type"]);

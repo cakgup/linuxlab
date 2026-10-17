@@ -6,7 +6,7 @@ const html = fs.readFileSync(path.join(root,'lab.html'),'utf8');
 assert(!/\son\w+=/i.test(html),'Unexpected original inline event handler');
 assert(!/https?:\/\/|__INITIAL_PARTICIPANT__|085717119171/.test(html),'Remote URL or original session data retained');
 for(const [,url] of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
-  if(url==='../../') continue;
+  if(url==='arena/') continue; // Next.js catalog route, checked in the static export.
   assert(fs.existsSync(path.resolve(root,url.split(/[?#]/)[0])),`Missing local resource ${url}`);
 }
 const answers=JSON.parse(fs.readFileSync(path.join(root,'answers.json'),'utf8'));

@@ -1,7 +1,7 @@
 import { listChildren, normalizePath } from "./fs";
 import type { VNode } from "./types";
 
-export const labCommands = "help man clear pwd whoami hostname uname id groups ip ss history echo cd ls cat less head tail grep find wc stat chmod mkdir touch cp mv rm rmdir tee ps kill".split(" ");
+export { labCommands } from "./command-catalog";
 export const ctfCommands = "help man clear pwd echo history hostname uname getent whoami id sudo chmod cd ls stat cat more less strings head tail grep wc find locate base64 md5sum sha1sum sha256sum sha512sum python python3 unzip tar unrar curl gpg su".split(" ");
 
 /** Complete the shell token immediately before the cursor, preserving shell quoting. */

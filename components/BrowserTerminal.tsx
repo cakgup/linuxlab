@@ -11,6 +11,7 @@ export interface TerminalCommandResponse {
   clear?: boolean;
   password?: boolean;
   passwordPrompt?: string;
+  prompt?: string;
   identity?: { user: string; host: string; home: string };
 }
 
@@ -25,7 +26,7 @@ function prompt(cwd: string, identity?: { user: string; host: string; home: stri
   return `\x1b[38;2;141;252;101m${identity ? `${identity.user}@${identity.host}` : "analyst@training-web-01"}\x1b[0m:\x1b[38;2;76;201;240m${path}\x1b[0m${identity?.user === "root" ? "#" : "$"} `;
 }
 
-export function BrowserTerminal({ onCommand, cwd, resetToken, identity, onComplete, onCancel }: { onCommand: (line: string) => TerminalCommandResponse | Promise<TerminalCommandResponse>; cwd: string; resetToken: number; identity?: { user: string; host: string; home: string }; onComplete?: (line: string) => string; onCancel?: () => void }) {
+export function BrowserTerminal({ onCommand, cwd, resetToken, identity, onComplete, onCancel }: { onCommand: (line: string) => TerminalCommandResponse | Promise<TerminalCommandResponse>; cwd: string; resetToken: number; identity?: { user: string; host: string; home: string }; onComplete?: (line: string) => string; onCancel?: () => { prompt?: string } | void }) {
   const hostRef = useRef<HTMLDivElement | null>(null);
   const commandRef = useRef(onCommand);
   const cwdRef = useRef(cwd);
@@ -39,6 +40,7 @@ export function BrowserTerminal({ onCommand, cwd, resetToken, identity, onComple
   const cancelRef = useRef(onCancel);
   const passwordRef = useRef(false);
   const passwordPromptRef = useRef("Password: ");
+  const inputPromptRef = useRef("");
   const busyRef = useRef(false);
 
   useEffect(() => { commandRef.current = onCommand; }, [onCommand]);
@@ -79,9 +81,10 @@ export function BrowserTerminal({ onCommand, cwd, resetToken, identity, onComple
     term.write(prompt(cwdRef.current, identityRef.current));
     fit.fit();
 
+    const currentPrompt = () => inputPromptRef.current || prompt(cwdRef.current, identityRef.current);
     const writePrompt = () => {
       term.textarea?.setAttribute("aria-label", passwordRef.current ? "Password (input disembunyikan)" : "Terminal input");
-      term.write(passwordRef.current ? passwordPromptRef.current : prompt(cwdRef.current, identityRef.current));
+      term.write(passwordRef.current ? passwordPromptRef.current : currentPrompt());
     };
 
     const cancelInput = () => {
@@ -89,7 +92,8 @@ export function BrowserTerminal({ onCommand, cwd, resetToken, identity, onComple
       bufferRef.current = "";
       cursorRef.current = 0;
       passwordRef.current = false;
-      cancelRef.current?.();
+      const cancelled = cancelRef.current?.();
+      if (cancelled) inputPromptRef.current = cancelled.prompt || "";
       writePrompt();
     };
 
@@ -103,12 +107,12 @@ export function BrowserTerminal({ onCommand, cwd, resetToken, identity, onComple
     });
 
     const rewriteBuffer = (next: string, cursor = Array.from(next).length) => {
-      const promptWidth = terminalTextWidth(prompt(cwdRef.current, identityRef.current));
+      const promptWidth = terminalTextWidth(currentPrompt());
       const oldPosition = promptWidth + terminalTextWidth(Array.from(bufferRef.current).slice(0, cursorRef.current).join(""));
       if (!passwordRef.current) {
         const oldRow = Math.floor(oldPosition / term.cols);
         term.write("\r" + (oldRow ? `\x1b[${oldRow}A` : "") + "\x1b[J");
-        term.write(prompt(cwdRef.current, identityRef.current) + next);
+        term.write(currentPrompt() + next);
         const end = promptWidth + terminalTextWidth(next);
         // Resolve xterm's pending wrap before positioning the editing cursor.
         if (end > 0 && end % term.cols === 0) term.write("\r\n");
@@ -152,6 +156,7 @@ export function BrowserTerminal({ onCommand, cwd, resetToken, identity, onComple
         if (result.identity) identityRef.current = result.identity;
         passwordRef.current = !!result.password;
         passwordPromptRef.current = result.passwordPrompt || "Password: ";
+        inputPromptRef.current = result.prompt || "";
         writePrompt();
         return;
       }
@@ -235,6 +240,7 @@ export function BrowserTerminal({ onCommand, cwd, resetToken, identity, onComple
     bufferRef.current = "";
     cursorRef.current = 0;
     passwordRef.current = false;
+    inputPromptRef.current = "";
     cancelRef.current?.();
     term.textarea?.setAttribute("aria-label", "Terminal input");
     historyRef.current = [];

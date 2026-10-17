@@ -162,6 +162,67 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .btn-primary { background: linear-gradient(180deg, #ffdc55, var(--accent)); color: var(--bg); border-color: var(--accent); font-weight: 850; box-shadow: 0 10px 24px #ffca1a25; }
 .btn-primary:hover { background: linear-gradient(180deg, #ffe27a, #ffc400); color: var(--bg); }
 .dashboard-main { padding-top: 34px; padding-bottom: 40px; }
+.learning-route { margin:28px 0; padding:28px; border:1px solid var(--line); border-radius:18px; background:var(--panel); scroll-margin-top:24px; }
+.learning-route h2 { margin:8px 0; font-size:28px; }
+.learning-route > p { color:var(--muted); max-width:800px; }
+.learning-route ol { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; list-style:none; padding:0; margin:24px 0; }
+.learning-route li a { display:grid; grid-template-columns:32px 1fr; gap:4px 12px; padding:16px; border:1px solid var(--line); border-radius:12px; height:100%; }
+.learning-route li a:hover { border-color:var(--accent); background:var(--panel-2); }
+.learning-route li span { grid-row:span 2; width:30px; height:30px; border-radius:50%; background:var(--accent); color:var(--bg); display:grid; place-items:center; font-weight:800; }
+.learning-route li small { color:var(--muted); }
+.route-next { display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; padding-top:16px; border-top:1px solid var(--line); }
+.route-next a { display:flex; align-items:center; gap:8px; color:var(--accent); }
+.arena-cards { grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); }
+.arena-cards .path-kicker { margin-top:20px; font-size:10px; }
+.arena-cards .tag { white-space:normal; }
+.arena-heading { margin-bottom:32px; max-width:850px; }
+.arena-heading h1 { font-size:clamp(32px,5vw,48px); margin:8px 0; }
+.arena-heading p { color:var(--muted); }
+.warm-up-brief { margin:24px 0; padding:24px; border:1px solid var(--line); border-radius:16px; background:var(--panel); }
+.warm-up-brief h2 { margin-top:0; }
+.warm-up-brief p { color:var(--muted); }
+.warm-up-brief code { color:var(--cyan); overflow-wrap:anywhere; }
+.warm-up-group { font-size:11px; color:var(--cyan); text-transform:uppercase; letter-spacing:.05em; margin:16px 8px 8px; }
+.warm-up-flow { list-style:none; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.warm-up-flow li { border:1px solid var(--line); border-radius:12px; padding:14px; }
+.warm-up-flow strong,.warm-up-flow span { display:block; }
+.warm-up-flow strong { color:var(--accent); margin-bottom:8px; }
+.warm-up-flow span { font-size:13px; color:var(--muted); }
+.warm-up-brief details { margin:16px 0; color:var(--muted); font-size:13px; }
+.warm-up-brief summary { cursor:pointer; color:var(--cyan); }
+.warm-up-main .laser-layout { grid-template-columns:200px minmax(0,1fr); align-items:start; scroll-margin-top:20px; }
+.warm-up-workspace { grid-template-columns:minmax(270px,.9fr) minmax(0,1.3fr); align-items:start; }
+.warm-up-workspace > .laser-mission { grid-column:1; grid-row:1; }
+.warm-up-workspace > .laser-submit { grid-column:1; grid-row:2; }
+.warm-up-workspace > .laser-victory { grid-column:1/-1; }
+.warm-up-workspace:has(> .laser-victory) > .laser-mission { grid-row:2; }
+.warm-up-workspace:has(> .laser-victory) > .laser-submit { grid-row:3; }
+.warm-up-terminal-column { grid-column:2; grid-row:1 / span 2; position:sticky; top:20px; min-width:0; }
+.warm-up-workspace:has(> .laser-victory) > .warm-up-terminal-column { grid-row:2 / span 2; }
+.warm-up-terminal-column .terminal-host { height:clamp(350px,55dvh,650px); min-height:350px; }
+.warm-up-session { padding:16px; border:1px solid var(--line); border-radius:12px; margin-bottom:12px; background:var(--panel); }
+.warm-up-session strong { color:var(--cyan); font-size:13px; }
+.warm-up-session p { color:var(--muted); font-size:12px; margin:8px 0 0; }
+.warm-up-session .warm-up-commands { margin-bottom:0; }
+.warm-up-goal,.warm-up-answer-format { border-left:3px solid var(--cyan); padding:10px 12px; background:#83d7ff08; }
+.warm-up-answer-format { color:var(--muted); margin:16px 0; font-size:12px; }
+.warm-up-answer-format p { margin:6px 0 0; font-size:12px; }
+.warm-up-commands { list-style:none; padding:0; margin:12px 0; display:grid; gap:10px; }
+.warm-up-commands li { display:flex; align-items:flex-start; gap:8px; padding:10px; border:1px solid var(--line); border-radius:8px; background:var(--bg); }
+.warm-up-commands code { flex:1; min-width:0; overflow-wrap:anywhere; white-space:pre-wrap; color:var(--cyan); font-size:12px; }
+.warm-up-commands .btn { flex-shrink:0; padding:5px 8px; font-size:10px; }
+.warm-up-terminal-tip { color:var(--muted); line-height:1.6; }
+.warm-up-main .laser-submit form > div { flex-direction:column; }
+.warm-up-main .laser-submit h3 { display:flex; align-items:center; gap:8px; margin-top:0; }
+.warm-up-explanation { color:var(--muted); font-size:14px; line-height:1.8; }
+@media(max-width:1100px) {
+  .warm-up-workspace { grid-template-columns:1fr; }
+  .warm-up-workspace > .laser-mission,.warm-up-workspace:has(> .laser-victory) > .laser-mission,
+  .warm-up-workspace > .laser-submit,.warm-up-workspace:has(> .laser-victory) > .laser-submit,
+  .warm-up-terminal-column,.warm-up-workspace:has(> .laser-victory) > .warm-up-terminal-column { grid-column:1; grid-row:auto; position:static; }
+}
+@media(max-width:800px) { .warm-up-main .laser-layout { grid-template-columns:1fr; } .warm-up-main .laser-levels { display:block; } .warm-up-flow { grid-template-columns:1fr; } }
+@media(max-width:700px) { .learning-route { padding:20px 16px; } .learning-route ol { grid-template-columns:1fr; } }
 .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-bottom: 28px; }
 .stat { border: 1px solid var(--line); border-radius: 18px; padding: 22px; background: linear-gradient(180deg, #1a3a6be0, #102b52ad); }
 .stat > svg { color: var(--accent); }
@@ -288,3 +349,27 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+.learning-route ol { grid-template-columns:repeat(4,minmax(0,1fr)); }
+.command-guide details { border-top:1px solid var(--line); padding:12px 0; }
+.command-guide summary { display:flex; align-items:center; justify-content:space-between; gap:12px; cursor:pointer; font-weight:700; }
+.command-guide summary span { color:var(--muted); font-size:12px; }
+.command-guide pre { white-space:pre-wrap; overflow-wrap:anywhere; padding:12px; background:var(--bg); border:1px solid var(--line); border-radius:8px; font-size:12px; line-height:1.6; color:var(--cyan); }
+.command-guide p { color:var(--muted); line-height:1.7; }
+.room-session-guide { flex:none; max-height:180px; overflow:auto; padding:12px 16px; background:#17213b; border-bottom:1px solid var(--line); font-size:12px; line-height:1.6; color:var(--muted); }
+.room-session-guide strong { color:var(--cyan); }
+.room-session-guide p { margin:4px 0; }
+.room-session-guide code { display:block; color:var(--accent); }
+.room-session-guide span { display:block; margin-top:6px; }
+.terminal-pane:has(.room-session-guide) .terminal-host { min-height:220px; }
+.reference-page { padding-top:40px; padding-bottom:60px; }
+.reference-page > p { color:var(--muted); max-width:850px; line-height:1.7; }
+.reference-note { margin:24px 0; padding:18px; background:var(--panel); border-left:3px solid var(--cyan); line-height:1.7; color:var(--muted); }
+.reference-filters { display:grid; grid-template-columns:2fr 1fr; gap:18px; }
+.reference-filters label { display:grid; gap:8px; font-weight:700; }
+.reference-filters input,.reference-filters select { width:100%; padding:13px; color:var(--text); background:var(--panel); border:1px solid var(--line); border-radius:10px; font:inherit; }
+.reference-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.reference-grid article { margin:0; }
+.reference-grid h2 { margin-top:8px; }
+@media(max-width:800px) { .learning-route ol { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:640px) { .reference-grid,.reference-filters,.learning-route ol { grid-template-columns:1fr; } }

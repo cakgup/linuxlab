@@ -89,7 +89,7 @@ export function LaserCtf() {
     <header className="laser-heading">
       <div><span className="eyebrow">Capture the flag · Linux pemula</span><h1>CTF Linux: <span>Laser</span></h1>
         <p>Temukan flag, pahami perintahnya, dan naik level. Dari langkah pertama di terminal hingga Golden Tiket.</p></div>
-      <Link className="btn" href="/ctf/"><Flag size={16} />CTF Jejak Digital</Link>
+      <Link className="btn" href="/ctf/arena/">Semua CTF</Link>
     </header>
     <div className="laser-overview"><span><Terminal size={16} />31 level · 0–30</span><span><CheckCircle2 size={16} />{completed}/{laserLevels.length} selesai</span><span><Trophy size={16} />{earnedPoints} poin</span><span>Ubuntu 16.04.4 · i686 · simulasi VM Laser</span></div>
     <div className="progress-line" role="progressbar" aria-label="Progres CTF Linux" aria-valuenow={completed} aria-valuemin={0} aria-valuemax={laserLevels.length}><div style={{ width: `${completed / laserLevels.length * 100}%` }} /></div>
@@ -102,7 +102,7 @@ export function LaserCtf() {
         </button>)}
       </nav>
       <div className="laser-workspace">
-        {completed === laserLevels.length && <div className="laser-victory" role="status"><Trophy size={24} /><div><strong>Golden Tiket berhasil diraih!</strong><p>Kamu telah menuntaskan semua tantangan. Pilih level untuk berlatih kembali.</p></div></div>}
+        {completed === laserLevels.length && <div className="laser-victory" role="status"><Trophy size={24} /><div><strong>Golden Tiket berhasil diraih!</strong><p>Lanjutkan keterampilan investigasi server pada CTF berikutnya.</p><Link className="btn" href="/ctf/warm-up/">Lanjut ke CTF Warm Up</Link></div></div>}
         <section className="laser-mission" aria-labelledby="laser-title">
           <div className="laser-mission-top"><span className="eyebrow">{`Level ${active} / 30`}</span><span className="tag">{level.topic} · {level.points} poin</span></div>
           <h2 ref={missionTitle} tabIndex={-1} id="laser-title">{level.title}</h2><h3 className="laser-objective-label">Tujuan level</h3><p>{level.mission}</p>

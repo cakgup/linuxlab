@@ -37,8 +37,8 @@ Seluruh latihan berjalan sebagai simulasi di browser. Perintah diproses oleh mes
 
 ## Fitur Utama
 
-- 15 room interaktif dengan 58 tugas praktik.
-- Tiga learning path dengan prasyarat untuk membuka room berikutnya.
+- 29 room interaktif dengan 114 tugas praktik dan 71 entri referensi perintah yang dapat dicari.
+- Empat learning path dengan prasyarat untuk membuka room berikutnya.
 - Terminal berbasis xterm.js dengan simulasi filesystem, proses, dan jaringan.
 - Validasi tugas berdasarkan hasil perubahan host virtual dan riwayat perintah.
 - XP, badge, petunjuk, dan indikator progres pembelajaran.
@@ -48,15 +48,27 @@ Seluruh latihan berjalan sebagai simulasi di browser. Perintah diproses oleh mes
 
 ## Alur Pembelajaran
 
-Menu **CTF Linux** membuka arena **Laser** di `/ctf/linux/`: 31 level (0–30), dengan Golden Tiket sebagai tujuan akhir level30, diadaptasi dari bahan VM Laser karya Gara yang terinspirasi OverTheWire. Latihan mencakup navigasi, file tersembunyi, quoting, metadata, pencarian teks, arsip, Base64, checksum, HTTP, GPG, serta hak akses. Setiap level menyediakan terminal simulasi, petunjuk, pembahasan, dan validasi flag untuk membuka level berikutnya. Peserta berpindah melalui `su levelN`, misalnya `su level1` dari level0, lalu memasukkan isi flag level saat ini sebagai password tanpa `Cakgup{}`. Contoh: `Cakgup{sangatmudah}` menjadi `sangatmudah`. Password disembunyikan dan tidak disimpan dalam riwayat. Login su yang berhasil memverifikasi penyelesaian level. Formulir flag hanya tersedia di level30 untuk menyelesaikan Golden Tiket. Password salah ditolak. Seperti VM, password adalah milik akun tujuan: levelN menggunakan isi flag levelN-1; akun level0 menggunakan password awalnya. Ctrl+C membatalkan permintaan password. Level30 mengikuti panduan Linux Game: dapatkan root dengan `sudo su`, baca `flag.txt` sebagai petunjuk (bukan password), lalu temukan `GoldenTiket.txt` yang berisi kredensial pengguna Laser dan flag akhir. Tidak ada akun level31. Peta tantangan hanya membuka kembali level yang sudah selesai. Progres dan posisi level disimpan secara terpisah di browser; CTF Jejak Digital tetap tersedia melalui menu sendiri.
+Navigasi dibagi menjadi **Materi Linux** dan **CTF**. Halaman materi menampilkan empat tahap berurutan: Dasar Linux, Administrasi Server Linux, Linux untuk Keamanan Siber, dan Penanganan Insiden, beserta tombol untuk melanjutkan materi berikutnya. CTF terpisah di `/ctf/arena/` dan seluruh arenanya dapat dibuka langsung tanpa menyelesaikan materi atau CTF lain.
+
+Arena CTF berisi:
+
+1. **CTF Linux** (`/ctf/linux/`): 31 level latihan terminal.
+2. **CTF Warm Up** (`/ctf/warm-up/`): 30 pertanyaan dalam profil server, webserver, dan database, berdasarkan Warm Up.pdf. SSH, konfigurasi Apache, 1452 entri akses dari IP pertama, dan sesi MySQL berjalan dalam simulasi. Lihat [cakupan dan rekonstruksi Warm Up](docs/WARM_UP.md). Progres terpisah dari materi dan CTF lainnya.
+3. **CTF Jejak Digital** (`/ctf/`): sembilan stage investigasi forensik.
+
+
+Menu **CTF Linux** membuka arena **Laser** di `/ctf/linux/`: 31 level (0–30), dengan Golden Tiket sebagai tujuan akhir level30, diadaptasi dari bahan VM Laser karya Gara yang terinspirasi OverTheWire. Latihan mencakup navigasi, file tersembunyi, quoting, metadata, pencarian teks, arsip, Base64, checksum, HTTP, GPG, serta hak akses. Setiap level menyediakan terminal simulasi, petunjuk, dan validasi flag untuk membuka level berikutnya. Peserta berpindah melalui `su levelN`, misalnya `su level1` dari level0, lalu memasukkan isi flag level saat ini sebagai password tanpa `Cakgup{}`. Contoh: `Cakgup{sangatmudah}` menjadi `sangatmudah`. Password disembunyikan dan tidak disimpan dalam riwayat. Login su yang berhasil memverifikasi penyelesaian level. Formulir flag hanya tersedia di level30 untuk menyelesaikan Golden Tiket. Password salah ditolak. Seperti VM, password adalah milik akun tujuan: levelN menggunakan isi flag levelN-1; akun level0 menggunakan password awalnya. Ctrl+C membatalkan permintaan password. Level30 mengikuti panduan Linux Game: dapatkan root dengan `sudo su`, baca `flag.txt` sebagai petunjuk (bukan password), lalu temukan `GoldenTiket.txt` yang berisi kredensial pengguna Laser dan flag akhir. Tidak ada akun level31. Peta tantangan hanya membuka kembali level yang sudah selesai. Progres dan posisi level disimpan secara terpisah di browser; semua CTF tersedia pada menu CTF. Tombol Reset ke level0 menghapus progres CTF Linux dan memulai ulang arena tersebut.
 
 Tampilan terminal dimulai ulang saat pindah akun. Plain `su levelN` mempertahankan direktori kerja dan perubahan filesystem sesi; jalankan `cd` untuk masuk home akun baru, atau gunakan `su - levelN`. Memuat ulang halaman atau mengulang latihan memulihkan fixture awal. Arsip, Python, executable, GPG, dan layanan HTTP dimodelkan dalam browser. Checksum berasal dari isi fixture latihan, termasuk newline; simulator mendukung checksum fixture tersebut. Sesuai Linux Game.pdf, level12 melatih `chmod`, level29 menggunakan passphrase GPG `12345678`, dan poin masing-masing level mengikuti kolom Points pada PDF. Audit langsung VM telah mengganti fixture buatan dengan 122 berkas tantangan dari VM beserta permission, pemilik, waktu, dan checksum. Sesuai penyesuaian Cakgup, semua flag kini berawalan `Cakgup{...}`—termasuk isi Base64, bytecode, ELF, arsip ZIP/TAR/RAR, dan GPG. Artefak dibangun ulang dengan format valid dan checksum baru; metadata permission/pemilik/waktu dipertahankan. Level12 memiliki mode awal 000; level30 sudo meminta password akun saat ini, sesuai VM. Rincian bukti dan batas simulator tersedia di [Laser VM parity audit](docs/LASER_VM_PARITY.md). Progres versi sebelumnya dimigrasikan; tahap Golden Tiket yang sebelumnya terpisah digabung ke level30.
 
 | Learning Path | Jumlah Room | Materi |
 | --- | --- | --- |
-| Linux Basics | 8 | Navigasi, operasi file, membaca teks, pencarian, permission, proses, pipes, dan identitas sistem. |
+| Linux Basics | 14 | Navigasi, berkas, teks, permission, proses, pipe, bantuan, pengolahan teks, symbolic link, arsip, kapasitas, dan environment. |
+| Linux Administration | 8 | SSH, OS/kernel/akun, systemd/journal, jaringan, Apache/virtual host, access log, autentikasi dan query MySQL. |
 | Linux for Cybersecurity | 6 | Hardening, investigasi log, SUID, proses mencurigakan, jaringan, dan persistence. |
 | Incident Response | 1 | Skenario gabungan untuk investigasi, containment, dan pencatatan hasil. |
+
+Setiap modul menyertakan fungsi, sintaks, dan contoh perintah. Referensi lengkap tersedia di `/materi/perintah/`. Jalur administrasi memakai engine dan fixture yang sama dengan CTF Warm Up; setelah modul SSH, peserta mulai di shell server, sedangkan login MySQL tetap dilakukan sendiri. Password SSH adalah `admin1234!` tanpa titik; password MySQL dibaca dari konfigurasi aplikasi.
 
 Rincian materi tersedia di [Curriculum Map](docs/CURRICULUM.md).
 
